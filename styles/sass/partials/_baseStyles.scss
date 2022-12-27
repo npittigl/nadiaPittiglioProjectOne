@@ -1,1 +1,72 @@
 @use './variables' as *;
+
+// Stripping Styles:
+
+p,
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+button,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+// General Styles:
+
+// Wrapper
+.wrapper {
+    max-width: 1260px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+// Anchor Tags
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+// Images
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+// Default 'Button' (anchor tags) Styles
+a {
+    &.btn {
+        background-color: $accent;
+        text-align: center;
+        border: 3px solid transparent;
+
+        &:hover,
+        &:focus {
+            background-color: $whiteShade;
+            border: 3px solid $accent; 
+        }
+    }
+    
+    // Styles For Big Button Anchor Tags
+    &.bigButton {
+        padding: 4px 32px;
+    }
+    
+    // Styles For Small Button Anchor Tags
+    &.smallButton {
+        padding: 4px 25px;
+    }
+}

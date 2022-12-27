@@ -1,6 +1,7 @@
 
 @use './partials/variables' as *;
 @use './partials/setup';
+@use './partials/typography';
 @use './partials/baseStyles';
-@use './partials/header';
 @use './partials/nav';
+@use './partials/header';
