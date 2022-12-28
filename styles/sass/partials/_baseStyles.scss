@@ -3,6 +3,7 @@
 // Stripping Styles:
 
 p,
+nav,
 ul,
 li,
 a,
@@ -43,23 +44,20 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
 }
 
 // Default 'Button' (anchor tags) Styles
-a {
-    &.btn {
-        background-color: $accent;
-        text-align: center;
-        border: 3px solid transparent;
+.btn {
+    background-color: $accent;
+    text-align: center;
+    border: 3px solid transparent;
 
-        &:hover,
-        &:focus {
-            background-color: $whiteShade;
-            border: 3px solid $accent; 
-        }
+    &:hover,
+    &:focus {
+        background-color: $whiteShade;
+        border: 3px solid $accent; 
     }
-    
+
     // Styles For Big Button Anchor Tags
     &.bigButton {
         padding: 4px 32px;
@@ -69,4 +67,19 @@ a {
     &.smallButton {
         padding: 4px 25px;
     }
+}
+
+// Flexbox
+.flexContainer {
+    display: flex;
+}
+
+.about .flexContainer,
+.blogOneText,
+.blogTwoText {
+    flex-direction: column;
+}
+
+.linksList {
+    flex-wrap: wrap;
 }

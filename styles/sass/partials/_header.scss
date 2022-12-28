@@ -1,1 +1,47 @@
 @use './variables' as *;
+
+header {
+    min-height: calc(80vh - 53px);
+    background-color: $primary;
+
+    // .wrapper {
+    //     border: 2px solid blue;
+    // }
+    
+    .headerImgContainer {
+        width: calc(40% - 4%);
+        margin-right: 4%;
+        // border: 2px solid red;
+        
+        img {
+            box-shadow: 16px 16px 0 $white;
+            position: relative;
+            top: 55px;
+        }
+    }
+
+    .mainHeading {
+        width: calc(60% - 4%);
+        margin-left: 4%;
+        
+        // border: 2px solid black;
+
+        h1 {
+            // border: 2px solid purple;
+            margin-top: 38%;
+            position: relative;
+            max-width: 425px;
+        }
+
+        .textImage{
+            width: 12.5%;
+            position: absolute;
+            // border: 2px solid yellow;
+            top: 240px;
+            right: 228px;
+        }
+    }
+}
+
+
+

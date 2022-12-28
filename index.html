@@ -15,34 +15,45 @@
     <script src="https://kit.fontawesome.com/7313fc4cea.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- navigation bar begins -->
+    <nav class="navMenu">
+        <ul class="flexContainer">
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="#about">ABOUT</a>
+            </li>
+            <li class="logo">
+                <a href="index.html">HARPER</a>
+            </li>
+            <li>
+                <a href="blog.html">BLOG</a>
+            </li>
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </nav><!-- navigation bar ends -->
+
     <!-- header begins -->
     <header>
         <!-- header wrapper begins -->
-        <div class="wrapper">
-            <!-- nav begins -->
-            <nav class="navMenu">
-                <ul class="flexContainer">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="index.html" class="logo">HARPER</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav><!-- nav ends -->
-
-            <!-- main title begins -->
-            <div class="mainTitle flexContainer">
-                <div class="headerImgContainer">
-                    <img src="./assets/home-image-1.jpg" alt="A young girl's face with dark hair and blue eyes surrounded by pink and blue balloons.">
-                </div>
-
-                <div class="pageTitle">
-                    <h1>HARPER</h1>
-                    <img src="./assets/circle-text.png" alt="Image text that reads 'Everyday life with'">
-                    <!-- sr-only?? -->
-                </div><!-- page title ends -->
-            </div><!-- main title ends -->    
-        </div><!-- header wrapper ends -->
+        <div class="wrapper flexContainer">
+            <!-- header image -->
+            <div class="headerImgContainer">
+                <img src="./assets/home-image-1.jpg"
+                alt="A young girl's face with dark hair and blue eyes surrounded by pink and blue balloons.">
+            </div><!-- header image ends -->
+                
+            <!-- main heading -->
+            <div class="mainHeading">
+                <span class="sr-only">Everyday life with</span>
+                <h1>HARPER</h1>
+                <img src="./assets/circle-text.png" alt="Image text that reads 'Everyday life with'" class="textImage"
+                aria-hidden="true">
+            </div><!-- main heading ends -->
+        </div><!-- wrapper ends -->
     </header><!-- header ends -->
 
     <!-- main begins -->

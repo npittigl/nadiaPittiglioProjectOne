@@ -274,17 +274,22 @@ body {
   letter-spacing: 0px;
 }
 
-h1, h2, h3, h4, .btn, .navMenu {
+nav, h1, h2, h3, h4, .btn {
   font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
 }
 
-.navMenu {
+nav {
   line-height: 1.45rem;
 }
 
+.logo {
+  font-size: 1.8rem;
+}
+
 h1 {
-  font-size: 6.3rem;
+  font-size: 6.2rem;
+  line-height: 6.7rem;
 }
 
 .blogHeading,
@@ -306,6 +311,7 @@ h4 {
 }
 
 p,
+nav,
 ul,
 li,
 a,
@@ -342,22 +348,98 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
-a.btn {
+.btn {
   background-color: #f38d8d;
   text-align: center;
   border: 3px solid transparent;
 }
-a.btn:hover, a.btn:focus {
+.btn:hover, .btn:focus {
   background-color: #f6f6f6;
   border: 3px solid #f38d8d;
 }
-a.bigButton {
+.btn.bigButton {
   padding: 4px 32px;
 }
-a.smallButton {
+.btn.smallButton {
   padding: 4px 25px;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .flexContainer,
+.blogOneText,
+.blogTwoText {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.linksList {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav {
+  background-color: #b9dde7;
+}
+nav ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 0.8rem;
+}
+nav ul .logo {
+  margin: 0 0.9rem;
+}
+nav ul li a {
+  padding: 0.7rem;
+}
+nav ul li a:hover, nav ul li a:focus {
+  color: #f6f6f6;
+}
+nav ul li:first-child a {
+  color: #f6f6f6;
+}
+nav ul li:first-child a:hover, nav ul li:first-child a:focus {
+  color: #171717;
+}
+
+header {
+  min-height: calc(80vh - 53px);
+  background-color: #b9dde7;
+}
+header .headerImgContainer {
+  width: 36%;
+  margin-right: 4%;
+}
+header .headerImgContainer img {
+  -webkit-box-shadow: 16px 16px 0 #fff;
+          box-shadow: 16px 16px 0 #fff;
+  position: relative;
+  top: 55px;
+}
+header .mainHeading {
+  width: 56%;
+  margin-left: 4%;
+}
+header .mainHeading h1 {
+  margin-top: 38%;
+  position: relative;
+  max-width: 425px;
+}
+header .mainHeading .textImage {
+  width: 12.5%;
+  position: absolute;
+  top: 240px;
+  right: 228px;
 }
