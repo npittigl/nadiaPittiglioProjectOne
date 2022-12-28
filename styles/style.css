@@ -413,13 +413,9 @@ header {
   min-height: calc(80vh - 57px);
   background-color: #b9dde7;
 }
-header .wrapper {
-  border: 2px solid blue;
-}
 header .headerImgContainer {
-  width: 36%;
-  margin-right: 4%;
-  border: 2px solid red;
+  width: 40%;
+  min-width: 300px;
 }
 header .headerImgContainer img {
   -webkit-box-shadow: 16px 16px 0 #fff;
@@ -427,23 +423,18 @@ header .headerImgContainer img {
   position: relative;
   top: 65px;
 }
-header .mainHeading {
-  width: 56%;
-  margin-left: 4%;
-  border: 2px solid black;
-}
-header .mainHeading h1 {
-  border: 2px solid purple;
-  margin-top: 38%;
+header .headerText {
+  width: 425px;
+  height: 145px;
+  margin-top: 24%;
+  margin-left: 7%;
   position: relative;
-  max-width: 425px;
 }
-header .mainHeading .textImage {
-  width: 12.5%;
+header .headerText .textImage {
+  width: 150px;
   position: absolute;
-  border: 2px solid yellow;
-  top: 240px;
-  right: 228px;
+  top: -40px;
+  left: 320px;
 }
 
 .about {
