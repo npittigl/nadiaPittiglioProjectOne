@@ -268,7 +268,7 @@ html {
 
 body {
   font-family: "Cabin", sans-serif;
-  font-size: 1rem;
+  font-size: 0.85rem;
   line-height: 1.6rem;
   color: #171717;
   letter-spacing: 0px;
@@ -283,7 +283,7 @@ nav {
   line-height: 1.45rem;
 }
 
-.logo {
+.logo, h2 {
   font-size: 1.8rem;
 }
 
@@ -298,12 +298,8 @@ h1 {
   line-height: 92px;
 }
 
-h2 {
-  font-size: 2.1rem;
-}
-
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 h4 {
@@ -372,7 +368,6 @@ img {
   display: flex;
 }
 
-.about .flexContainer,
 .blogOneText,
 .blogTwoText {
   -webkit-box-orient: vertical;
@@ -399,7 +394,7 @@ nav ul {
   gap: 0 0.8rem;
 }
 nav ul .logo {
-  margin: 0 0.9rem;
+  margin: 0 0.8rem;
 }
 nav ul li a {
   padding: 0.7rem;
@@ -415,24 +410,30 @@ nav ul li:first-child a:hover, nav ul li:first-child a:focus {
 }
 
 header {
-  min-height: calc(80vh - 53px);
+  min-height: calc(80vh - 57px);
   background-color: #b9dde7;
+}
+header .wrapper {
+  border: 2px solid blue;
 }
 header .headerImgContainer {
   width: 36%;
   margin-right: 4%;
+  border: 2px solid red;
 }
 header .headerImgContainer img {
   -webkit-box-shadow: 16px 16px 0 #fff;
           box-shadow: 16px 16px 0 #fff;
   position: relative;
-  top: 55px;
+  top: 65px;
 }
 header .mainHeading {
   width: 56%;
   margin-left: 4%;
+  border: 2px solid black;
 }
 header .mainHeading h1 {
+  border: 2px solid purple;
   margin-top: 38%;
   position: relative;
   max-width: 425px;
@@ -440,6 +441,23 @@ header .mainHeading h1 {
 header .mainHeading .textImage {
   width: 12.5%;
   position: absolute;
+  border: 2px solid yellow;
   top: 240px;
   right: 228px;
+}
+
+.about {
+  background-color: #f6f6f6;
+  padding: 80px 0;
+}
+.about .flexContainer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.about .flexContainer .aboutText {
+  width: 53%;
+}
+.about .flexContainer .aboutText p {
+  margin: 20px 0;
 }

@@ -1,0 +1,15 @@
+@use './variables' as *;
+
+.about {
+    background-color: $whiteShade;
+    padding: 80px 0;
+    .flexContainer {
+        justify-content: flex-end;
+        .aboutText {
+            width: 53%;
+            p {
+                margin: 20px 0;
+            }
+        }
+    }
+}
