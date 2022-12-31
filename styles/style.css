@@ -359,7 +359,7 @@ img {
   padding: 4px 32px;
 }
 .btn.smallButton {
-  padding: 4px 25px;
+  padding: 2px 20px;
 }
 
 .flexContainer {
@@ -488,21 +488,37 @@ header .headerText .textImage {
 .imgContainer,
 .blogText {
   width: 50%;
+  min-width: 350px;
+  background-color: #fff;
 }
 
+.blogOne {
+  border: 2px solid black;
+}
+.blogOne .blogOneImage {
+  border: 2px solid red;
+}
 .blogOne .blogOneImage img {
   position: relative;
   bottom: 35px;
-  right: 15px;
-  -webkit-box-shadow: 15px 15px #227284, -85px 15px #227284;
-          box-shadow: 15px 15px #227284, -85px 15px #227284;
+  -webkit-box-shadow: 15px 15px #227284, -100px 15px #227284;
+          box-shadow: 15px 15px #227284, -100px 15px #227284;
 }
 .blogOne .blogOneText {
+  border: 2px solid red;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding: 20px 0 20px 85px;
+}
+.blogOne .blogOneText p {
+  margin: 20px 0 25px;
 }
 .blogOne .blogOneText .btn {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.journey {
+  background-color: #f6f6f6;
 }
