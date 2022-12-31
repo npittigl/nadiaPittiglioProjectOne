@@ -70,12 +70,7 @@ img {
 }
 
 // Flexbox
-.flexContainer {
-    display: flex;
-}
+.flexContainer { display: flex; }
 
-.blogOneText,
-.blogTwoText {
-    flex-direction: column;
-}
+.blogText { flex-direction: column; }
 

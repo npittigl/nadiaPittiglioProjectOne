@@ -1,0 +1,30 @@
+@use './variables' as *;
+
+.imgContainer,
+.blogText {
+    width: calc(100% / 2);
+}   
+
+
+
+.blogOne {
+    .blogOneImage {        
+        img {
+            position: relative;
+            bottom: 35px;
+            right: 15px;
+            box-shadow: 15px 15px $secondary,
+            -85px 15px $secondary;
+        }
+        
+    }
+
+    .blogOneText {
+        justify-content: flex-end;
+
+        .btn {
+            align-self: flex-start;
+        }
+
+    }
+}
