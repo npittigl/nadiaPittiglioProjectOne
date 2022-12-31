@@ -3,35 +3,46 @@
 .imgContainer,
 .blogText {
     width: calc(100% / 2);
-    min-width: 350px;
     background-color: $white;
 }   
 
-
-
 .blogOne {
-    border: 2px solid black;
     .blogOneImage {
-        border: 2px solid red;
         img {
             position: relative;
             bottom: 35px;
             box-shadow: 15px 15px $secondary,
             -100px 15px $secondary;
         }
+        
     }
-
     .blogOneText {
-        border: 2px solid red;
-        justify-content: flex-end;
-        padding: 20px 0 20px 85px;
+        padding: 70px 0 20px 95px;
         p {
             margin: 20px 0 25px;
         }
-
         .btn {
             align-self: flex-start;
         }
+    }
+}
 
+.blogTwo {
+    .blogTwoText {
+            padding: 50px 95px 20px 0;
+            p {
+                margin: 20px 0 25px;
+            }
+            .btn {
+                align-self: flex-end;
+            }
+        }
+    .blogTwoImage {
+        img {
+            position: relative;
+            top: 25px;
+            box-shadow: 15px 15px $secondary,
+            100px 15px $secondary;
+        }
     }
 }

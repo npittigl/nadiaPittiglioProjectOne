@@ -342,8 +342,10 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .btn {
@@ -488,16 +490,9 @@ header .headerText .textImage {
 .imgContainer,
 .blogText {
   width: 50%;
-  min-width: 350px;
   background-color: #fff;
 }
 
-.blogOne {
-  border: 2px solid black;
-}
-.blogOne .blogOneImage {
-  border: 2px solid red;
-}
 .blogOne .blogOneImage img {
   position: relative;
   bottom: 35px;
@@ -505,11 +500,7 @@ header .headerText .textImage {
           box-shadow: 15px 15px #227284, -100px 15px #227284;
 }
 .blogOne .blogOneText {
-  border: 2px solid red;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 20px 0 20px 85px;
+  padding: 70px 0 20px 95px;
 }
 .blogOne .blogOneText p {
   margin: 20px 0 25px;
@@ -517,6 +508,23 @@ header .headerText .textImage {
 .blogOne .blogOneText .btn {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.blogTwo .blogTwoText {
+  padding: 50px 95px 20px 0;
+}
+.blogTwo .blogTwoText p {
+  margin: 20px 0 25px;
+}
+.blogTwo .blogTwoText .btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.blogTwo .blogTwoImage img {
+  position: relative;
+  top: 25px;
+  -webkit-box-shadow: 15px 15px #227284, 100px 15px #227284;
+          box-shadow: 15px 15px #227284, 100px 15px #227284;
 }
 
 .journey {
