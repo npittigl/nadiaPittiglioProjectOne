@@ -547,3 +547,26 @@ header .headerText .textImage {
 .journey .journeyText p {
   margin: 25px 0 30px;
 }
+
+.gallery ul {
+  padding: 80px 0;
+}
+.gallery ul li {
+  width: 31.3333333333%;
+}
+.gallery ul .img1 {
+  margin-right: 2%;
+}
+.gallery ul .img2 {
+  margin: 0 1%;
+}
+.gallery ul .img3 {
+  margin-left: 2%;
+}
+
+.footer {
+  background-color: #171717;
+  padding: 5px 0;
+  color: #f6f6f6;
+  text-align: center;
+}
