@@ -17,7 +17,7 @@
         
     }
     .blogOneText {
-        padding: 70px 0 20px 95px;
+        padding: 70px 0 15px 95px;
         p {
             margin: 20px 0 25px;
         }
@@ -41,8 +41,8 @@
         img {
             position: relative;
             top: 25px;
-            box-shadow: 15px 15px $secondary,
-            100px 15px $secondary;
+            box-shadow: 15px 15px $primary,
+            100px 15px $primary;
         }
     }
 }

@@ -358,7 +358,7 @@ img {
   border: 3px solid #f38d8d;
 }
 .btn.bigButton {
-  padding: 4px 32px;
+  padding: 2px 32px;
 }
 .btn.smallButton {
   padding: 2px 20px;
@@ -496,11 +496,11 @@ header .headerText .textImage {
 .blogOne .blogOneImage img {
   position: relative;
   bottom: 35px;
-  -webkit-box-shadow: 15px 15px #227284, -100px 15px #227284;
-          box-shadow: 15px 15px #227284, -100px 15px #227284;
+  -webkit-box-shadow: 15px 15px #68b0c1, -100px 15px #68b0c1;
+          box-shadow: 15px 15px #68b0c1, -100px 15px #68b0c1;
 }
 .blogOne .blogOneText {
-  padding: 70px 0 20px 95px;
+  padding: 70px 0 15px 95px;
 }
 .blogOne .blogOneText p {
   margin: 20px 0 25px;
@@ -523,10 +523,27 @@ header .headerText .textImage {
 .blogTwo .blogTwoImage img {
   position: relative;
   top: 25px;
-  -webkit-box-shadow: 15px 15px #227284, 100px 15px #227284;
-          box-shadow: 15px 15px #227284, 100px 15px #227284;
+  -webkit-box-shadow: 15px 15px #b9dde7, 100px 15px #b9dde7;
+          box-shadow: 15px 15px #b9dde7, 100px 15px #b9dde7;
 }
 
 .journey {
   background-color: #f6f6f6;
+  padding: 120px 0 80px;
+}
+.journey .journeyImage {
+  width: 25%;
+  min-width: 250px;
+}
+.journey .journeyImage img {
+  height: auto;
+  -webkit-box-shadow: 15px 15px #227284;
+          box-shadow: 15px 15px #227284;
+}
+.journey .journeyText {
+  width: 67%;
+  margin-left: 8%;
+}
+.journey .journeyText p {
+  margin: 25px 0 30px;
 }
