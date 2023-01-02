@@ -1,0 +1,16 @@
+@use './variables' as *;
+
+.blogPostHeader {
+    // min-height: calc(65vh - 59px);
+    background: url(../assets/blog-image-1.jpg)no-repeat center / cover;
+    
+    .wrapper {
+        position: relative;
+        min-height: calc(65vh - 59px);
+
+        h2 {
+            position: absolute;
+            bottom: -5px;
+        }
+    }
+}
