@@ -5,28 +5,19 @@ nav {
     ul {
         justify-content: center;
         align-items: center;
-        gap: 0 0.8rem;
+        gap: 0 20px;
 
         .logo {
-            margin: 0 0.8rem;
+            margin: 0 5px;
         }
 
         li {
             a {
-                padding: 0.7rem;
+                padding: 15px;
             
                 &:hover,
                 &:focus {
                     color: $whiteShade;
-                }
-            }
-
-            &:first-child a {
-                color: $whiteShade;
-
-                &:hover,
-                &:focus {
-                    color: $black;
                 }
             }
         }

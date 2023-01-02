@@ -283,13 +283,21 @@ nav {
   line-height: 1.45rem;
 }
 
-.logo, h2 {
+h2 {
+  font-size: 1.8rem;
+}
+
+.logo {
   font-size: 1.8rem;
 }
 
 h1 {
   font-size: 6.2rem;
   line-height: 6.7rem;
+}
+
+.blogPostHeader h2 {
+  font-size: 3.6rem;
 }
 
 .blogHeading,
@@ -387,46 +395,40 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 0.8rem;
+  gap: 0 20px;
 }
 nav ul .logo {
-  margin: 0 0.8rem;
+  margin: 0 5px;
 }
 nav ul li a {
-  padding: 0.7rem;
+  padding: 15px;
 }
 nav ul li a:hover, nav ul li a:focus {
   color: #f6f6f6;
 }
-nav ul li:first-child a {
-  color: #f6f6f6;
-}
-nav ul li:first-child a:hover, nav ul li:first-child a:focus {
-  color: #171717;
-}
 
-header {
-  min-height: calc(80vh - 57px);
+.homeHeader {
+  min-height: calc(80vh - 59px);
   background-color: #b9dde7;
 }
-header .headerImgContainer {
+.homeHeader .headerImgContainer {
   width: 40%;
   min-width: 300px;
 }
-header .headerImgContainer img {
+.homeHeader .headerImgContainer img {
   -webkit-box-shadow: 16px 16px 0 #fff;
           box-shadow: 16px 16px 0 #fff;
   position: relative;
   top: 65px;
 }
-header .headerText {
+.homeHeader .headerText {
   width: 425px;
   height: 145px;
   margin-top: 24%;
   margin-left: 7%;
   position: relative;
 }
-header .headerText .textImage {
+.homeHeader .headerText .textImage {
   width: 150px;
   position: absolute;
   top: -40px;
@@ -510,8 +512,11 @@ header .headerText .textImage {
       align-self: flex-start;
 }
 
+.blogTwo {
+  padding-top: 20px;
+}
 .blogTwo .blogTwoText {
-  padding: 50px 95px 20px 0;
+  padding: 30px 95px 20px 0;
 }
 .blogTwo .blogTwoText p {
   margin: 20px 0 25px;

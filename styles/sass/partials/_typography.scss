@@ -8,8 +8,6 @@ body {
     font-family: $bodyFont;
     font-size: 0.85rem;
     line-height: 1.6rem;
-    // font-size: 1rem;
-    // line-height: 1.6rem; 
     color: $black;
     letter-spacing: 0px;
 }
@@ -22,12 +20,16 @@ nav, h1, h2, h3, h4, .btn {
 
 nav { line-height: 1.45rem; }
 
-.logo, h2 { font-size: 1.8rem; }
+h2 { font-size: 1.8rem; }
+
+.logo { font-size: 1.8rem; }
 
 h1 { 
     font-size: 6.2rem;
     line-height: 6.7rem;
 }
+
+.blogPostHeader h2 { font-size: 3.6rem; }
 
 .blogHeading, 
 .contactHeading {

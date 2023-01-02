@@ -1,7 +1,7 @@
 @use './variables' as *;
 
-header {
-    min-height: calc(80vh - 57px);
+.homeHeader {
+    min-height: calc(80vh - 59px);
     background-color: $primary;
 
     .headerImgContainer {
