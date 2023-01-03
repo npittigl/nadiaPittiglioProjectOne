@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harper's Blog - Project One</title>
+    <!-- link to style sheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- link to font awesome -->
+    <script src="https://kit.fontawesome.com/7313fc4cea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation bar begins -->
+    <nav class="navMenu">
+        <ul class="flexContainer">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li class="logo"><a href="index.html">HARPER</a></li>
+            <li><a href="blogPost.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav><!-- navigation bar ends -->
+
+    <!-- contact header begins -->
+    <header>
+        <!-- header wrapper -->
+        <div class="wrapper">
+            <h2>CONTACT ME</h2>
+        </div>
+    </header><!-- contact header ends -->
+
+    <!-- main begins -->
+    <main>
+        <!-- main wrapper begins -->
+        <div class="wrapper flexContainer">
+            <!-- left column aside -->
+            <aside>
+                <!-- social media links -->
+                <ul class="mediaLinks">
+                    <!-- facebook -->
+                    <li>
+                        <a href="#" aria-label="Go to Harper's Facebook page">
+                            <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <!-- twitter -->
+                    <li>
+                        <a href="#" aria-label="Go to Harper's Twitter page">
+                            <i aria-hidden="true" class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <!-- instagram -->
+                    <li>
+                        <a href="#" aria-label="Go to Harper's Instagram page">
+                            <i aria-hidden="true" class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <!-- snapchat -->
+                    <li>
+                        <a href="#" aria-label="Go to Harper's Snapchat page">
+                            <i aria-hidden="true" class="fab fa-snapchat-ghost"></i>
+                        </a>
+                    </li>
+                </ul><!-- social media links ends -->
+
+                <!-- contact email -->
+                <p class="emailBold">
+                    info@email.com
+                </p>
+
+                <!-- contact address -->
+                <div class="address">
+                    <p>123 - 456 - 7890</p>
+                    <p>123 Queen Street West Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div>
+            </aside><!-- left column aside -->
+
+            <!-- contact form begins -->
+            <form action="#" method="#" class="contactForm" name="contactForm">
+                <!-- name & email input -->
+                <div>
+                    <label for="userName" class="sr-only">Name</label>
+                    <input type="text" id="userName" name="userName" placeholder="Name" required>
+            
+                    <label for="userEmail" class="sr-only">Email address</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Email address" required>
+                </div><!-- name & email input ends -->
+        
+                <div class="flexContainer">
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea name="userMessage" id="userMessage" cols="30" rows="8" placeholder="Message" required></textarea>
+            
+                    <!-- button to post comment -->
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form><!-- contact form ends -->
+        </div><!-- main wrapper ends -->
+    </main><!-- main ends -->
+
+    <!-- footer begins -->
+    <footer class="footer">
+        <p>Copyright &copy 2022 Juno College</p>
+    </footer><!-- footer ends -->
+</body>
+</html>
