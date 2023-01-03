@@ -296,7 +296,8 @@ h1 {
   line-height: 6.7rem;
 }
 
-.blogPostHeader h2 {
+.blogPostHeader h2,
+.contactHeader h2 {
   font-size: 3.6rem;
 }
 
@@ -343,9 +344,13 @@ a {
   text-decoration: none;
   display: inline-block;
   color: inherit;
-  cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 img {
@@ -689,5 +694,87 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
   resize: none;
 }
 .commentForm .flexContainer button {
+  padding: 7px;
+}
+
+.contactHeader {
+  background: url(../assets/contact-image-1.jpg) no-repeat center/cover;
+}
+.contactHeader .wrapper {
+  position: relative;
+  min-height: calc(45vh - 59px);
+}
+.contactHeader .wrapper h2 {
+  position: absolute;
+  bottom: -10px;
+}
+
+.contactMain {
+  background-color: #f6f6f6;
+  padding: 80px 0;
+}
+.contactMain aside {
+  width: 29%;
+  margin-right: 1%;
+}
+.contactMain aside .contactInfoCard {
+  background-color: #fff;
+  padding: 35px 30px;
+}
+.contactMain aside .emailBold {
+  font-size: 0.9rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.contactMain aside .address {
+  font-size: 0.82rem;
+  line-height: 1.4rem;
+}
+
+.mediaLinks {
+  color: #227284;
+}
+.mediaLinks li {
+  margin-right: 12%;
+}
+.mediaLinks li a {
+  border: 1px solid transparent;
+}
+.mediaLinks li a:hover, .mediaLinks li a:focus {
+  border: 1px solid transparent;
+}
+
+.contactForm {
+  width: 68%;
+  margin-left: 2%;
+}
+.contactForm input {
+  width: calc(50% - 8px);
+  padding: 25px 30px;
+  border: none;
+  font-family: "Cabin", sans-serif;
+}
+.contactForm input[type=text] {
+  margin-right: 4px;
+}
+.contactForm input[type=email] {
+  margin-left: 4px;
+}
+.contactForm .flexContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactForm .flexContainer textarea {
+  border: none;
+  margin: 17px 0;
+  padding: 35px 30px;
+  font-family: "Cabin", sans-serif;
+  resize: none;
+}
+.contactForm .flexContainer button {
   padding: 7px;
 }

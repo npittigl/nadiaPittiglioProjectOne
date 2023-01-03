@@ -35,8 +35,12 @@ a {
     text-decoration: none;
     display: inline-block;
     color: inherit;
-    cursor: pointer;
     transition: 0.3s;
+}
+
+a,
+button {
+    cursor: pointer;
 }
 
 // Images

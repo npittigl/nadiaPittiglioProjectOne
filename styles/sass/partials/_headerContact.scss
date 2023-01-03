@@ -1,0 +1,15 @@
+@use './variables' as *;
+
+.contactHeader {
+    background: url(../assets/contact-image-1.jpg) no-repeat center / cover;
+
+    .wrapper {
+        position: relative;
+        min-height: calc(45vh - 59px);
+
+        h2 {
+            position: absolute;
+            bottom: -10px;
+        }
+    }
+}
