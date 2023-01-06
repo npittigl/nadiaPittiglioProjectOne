@@ -13,35 +13,37 @@ body {
 }
 
 // Heading Styles
-nav, h1, h2, h3, h4, .btn {
+nav, h1, h2, h3, h4, h5, .btn {
     font-family: $headingFont;
     letter-spacing: 1px;
 }
 
 nav { line-height: 1.45rem; }
 
-h2 { font-size: 1.8rem; }
-
-.logo { font-size: 1.8rem; }
 
 h1 { 
-    font-size: 6.2rem;
+    font-size: 1.65rem;
+    line-height: 1.8rem; 
+}
+
+.headerText h2 { 
+    // font-size: 6.2rem;
+    font-size: calc(6.8rem - 1vw);
+    // font-size: calc(7.5rem - 2vw);
     line-height: 6.7rem;
 }
 
 .blogPostHeader h2,
-.contactHeader h2 { font-size: 3.6rem; }
-
-.blogHeading, 
-.contactHeading {
-    font-size: 4rem;
-    line-height: 92px;
+.contactHeader h2 {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
 }
 
-// h2 { font-size: 2.1rem; }
+h3 { 
+    font-size: 1.8rem;
+    line-height: 1.6rem; 
+}
 
-// h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
 
-h3 { font-size: 1.4rem; }
-
-h4 { font-size: 1.2rem; }
+h5 { font-size: 1.2rem; }

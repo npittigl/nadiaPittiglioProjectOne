@@ -11,6 +11,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 button,
 input {
     margin: 0;
@@ -51,7 +52,7 @@ img {
     object-fit: cover;
 }
 
-// Default 'Button' (anchor tags) Styles
+// Base 'Button' Styles for Anchor Tags
 .btn {
     background-color: $accent;
     text-align: center;
@@ -79,3 +80,5 @@ img {
 
 .blogText { flex-direction: column; }
 
+// Background Colours 
+nav, .homeHeader  { background-color: $primary; }

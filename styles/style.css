@@ -274,7 +274,7 @@ body {
   letter-spacing: 0px;
 }
 
-nav, h1, h2, h3, h4, .btn {
+nav, h1, h2, h3, h4, h5, .btn {
   font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
 }
@@ -283,35 +283,32 @@ nav {
   line-height: 1.45rem;
 }
 
-h2 {
-  font-size: 1.8rem;
-}
-
-.logo {
-  font-size: 1.8rem;
-}
-
 h1 {
-  font-size: 6.2rem;
+  font-size: 1.65rem;
+  line-height: 1.8rem;
+}
+
+.headerText h2 {
+  font-size: calc(6.8rem - 1vw);
   line-height: 6.7rem;
 }
 
 .blogPostHeader h2,
 .contactHeader h2 {
   font-size: 3.6rem;
-}
-
-.blogHeading,
-.contactHeading {
-  font-size: 4rem;
-  line-height: 92px;
+  line-height: 4.2rem;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  line-height: 1.6rem;
 }
 
 h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
   font-size: 1.2rem;
 }
 
@@ -324,6 +321,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 button,
 input {
   margin: 0;
@@ -390,9 +388,10 @@ img {
           flex-direction: column;
 }
 
-nav {
+nav, .homeHeader {
   background-color: #b9dde7;
 }
+
 nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -413,36 +412,32 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .homeHeader {
-  min-height: calc(80vh - 59px);
-  background-color: #b9dde7;
+  min-height: calc(80vh - 66px);
 }
 .homeHeader .headerImgContainer {
-  width: 40%;
-  min-width: 300px;
+  width: 38%;
+  min-width: 270px;
 }
 .homeHeader .headerImgContainer img {
   -webkit-box-shadow: 16px 16px 0 #fff;
           box-shadow: 16px 16px 0 #fff;
   position: relative;
-  top: 65px;
+  top: 10%;
 }
 .homeHeader .headerText {
-  width: 425px;
-  height: 145px;
-  margin-top: 24%;
-  margin-left: 7%;
+  margin: 22% 0 22% 7.5%;
   position: relative;
 }
 .homeHeader .headerText .textImage {
-  width: 150px;
+  z-index: 100;
   position: absolute;
-  top: -40px;
-  left: 320px;
+  top: -30%;
+  left: 76%;
 }
 
 .about {
   background-color: #f6f6f6;
-  padding: 80px 0;
+  padding: 90px 0;
 }
 .about .flexContainer {
   -webkit-box-pack: end;
@@ -590,7 +585,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 .blogPostHeader .wrapper h2 {
   position: absolute;
-  bottom: -5px;
+  bottom: -30px;
 }
 
 .blogPostMain {
@@ -614,16 +609,16 @@ nav ul li a:hover, nav ul li a:focus {
 aside .aboutHarper {
   margin-bottom: 5%;
 }
-aside .aboutHarper h4 {
+aside .aboutHarper h5 {
   border-bottom: 3px solid transparent;
 }
 aside .aboutHarper a {
   padding: 20px 0 15px;
 }
-aside .aboutHarper a:hover h4, aside .aboutHarper a:focus h4 {
+aside .aboutHarper a:hover h5, aside .aboutHarper a:focus h5 {
   border-bottom: 3px solid #f38d8d;
 }
-aside .recentPosts h4 {
+aside .recentPosts h5 {
   margin-bottom: 15px;
 }
 aside .recentPosts .posts {
@@ -645,7 +640,7 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
   border-bottom: 4px solid #227284;
   margin-bottom: 2%;
 }
-.article h3 {
+.article h4 {
   margin-bottom: 10px;
 }
 .article p {
@@ -706,7 +701,7 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
 }
 .contactHeader .wrapper h2 {
   position: absolute;
-  bottom: -10px;
+  bottom: -35px;
 }
 
 .contactMain {

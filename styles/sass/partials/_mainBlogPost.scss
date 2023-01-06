@@ -23,18 +23,18 @@
 aside {
     .aboutHarper {
         margin-bottom: 5%;
-        h4 { border-bottom: 3px solid transparent; }
+        h5 { border-bottom: 3px solid transparent; }
         a {
             padding: 20px 0 15px;
-            &:hover h4,
-            &:focus h4 {
+            &:hover h5,
+            &:focus h5 {
                 border-bottom: 3px solid $accent;
             }
         }
     }
 
     .recentPosts {
-        h4 { margin-bottom: 15px; }
+        h5 { margin-bottom: 15px; }
         .posts { 
             list-style-position: inside;
             a {
@@ -56,7 +56,7 @@ aside {
     padding-bottom: 30px;
     border-bottom: 4px solid $tertiary;
     margin-bottom: 2%;
-    h3 { margin-bottom: 10px; }
+    h4 { margin-bottom: 10px; }
     p { margin-bottom: 15px; }
 }
 
