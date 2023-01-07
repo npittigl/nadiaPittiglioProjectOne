@@ -82,3 +82,9 @@ img {
 
 // Background Colours 
 nav, .homeHeader  { background-color: $primary; }
+
+// display: none
+label[for="toggle"],
+.toggle {
+    display: none;
+}

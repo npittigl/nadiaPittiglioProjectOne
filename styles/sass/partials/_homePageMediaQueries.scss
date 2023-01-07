@@ -1,10 +1,67 @@
+@use 'variables' as *;
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
     
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    // Nav Slide-Out Menu //
+    label[for="toggle"] {
+        display: block;
+        position: fixed;
+        right: 7.5%;
+        top: 10px;
+        z-index: 10;
+    }
+
+    i.fa-bars {
+        font-size: 2rem;
+    }
+    
+    ul.slideOutMenu {
+        min-width: 55%;
+        background: $secondary;
+        border: 4px solid $accent;
+        // border-right-color: transparent;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: fixed;
+        right: -60%;
+        top: 100px;
+        z-index: 10;
+        transition: all 0.6s;
+    
+        h1 {
+            font-size: 2.3rem;
+        }
+
+        li {
+            width: 100%;
+        }
+    
+        a {
+            width: inherit;
+            padding: 35px 0;
+            font-size: 1.8rem;
+            text-align: center;
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+    
+            &:hover,
+            &:focus {
+                background-color: $tertiary;
+                border-top: 2px solid $whiteShade;
+                border-bottom: 2px solid $whiteShade;
+            }
+        }
+    }
+    
+    input[type="checkbox"]:checked + ul.slideOutMenu {
+        right: 0px;
+    }
+}
 
 /* Landscape phones and down */
 @media (max-width: 480px) {}
