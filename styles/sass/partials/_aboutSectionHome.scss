@@ -28,10 +28,11 @@
 
         .aboutImgContainer {
             width: 38%;
-            position: relative;
             min-width: 270px;
+            position: relative;
 
             img {
+                height: auto;
                 box-shadow: 16px 16px 0 $white;
                 position: absolute;
                 bottom: 110px;

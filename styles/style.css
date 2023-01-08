@@ -289,8 +289,8 @@ h1 {
 }
 
 .headerText h2 {
-  font-size: calc(6.8rem - 1vw);
-  line-height: 6.9rem;
+  font-size: 6.2rem;
+  line-height: 6.4rem;
 }
 
 .blogPostHeader h2,
@@ -353,7 +353,7 @@ button {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -419,14 +419,13 @@ nav ul li a:hover, nav ul li a:focus {
 .homeHeader {
   height: 90vh;
 }
-
-.headerText {
+.homeHeader .headerText {
   display: inline-block;
   margin-top: 23%;
   margin-left: 45%;
   position: relative;
 }
-.headerText .textImage {
+.homeHeader .headerText .textImage {
   height: 100%;
   position: absolute;
   top: -33%;
@@ -447,10 +446,11 @@ nav ul li a:hover, nav ul li a:focus {
 }
 .about .flexContainer .aboutImgContainer {
   width: 38%;
-  position: relative;
   min-width: 270px;
+  position: relative;
 }
 .about .flexContainer .aboutImgContainer img {
+  height: auto;
   -webkit-box-shadow: 16px 16px 0 #fff;
           box-shadow: 16px 16px 0 #fff;
   position: absolute;
@@ -789,27 +789,41 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .homeHeader {
-    height: 75vh;
+    height: 80vh;
   }
-  .headerText h2 {
-    font-size: calc(5.5rem - 1vw);
+  .homeHeader h2 {
+    font-size: 5.2rem;
+  }
+  .homeHeader .headerText .textImage {
+    height: 95%;
+    position: absolute;
+    top: -26%;
+    left: 75%;
+  }
+}
+@media (max-height: 800px) and (max-width: 450px) {
+  .homeHeader {
+    height: auto;
   }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  label[for=toggle] {
+  .wrapper {
+    width: 90%;
+  }
+  nav {
+    line-height: 1.8rem;
+  }
+  nav label[for=toggle] {
     display: block;
     position: fixed;
     right: 7.5%;
     top: 10px;
     z-index: 10;
   }
-  label[for=toggle] i.fa-bars {
+  nav label[for=toggle] i.fa-bars {
     font-size: 2rem;
     color: #227284;
-  }
-  nav {
-    line-height: 1.8rem;
   }
   nav input[type=checkbox]:checked + ul.slideOutMenu {
     right: 0px;
@@ -852,6 +866,30 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
     background-color: #227284;
     border-top: 2px solid #b9dde7;
     border-bottom: 2px solid #b9dde7;
+  }
+  .homeHeader .headerText h2 {
+    font-size: 4.5rem;
+  }
+  .homeHeader .headerText .textImage {
+    height: 87%;
+    top: -20%;
+    left: 74%;
+  }
+  .about .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .flexContainer .aboutImgContainer {
+    border: 2px solid red;
+  }
+  .about .flexContainer .aboutImgContainer img {
+    position: relative;
+    bottom: 100px;
+  }
+  .about .flexContainer .aboutText {
+    width: 100%;
   }
 }
 /* Landscape phones and down */

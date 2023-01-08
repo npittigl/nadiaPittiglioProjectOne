@@ -2,34 +2,57 @@
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-    // Home Page Header
+    // Header
     .homeHeader {
-        height: 75vh;
-    }
+        height: 80vh;
 
-    .headerText h2 {
-        font-size: calc(5.5rem - 1vw);
-    }    
+        h2 {
+            font-size: 5.2rem;
+        }
+
+        .headerText {
+            .textImage {
+                height: 95%;
+                position: absolute;
+                // top: -40px;
+                // left: 325px;
+                top: -26%;
+                left: 75%;
+            }
+        }
+
+
+    }
+}
+
+@media (max-height: 800px) and (max-width: 450px) {
+    .homeHeader {
+        height: auto;
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    // Nav Slide-Out Menu //
-    label[for="toggle"] {
-        display: block;
-        position: fixed;
-        right: 7.5%;
-        top: 10px;
-        z-index: 10;
-
-        i.fa-bars {
-            font-size: 2rem;
-            color: $tertiary;
-        }
+    // wrapper
+    .wrapper {
+        width: 90%;
     }
 
+    // Nav Slide-Out Menu //
     nav {
         line-height: 1.8rem;
+        label[for="toggle"] {
+            display: block;
+            position: fixed;
+            right: 7.5%;
+            top: 10px;
+            z-index: 10;
+    
+            i.fa-bars {
+                font-size: 2rem;
+                color: $tertiary;
+            }
+        }
         input[type="checkbox"]:checked+ul.slideOutMenu {
             right: 0px;
         }
@@ -73,7 +96,50 @@
             }
         }
     }
+
+    // Header
+    .homeHeader {
+        // height: 75vh;
+        .headerText {
+            // margin: 0;
+            // justify-content: center;
+            // align-content: center;
+            
+    
+            h2 {
+                font-size: 4.5rem;
+            }
+    
+            .textImage {
+                height: 87%;
+                top: -20%;
+                left: 74%;
+            }
+    
+        }
+    }
+    
+
+    // About Section
+    .about {
+        .flexContainer {
+            flex-direction: column;
+            
+            .aboutImgContainer {
+                border: 2px solid red;
+                img {
+                    position: relative;
+                    bottom: 100px;
+                }
+            }
+
+            .aboutText {
+                width: 100%;
+            }
+        }
+    }
 }
+
 
 /* Landscape phones and down */
 @media (max-width: 480px) {}

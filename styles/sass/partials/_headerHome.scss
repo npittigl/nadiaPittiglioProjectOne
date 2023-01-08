@@ -33,21 +33,23 @@
 
 .homeHeader {
     height: 90vh;
-}
 
-.headerText {
-    display: inline-block;
-    margin-top: 23%;
-    margin-left: 45%;
-    position: relative;
-
-    .textImage {
-        height: 100%;
-        position: absolute;
-        // top: -40px;
-        // left: 325px;
-        top: -33%;
-        left: 78%;
+    .headerText {
+        display: inline-block;
+        margin-top: 23%;
+        margin-left: 45%;
+        position: relative;
+    
+        .textImage {
+            height: 100%;
+            position: absolute;
+            // top: -40px;
+            // left: 325px;
+            top: -33%;
+            left: 78%;
+        }
     }
 }
+
+
 
