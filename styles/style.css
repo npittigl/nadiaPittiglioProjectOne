@@ -779,6 +779,37 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
 }
 
 /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .homeHeader .headerImgContainer img {
+    top: 15%;
+  }
+  .homeHeader .headerText {
+    margin: 18% 0 22% 7.5%;
+  }
+  .homeHeader .headerText h2 {
+    font-size: calc(5.5rem - 1vw);
+  }
+  .homeHeader .headerText .textImage {
+    top: -27%;
+    left: 74%;
+  }
+}
+/* First Small Break Point */
+@media (max-width: 800px) {
+  .homeHeader .headerImgContainer img {
+    top: 20%;
+  }
+  .homeHeader .headerText {
+    margin: 14% 0 22% 7.5%;
+  }
+  .homeHeader .headerText h2 {
+    font-size: calc(5.5rem - 1vw);
+  }
+  .homeHeader .headerText .textImage {
+    top: -27%;
+    left: 74%;
+  }
+}
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   label[for=toggle] {
@@ -788,13 +819,21 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
     top: 10px;
     z-index: 10;
   }
-  i.fa-bars {
+  label[for=toggle] i.fa-bars {
     font-size: 2rem;
+    color: #227284;
+  }
+  nav {
+    line-height: 1.8rem;
+  }
+  nav input[type=checkbox]:checked + ul.slideOutMenu {
+    right: 0px;
   }
   ul.slideOutMenu {
-    min-width: 55%;
+    width: 58%;
+    color: #f6f6f6;
     background: #68b0c1;
-    border: 4px solid #f38d8d;
+    border: 3px solid #f38d8d;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -811,13 +850,14 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
   }
   ul.slideOutMenu h1 {
     font-size: 2.3rem;
+    line-height: 2.5rem;
   }
   ul.slideOutMenu li {
     width: 100%;
   }
   ul.slideOutMenu a {
     width: inherit;
-    padding: 35px 0;
+    padding: 25px 0;
     font-size: 1.8rem;
     text-align: center;
     border-top: 2px solid transparent;
@@ -825,11 +865,8 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
   }
   ul.slideOutMenu a:hover, ul.slideOutMenu a:focus {
     background-color: #227284;
-    border-top: 2px solid #f6f6f6;
-    border-bottom: 2px solid #f6f6f6;
-  }
-  input[type=checkbox]:checked + ul.slideOutMenu {
-    right: 0px;
+    border-top: 2px solid #b9dde7;
+    border-bottom: 2px solid #b9dde7;
   }
 }
 /* Landscape phones and down */

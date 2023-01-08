@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harper's Blog Home Page</title>
+    <!-- link to style sheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- link to font awesome -->
+    <script src="https://kit.fontawesome.com/7313fc4cea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation bar begins -->
+    <nav>
+        <!-- nav wrapper -->
+        <div class="wrapper">
+            <!-- slide out menu icon for smaller screen -->
+            <label for="toggle" aria-label="Click here to open or close main menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <input type="checkbox" class="toggle" id="toggle" name="toggle">
+            
+            <!-- menu -->
+            <ul class="slideOutMenu flexContainer">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li class="logo"><a href="index.html">
+                        <h1>HARPER</h1>
+                    </a></li>
+                <li><a href="blogPost.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div><!-- nav wrapper ends-->
+    </nav><!-- navigation bar ends -->
+
+    <!-- header begins -->
+    <header class="homeHeader">
+        <!--  header wrapper begins -->
+        <div class="wrapper">
+            <div class="headerText">
+                <span class="sr-only">Everyday life with</span>
+                <h2>HARPER</h2>
+                <img src="./assets/circle-text.png" alt="Image text that reads 'Everyday life with'" class="textImage"
+                aria-hidden="true">
+            </div><!-- header text ends -->
+        </div><!-- header wrapper ends -->
+    </header><!-- header ends -->
+
+    <!-- main begins -->
+    <main>
+        <!-- about section begins -->
+        <section class="about" id="about">
+            <!-- about container begins -->
+            <div class="wrapper flexContainer">
+                <!-- header image -->
+                <div class="aboutImgContainer">
+                    <img src="./assets/home-image-1.jpg"
+                    alt="Upclose photo of a young girl with dark hair and blue eyes, whose face is surrounded by pink and blue balloons.">
+                </div><!-- image container ends -->
+
+                <div class="aboutText">
+                    <h3>WHO'S HARPER?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis.</p>
+                    <a href="#" class="btn bigButton">FIND OUT MORE</a>
+                </div><!-- about text ends -->
+            </div><!-- container ends -->
+        </section><!-- about section ends -->
+
+        <!-- web links section begins -->
+        <section class="webLinks" id="webLinks">
+            <div class="linksImgContainer">
+                <img src="./assets/home-image-2.jpg" alt="Side view of a large, tall and pink building with dark windows.">
+            </div>
+            <!-- list of web links begins -->
+            <ul class="wrapper flexContainer">
+                <li class="photosIcon">
+                    <!-- f03e -->
+                    <a href="#">
+                        <i class="fas fa-image icon"></i>
+                        <h4>PHOTOS</h4>
+                    </a>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                </li>
+                <li class="aboutIcon">
+                    <!-- f007 -->
+                    <a href="#">
+                        <i class="fas fa-user icon"></i>
+                        <h4>ABOUT</h4>
+                    </a>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                </li>
+                <li class="blogIcon">
+                    <!-- f108 -->
+                    <a href="blog.html">
+                        <i class="fas fa-desktop icon"></i>
+                        <h4>BLOG</h4>
+                    </a>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                </li>
+                <li class="contactIcon">
+                    <!-- f095 -->
+                    <a href="contact.html">
+                        <i class="fas fa-phone icon"></i>
+                        <h4>CONTACT ME</h4>
+                    </a>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                </li>
+            </ul><!-- list of web links ends -->
+        </section><!-- web links section ends -->
+
+        <!-- blog post section begins -->
+        <section class="blogPosts" id="blogPosts">
+            <!-- first blog post begins -->
+            <div class="blogOne wrapper flexContainer">
+                <div class="blogOneImage imgContainer">
+                    <img src="./assets/home-image-3.jpg" alt="People surfing on small ocean waves as the sun sets, making the sky look pink in colour.">
+                </div><!-- first blog image ends -->
+            
+                <div class="blogOneText blogText flexContainer">
+                    <h4>HARPER'S TRAVELS</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel
+                    turpis.</p>
+                    <a href="#" class="btn smallButton">READ MORE</a>
+                </div><!-- text ends -->
+            </div><!-- first blog post ends -->
+                
+            <!-- second blog post begins -->
+            <div class="blogTwo wrapper flexContainer">
+                <div class="blogTwoText blogText flexContainer">
+                    <h4>FAVOURITE THINGS</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel
+                    turpis.</p>
+                    <a href="#" class="btn smallButton">READ MORE</a>
+                </div><!-- blog text ends -->
+
+                <div class="blogTwoImage imgContainer">
+                    <img src="./assets/home-image-4.jpg" alt="Side view of a red brick industrial looking building against a pink sky.">
+                </div><!-- image ends -->
+            </div><!-- second blog post ends -->
+        </section><!-- blog post section ends -->
+
+        <!-- journey section begins -->
+        <section class="journey" id="journey">
+            <!-- journey section wrapper begins -->
+            <div class="wrapper flexContainer">
+                <div class="journeyImage">
+                    <img src="./assets/home-image-5.jpg" alt="Shot of young girl, from the chest up, smiling while facing the camera. She is wearing a floral top with pink and red hues.">
+                </div>
+
+                <div class="journeyText">
+                    <h3>HARPER'S JOURNEY</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis.</p>
+                    <a href="#" class="btn bigButton">FIND OUT MORE</a>
+                </div><!-- journey text ends -->
+            </div><!-- journey section wrapper ends -->
+        </section><!-- journey section ends -->
+
+        <!-- gallery section begins -->
+        <section class="gallery" id="gallery">
+            <!-- image gallery begins -->
+            <ul class="wrapper flexContainer">
+                <li class="img1"><img src="./assets/home-image-6.jpg" alt="View of top half of a pink house with white trimmed windows, againste a bright blue sky."></li>
+                <li class="img2"><img src="./assets/home-image-7.jpg" alt="Image of a plane flying across a cloudy sky with some pink hues."></li>
+                <li class="img3"><img src="./assets/home-image-8.jpg" alt="Abstract image of pink, light blue and white coloured clouds."></li>
+            </ul><!-- image gallery ends -->
+        </section><!-- gallery section ends -->
+    </main><!-- main ends -->    
+
+    <!-- footer begins -->
+    <footer class="footer">
+        <p>Copyright &copy 2022 Juno College</p>
+    </footer><!-- footer ends -->
+</body>
+</html>

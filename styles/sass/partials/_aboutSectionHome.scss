@@ -3,6 +3,7 @@
 .about {
     background-color: $whiteShade;
     padding: 90px 0;
+
     .flexContainer {
         justify-content: flex-end;
         .aboutText {
@@ -13,3 +14,38 @@
         }
     }
 }
+
+
+// index2:
+
+// .about {
+//     background-color: $whiteShade;
+
+//     .flexContainer {
+//         justify-content: space-between;
+//         // align-items: center;
+
+//         .aboutImgContainer {
+//             width: 38%;
+//             position: relative;
+//             min-width: 270px;
+
+//             img {
+//                 box-shadow: 16px 16px 0 $white;
+//                 // position: absolute;
+//                 // bottom: 110%;
+//                 position: relative;
+//                 bottom: 80%;
+//             }
+//         }
+
+//         .aboutText {
+//             width: 53.5%;
+
+//             // margin-top: 10%;
+//             p {
+//                 margin: 20px 0;
+//             }
+//         }
+//     }
+// }
