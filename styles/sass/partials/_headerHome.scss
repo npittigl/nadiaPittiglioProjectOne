@@ -1,52 +1,53 @@
 @use './variables' as *;
 
-.homeHeader {
-    min-height: calc(80vh - 66px);
+// .homeHeader {
+//     min-height: calc(80vh - 66px);
 
-    .headerImgContainer {
-        width: 38%;
-        min-width: 270px;
+//     .headerImgContainer {
+//         width: 38%;
+//         min-width: 270px;
 
-        img {
-            box-shadow: 16px 16px 0 $white;
-            position: relative;
-            top: 10%;
-        }
-    }
+//         img {
+//             box-shadow: 16px 16px 0 $white;
+//             position: relative;
+//             top: 10%;
+//         }
+//     }
 
-    .headerText {
-        margin: 22% 0 22% 7.5%;
-        position: relative;
+//     .headerText {
+//         margin: 22% 0 22% 7.5%;
+//         position: relative;
 
-        .textImage {
-            position: absolute;
-            // top: -40px;
-            // left: 325px;
-            top: -30%;
-            left: 76%;
-        }
-    }
-}
+//         .textImage {
+//             position: absolute;
+//             // top: -40px;
+//             // left: 325px;
+//             top: -30%;
+//             left: 76%;
+//         }
+//     }
+// }
 
 
 // index2:
 
-// .homeHeader {
-//     min-height: calc(80vh - 66px);
-// }
+.homeHeader {
+    height: 90vh;
+}
 
-// .headerText {
-//     display: inline-block;
-//     margin-top: 15%;
-//     margin-left: 45%;
-//     position: relative;
+.headerText {
+    display: inline-block;
+    margin-top: 23%;
+    margin-left: 45%;
+    position: relative;
 
-//     .textImage {
-//         position: absolute;
-//         // top: -40px;
-//         // left: 325px;
-//         top: -30%;
-//         left: 76%;
-//     }
-// }
+    .textImage {
+        height: 100%;
+        position: absolute;
+        // top: -40px;
+        // left: 325px;
+        top: -33%;
+        left: 78%;
+    }
+}
 

@@ -4,45 +4,12 @@
 @media (max-width: 940px) {
     // Home Page Header
     .homeHeader {
-        .headerImgContainer img {
-            top: 15%; 
-        }
-        .headerText {
-            margin: 18% 0 22% 7.5%;
-
-            h2 {
-                font-size: calc(5.5rem - 1vw);
-            }
-
-            .textImage {
-                top: -27%;
-                left: 74%;
-            }
-        }
+        height: 75vh;
     }
-}
 
-/* First Small Break Point */
-@media (max-width: 800px) {
-    // Home Page Header 
-    .homeHeader {
-        .headerImgContainer img {
-            top: 20%;
-        }
-    
-        .headerText {
-            margin: 14% 0 22% 7.5%;
-
-            h2 {
-                font-size: calc(5.5rem - 1vw);
-            }
-    
-            .textImage {
-                top: -27%;
-                left: 74%;
-            }
-        }
-    }
+    .headerText h2 {
+        font-size: calc(5.5rem - 1vw);
+    }    
 }
 
 /* Landscape phone to portrait tablet */

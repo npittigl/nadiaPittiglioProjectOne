@@ -290,7 +290,7 @@ h1 {
 
 .headerText h2 {
   font-size: calc(6.8rem - 1vw);
-  line-height: 6.7rem;
+  line-height: 6.9rem;
 }
 
 .blogPostHeader h2,
@@ -353,7 +353,7 @@ button {
 
 img {
   max-width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -417,39 +417,47 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .homeHeader {
-  min-height: calc(80vh - 66px);
+  height: 90vh;
 }
-.homeHeader .headerImgContainer {
-  width: 38%;
-  min-width: 270px;
-}
-.homeHeader .headerImgContainer img {
-  -webkit-box-shadow: 16px 16px 0 #fff;
-          box-shadow: 16px 16px 0 #fff;
-  position: relative;
-  top: 10%;
-}
-.homeHeader .headerText {
-  margin: 22% 0 22% 7.5%;
+
+.headerText {
+  display: inline-block;
+  margin-top: 23%;
+  margin-left: 45%;
   position: relative;
 }
-.homeHeader .headerText .textImage {
+.headerText .textImage {
+  height: 100%;
   position: absolute;
-  top: -30%;
-  left: 76%;
+  top: -33%;
+  left: 78%;
 }
 
 .about {
   background-color: #f6f6f6;
-  padding: 90px 0;
 }
 .about .flexContainer {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7% 0;
+}
+.about .flexContainer .aboutImgContainer {
+  width: 38%;
+  position: relative;
+  min-width: 270px;
+}
+.about .flexContainer .aboutImgContainer img {
+  -webkit-box-shadow: 16px 16px 0 #fff;
+          box-shadow: 16px 16px 0 #fff;
+  position: absolute;
+  bottom: 110px;
 }
 .about .flexContainer .aboutText {
-  width: 53%;
+  width: 53.5%;
 }
 .about .flexContainer .aboutText p {
   margin: 20px 0;
@@ -780,34 +788,11 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  .homeHeader .headerImgContainer img {
-    top: 15%;
+  .homeHeader {
+    height: 75vh;
   }
-  .homeHeader .headerText {
-    margin: 18% 0 22% 7.5%;
-  }
-  .homeHeader .headerText h2 {
+  .headerText h2 {
     font-size: calc(5.5rem - 1vw);
-  }
-  .homeHeader .headerText .textImage {
-    top: -27%;
-    left: 74%;
-  }
-}
-/* First Small Break Point */
-@media (max-width: 800px) {
-  .homeHeader .headerImgContainer img {
-    top: 20%;
-  }
-  .homeHeader .headerText {
-    margin: 14% 0 22% 7.5%;
-  }
-  .homeHeader .headerText h2 {
-    font-size: calc(5.5rem - 1vw);
-  }
-  .homeHeader .headerText .textImage {
-    top: -27%;
-    left: 74%;
   }
 }
 /* Landscape phone to portrait tablet */
