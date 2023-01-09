@@ -288,9 +288,9 @@ h1 {
   line-height: 1.8rem;
 }
 
-.headerText h2 {
-  font-size: calc(6.8rem - 1vw);
-  line-height: 6.7rem;
+.headerTitle h2 {
+  font-size: 6.2rem;
+  line-height: 6.4rem;
 }
 
 .blogPostHeader h2,
@@ -417,31 +417,35 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .homeHeader {
-  min-height: calc(80vh - 66px);
+  height: auto;
 }
 .homeHeader .headerImgContainer {
   width: 38%;
   min-width: 270px;
 }
 .homeHeader .headerImgContainer img {
+  height: auto;
   -webkit-box-shadow: 16px 16px 0 #fff;
           box-shadow: 16px 16px 0 #fff;
   position: relative;
-  top: 10%;
+  top: 8%;
 }
-.homeHeader .headerText {
-  margin: 22% 0 22% 7.5%;
+
+.headerTitle {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-left: 8%;
   position: relative;
 }
-.homeHeader .headerText .textImage {
+.headerTitle .textImage {
   position: absolute;
-  top: -30%;
   left: 76%;
+  bottom: 33%;
 }
 
 .about {
   background-color: #f6f6f6;
-  padding: 90px 0;
+  padding: 7% 0;
 }
 .about .flexContainer {
   -webkit-box-pack: end;

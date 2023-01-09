@@ -26,11 +26,9 @@ h1 {
     line-height: 1.8rem; 
 }
 
-.headerText h2 { 
-    // font-size: 6.2rem;
-    font-size: calc(6.8rem - 1vw);
-    // font-size: calc(7.5rem - 2vw);
-    line-height: 6.7rem;
+.headerTitle h2 { 
+    font-size: 6.2rem;
+    line-height: 6.4rem;
 }
 
 .blogPostHeader h2,
