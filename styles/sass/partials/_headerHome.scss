@@ -1,26 +1,24 @@
 @use './variables' as *;
 
 .homeHeader {
-    height: auto;
+    max-height: 77vh;
+    .flexContainer { gap: 8%; }
     .headerImgContainer {
         width: 38%;
-        min-width: 270px;
+        min-width: 180px;
         img {
             height: auto;
             box-shadow: 16px 16px 0 $white;
             position: relative;
-            top: 8%;
+            top: 7%;
         }
     }
 }
 
 .headerTitle {
     align-self: center;
-    margin-left: 8%;
     position: relative;
-
     .textImage {
-        // height: 100%;
         position: absolute;
         left: 76%;
         bottom: 33%;

@@ -417,24 +417,26 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .homeHeader {
-  height: auto;
+  max-height: 77vh;
+}
+.homeHeader .flexContainer {
+  gap: 8%;
 }
 .homeHeader .headerImgContainer {
   width: 38%;
-  min-width: 270px;
+  min-width: 180px;
 }
 .homeHeader .headerImgContainer img {
   height: auto;
   -webkit-box-shadow: 16px 16px 0 #fff;
           box-shadow: 16px 16px 0 #fff;
   position: relative;
-  top: 8%;
+  top: 7%;
 }
 
 .headerTitle {
   -ms-flex-item-align: center;
       align-self: center;
-  margin-left: 8%;
   position: relative;
 }
 .headerTitle .textImage {
@@ -783,17 +785,40 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
 }
 
 /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .homeHeader .flexContainer {
+    gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .homeHeader h2 {
+    font-size: 5rem;
+  }
+  .homeHeader .headerImgContainer img {
+    top: 20%;
+  }
+  .headerTitle .textImage {
+    height: 87%;
+  }
+}
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
   label[for=toggle] {
     display: block;
     position: fixed;
-    right: 7.5%;
+    right: 3%;
     top: 10px;
     z-index: 10;
   }
-  i.fa-bars {
-    font-size: 2rem;
+  label[for=toggle] i.fa-bars {
+    font-size: 1.8rem;
+  }
+  input[type=checkbox]:checked + ul.slideOutMenu {
+    right: 0px;
   }
   ul.slideOutMenu {
     min-width: 55%;
@@ -832,8 +857,53 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
     border-top: 2px solid #f6f6f6;
     border-bottom: 2px solid #f6f6f6;
   }
-  input[type=checkbox]:checked + ul.slideOutMenu {
-    right: 0px;
+  .homeHeader .flexContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .homeHeader h2 {
+    font-size: 3.8rem;
+  }
+  .homeHeader .headerImgContainer img {
+    top: 30%;
+    right: 6%;
+  }
+  .headerTitle .textImage {
+    height: 72%;
+  }
+  .about {
+    padding: 12% 0 5%;
+  }
+  .about .flexContainer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .about .flexContainer .aboutText {
+    width: 60%;
+  }
+}
+@media (max-width: 620px) {
+  .wrapper {
+    width: 95%;
+  }
+  .homeHeader .flexContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .homeHeader h2 {
+    font-size: 3.8rem;
+  }
+  .homeHeader .headerImgContainer img {
+    top: 30%;
+    right: 6%;
+  }
+  .about .flexContainer .aboutText {
+    width: 100%;
   }
 }
 /* Landscape phones and down */
