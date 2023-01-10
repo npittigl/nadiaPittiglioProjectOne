@@ -4,10 +4,11 @@
     max-height: 77vh;
     .flexContainer { gap: 8%; }
     .headerImgContainer {
+        border: 2px solid red;
         width: 38%;
         min-width: 180px;
         img {
-            height: auto;
+            // height: auto;
             box-shadow: 16px 16px 0 $white;
             position: relative;
             top: 7%;

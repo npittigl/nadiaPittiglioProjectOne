@@ -1,22 +1,26 @@
 @use './variables' as *;
 
-nav ul {
-    justify-content: center;
-    align-items: center;
-    gap: 0 20px;
+nav {
+    height: 66px;
+    ul {
+        justify-content: center;
+        align-items: center;
+        gap: 0 20px;
 
-    .logo {
-        margin: 0 5px;
-    }
+        .logo {
+            margin: 0 5px;
+        }
 
-    li {
-        a {
-            padding: 15px;
-        
-            &:hover,
-            &:focus {
-                color: $whiteShade;
+        li {
+            a {
+                padding: 15px;
+
+                &:hover,
+                &:focus {
+                    color: $whiteShade;
+                }
             }
         }
     }
 }
+

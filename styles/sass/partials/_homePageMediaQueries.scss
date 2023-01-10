@@ -12,7 +12,7 @@
             font-size: 5rem;
         }
         .headerImgContainer img {
-            top: 20%    
+            top: 12%    
         }
     }
 
@@ -91,7 +91,6 @@
             font-size: 3.8rem;
         }
         .headerImgContainer img {
-            top: 30%;
             right: 6%;
         }
     }
@@ -104,11 +103,10 @@
     
     // About Section
     .about {
-        padding: 12% 0 5%;
         .flexContainer {
             justify-content: flex-start;
             .aboutText {
-                width: 60%;
+                width: 70%;
             }
         }
     }
@@ -116,29 +114,19 @@
 
 // First Small Break Point
 @media (max-width: 620px) {
-    // wrapper
-    .wrapper {
-        width: 95%;
-    }
 
     // Header 
-    .homeHeader {
-        .flexContainer {
-            flex-direction: row-reverse;
-        }
-
-        h2 {
-            font-size: 3.8rem;
-        }
-
-        .headerImgContainer img {
-            top: 30%;
-            right: 6%;
-        }
-    }
+    // .homeHeader {
+    //     .flexContainer {
+    //         flex-direction: column-reverse;
+    //         justify-content: center;
+    //         align-items: center;
+    //     }
+    // }
 
     // About Section
     .about {
+        padding: 12% 0 8%;
         .flexContainer {
             .aboutText {
                 width: 100%;

@@ -397,6 +397,9 @@ label[for=toggle],
   display: none;
 }
 
+nav {
+  height: 66px;
+}
 nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -423,11 +426,11 @@ nav ul li a:hover, nav ul li a:focus {
   gap: 8%;
 }
 .homeHeader .headerImgContainer {
+  border: 2px solid red;
   width: 38%;
   min-width: 180px;
 }
 .homeHeader .headerImgContainer img {
-  height: auto;
   -webkit-box-shadow: 16px 16px 0 #fff;
           box-shadow: 16px 16px 0 #fff;
   position: relative;
@@ -796,7 +799,7 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
     font-size: 5rem;
   }
   .homeHeader .headerImgContainer img {
-    top: 20%;
+    top: 12%;
   }
   .headerTitle .textImage {
     height: 87%;
@@ -867,14 +870,10 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
     font-size: 3.8rem;
   }
   .homeHeader .headerImgContainer img {
-    top: 30%;
     right: 6%;
   }
   .headerTitle .textImage {
     height: 72%;
-  }
-  .about {
-    padding: 12% 0 5%;
   }
   .about .flexContainer {
     -webkit-box-pack: start;
@@ -882,25 +881,12 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
             justify-content: flex-start;
   }
   .about .flexContainer .aboutText {
-    width: 60%;
+    width: 70%;
   }
 }
 @media (max-width: 620px) {
-  .wrapper {
-    width: 95%;
-  }
-  .homeHeader .flexContainer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .homeHeader h2 {
-    font-size: 3.8rem;
-  }
-  .homeHeader .headerImgContainer img {
-    top: 30%;
-    right: 6%;
+  .about {
+    padding: 12% 0 8%;
   }
   .about .flexContainer .aboutText {
     width: 100%;
