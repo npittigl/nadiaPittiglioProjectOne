@@ -426,15 +426,13 @@ nav ul li a:hover, nav ul li a:focus {
   gap: 8%;
 }
 .homeHeader .headerImgContainer {
-  border: 2px solid red;
   width: 38%;
-  min-width: 180px;
+  position: relative;
+  top: 30px;
 }
 .homeHeader .headerImgContainer img {
   -webkit-box-shadow: 16px 16px 0 #fff;
           box-shadow: 16px 16px 0 #fff;
-  position: relative;
-  top: 7%;
 }
 
 .headerTitle {
@@ -789,14 +787,14 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+  .homeHeader h2 {
+    font-size: 5rem;
+  }
   .homeHeader .flexContainer {
     gap: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .homeHeader h2 {
-    font-size: 5rem;
   }
   .homeHeader .headerImgContainer img {
     top: 12%;
@@ -808,17 +806,17 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .wrapper {
-    width: 90%;
+    width: 95%;
   }
   label[for=toggle] {
     display: block;
     position: fixed;
-    right: 3%;
+    right: 2.5%;
     top: 10px;
     z-index: 10;
   }
   label[for=toggle] i.fa-bars {
-    font-size: 1.8rem;
+    font-size: 1.65rem;
   }
   input[type=checkbox]:checked + ul.slideOutMenu {
     right: 0px;
@@ -860,20 +858,23 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
     border-top: 2px solid #f6f6f6;
     border-bottom: 2px solid #f6f6f6;
   }
+  .homeHeader h2 {
+    font-size: 4.2rem;
+  }
   .homeHeader .flexContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .homeHeader h2 {
-    font-size: 3.8rem;
-  }
-  .homeHeader .headerImgContainer img {
-    right: 6%;
+  .homeHeader .headerImgContainer {
+    right: 15px;
   }
   .headerTitle .textImage {
-    height: 72%;
+    height: 75%;
+  }
+  .about {
+    padding-top: 12%;
   }
   .about .flexContainer {
     -webkit-box-pack: start;
@@ -885,11 +886,63 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
   }
 }
 @media (max-width: 620px) {
+  .homeHeader .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .homeHeader .headerImgContainer {
+    width: 45%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .headerTitle {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
   .about {
-    padding: 12% 0 8%;
+    padding: 12% 0 10%;
   }
   .about .flexContainer .aboutText {
     width: 100%;
   }
 }
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .homeHeader h2 {
+    font-size: 3.6rem;
+  }
+  .homeHeader .headerImgContainer {
+    width: 50%;
+    min-width: 180px;
+  }
+  .homeHeader .headerImgContainer img {
+    -webkit-box-shadow: 13px 13px 0 #fff;
+            box-shadow: 13px 13px 0 #fff;
+  }
+  .headerTitle .textImage {
+    height: 68%;
+    left: 75%;
+    bottom: 35%;
+  }
+  .about {
+    padding-top: 20%;
+  }
+}
+@media (max-width: 350px) {
+  .homeHeader h2 {
+    font-size: 3.1rem;
+  }
+  .homeHeader .headerImgContainer {
+    top: 15px;
+  }
+  .headerTitle .textImage {
+    height: 63%;
+    left: 72%;
+    bottom: 35%;
+  }
+  .about {
+    padding-top: 25%;
+  }
+}

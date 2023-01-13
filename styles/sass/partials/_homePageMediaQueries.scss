@@ -4,45 +4,33 @@
 @media (max-width: 940px) {
     // Header 
     .homeHeader {
+        h2 { font-size: 5rem; }
         .flexContainer {
             gap: 0;
             justify-content: space-between;
         }
-        h2 {
-            font-size: 5rem;
-        }
-        .headerImgContainer img {
-            top: 12%    
-        }
+        .headerImgContainer img { top: 12%; }
     }
 
-    .headerTitle .textImage {
-        height: 87%;
-    }
+    .headerTitle .textImage { height: 87%; }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    // wrapper 
-    .wrapper {
-        width: 90%;
-    }
+    // Wrapper 
+    .wrapper { width: 95%; }
 
     // Nav Slide-Out Menu //
     label[for="toggle"] {
         display: block;
         position: fixed;
-        right: 3%;
+        right: 2.5%;
         top: 10px;
         z-index: 10;
-        i.fa-bars {
-            font-size: 1.8rem;
-        }
+        i.fa-bars { font-size: 1.65rem; }
     }
 
-    input[type="checkbox"]:checked+ul.slideOutMenu {
-        right: 0px;
-    }
+    input[type="checkbox"]:checked+ul.slideOutMenu { right: 0px; }
 
     ul.slideOutMenu {
         min-width: 55%;
@@ -57,13 +45,9 @@
         z-index: 10;
         transition: all 0.6s;
     
-        h1 {
-            font-size: 2.3rem;
-        }
+        h1 { font-size: 2.3rem; }
 
-        li {
-            width: 100%;
-        }
+        li { width: 100%; }
     
         a {
             width: inherit;
@@ -84,71 +68,78 @@
     
     // Header 
     .homeHeader {
-        .flexContainer {
-            flex-direction: row-reverse;
-        }
-        h2 {
-            font-size: 3.8rem;
-        }
-        .headerImgContainer img {
-            right: 6%;
-        }
+        h2 { font-size: 4.2rem; }
+        .flexContainer { flex-direction: row-reverse; }
+        .headerImgContainer { right: 15px; }
     }
 
-    .headerTitle {
-        .textImage {
-            height: 72%;
-        }
-    }
+    .headerTitle .textImage { height: 75%; }
     
     // About Section
     .about {
-        .flexContainer {
+        padding-top: 12%;
+        .flexContainer { 
             justify-content: flex-start;
-            .aboutText {
-                width: 70%;
-            }
+            .aboutText { width: 70%; }
         }
     }
 }
 
 // First Small Break Point
 @media (max-width: 620px) {
-
     // Header 
-    // .homeHeader {
-    //     .flexContainer {
-    //         flex-direction: column-reverse;
-    //         justify-content: center;
-    //         align-items: center;
-    //     }
-    // }
+    .homeHeader {
+        .flexContainer { flex-direction: column-reverse; }
+        .headerImgContainer { 
+            width: 45%;
+            align-self: flex-end; 
+        }
+    }
+
+    .headerTitle { align-self: flex-start; }
 
     // About Section
     .about {
-        padding: 12% 0 8%;
-        .flexContainer {
-            .aboutText {
-                width: 100%;
-            }
-        }
+        padding: 12% 0 10%;
+        .flexContainer .aboutText { width: 100%; }
     }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
     // Header 
-    // .homeHeader {
-    //     h2 {
-    //         font-size: 2.8rem;
-    //     }
-    // }
+    .homeHeader {
+        h2 { font-size: 3.6rem; }
+        .headerImgContainer {
+            width: 50%;
+            min-width: 180px;
+            img { box-shadow: 13px 13px 0 $white; }
+        }
+    }
 
-    // .headerTitle {
-    //     .textImage {
-    //         height: 58%;
-    //         left: 74%;
-    //         bottom: 35%;
-    //     }
-    // }
+    .headerTitle .textImage {
+        height: 68%;
+        left: 75%;
+        bottom: 35%;
+    }
+
+    // About Section 
+    .about { padding-top: 20%; }
+}
+
+@media (max-width: 350px) {
+    // Header 
+    .homeHeader {
+        h2 { font-size: 3.1rem; }
+        .headerImgContainer { top: 15px; }
+    }
+
+    .headerTitle .textImage {
+        height: 63%;
+        left: 72%;
+        bottom: 35%;
+    }
+
+    // About Section 
+    .about { padding-top: 25%; }
 }
