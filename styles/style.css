@@ -465,6 +465,9 @@ nav ul li a:hover, nav ul li a:focus {
 .webLinks {
   background-color: #f6f6f6;
 }
+.webLinks .linksImgContainer img {
+  min-height: 140px;
+}
 .webLinks ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -906,6 +909,27 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
   }
   .about .flexContainer .aboutText {
     width: 100%;
+  }
+  .webLinks ul {
+    padding: 40px 0 70px;
+  }
+  .webLinks ul .photosIcon, .webLinks ul .blogIcon {
+    margin-right: 0;
+  }
+  .webLinks ul .aboutIcon,
+.webLinks ul .contactIcon {
+    margin-left: 0;
+  }
+  .webLinks ul li {
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 3%;
+  }
+  .webLinks ul li a {
+    margin-left: 55px;
+  }
+  .webLinks ul li a .icon {
+    left: 5px;
   }
 }
 /* Landscape phones and down */

@@ -103,6 +103,30 @@
         padding: 12% 0 10%;
         .flexContainer .aboutText { width: 100%; }
     }
+
+    // WebLinks Section
+    .webLinks ul {
+        padding: 40px 0 70px;
+        .photosIcon, .blogIcon {
+            margin-right: 0;
+            }
+        .aboutIcon,
+        .contactIcon {
+            margin-left: 0;
+        }
+        li {
+            width: 100%;
+            padding: 20px 10px;
+            margin-bottom: 3%;
+
+            a {
+                margin-left: 55px;
+                .icon {
+                    left: 5px;
+                }
+            }
+        }
+    }
 }
 
 /* Landscape phones and down */

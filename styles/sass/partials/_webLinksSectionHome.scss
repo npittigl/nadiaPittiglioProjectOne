@@ -3,6 +3,7 @@
 
 .webLinks {
     background-color: $whiteShade;
+    .linksImgContainer img { min-height: 140px; }
     ul {
         flex-wrap: wrap;
         padding: 50px 0 110px;
