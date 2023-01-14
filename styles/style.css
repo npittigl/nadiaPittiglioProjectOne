@@ -809,7 +809,7 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .wrapper {
-    width: 95%;
+    width: 90%;
   }
   label[for=toggle] {
     display: block;
@@ -887,6 +887,78 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
   .about .flexContainer .aboutText {
     width: 70%;
   }
+  .blogText,
+.imgContainer {
+    width: 100%;
+  }
+  .blogPosts .flexContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blogPosts .blogTwo.flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .blogOne .blogOneImage img {
+    width: 100%;
+    -webkit-box-shadow: 10px 15px #68b0c1, -100px 15px #68b0c1;
+            box-shadow: 10px 15px #68b0c1, -100px 15px #68b0c1;
+  }
+  .blogOne .blogOneText {
+    padding: 15px 0px 30px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .blogOne .blogOneText p {
+    text-align: right;
+  }
+  .blogOne .blogOneText .btn {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .blogTwo {
+    padding-top: 0px;
+  }
+  .blogTwo .blogTwoImage img {
+    top: 0px;
+  }
+  .blogTwo .blogTwoText {
+    padding: 50px 0 30px;
+  }
+  .blogTwo .blogTwoText p {
+    text-align: left;
+  }
+  .blogTwo .blogTwoText .btn {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .gallery .flexContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .gallery ul {
+    padding: 60px 0;
+  }
+  .gallery ul li {
+    width: 48.5%;
+  }
+  .gallery ul .img1 {
+    margin: 0 1.5% 3% 0;
+  }
+  .gallery ul .img2 {
+    margin: 0 0 3% 1.5%;
+  }
+  .gallery ul .img3 {
+    width: 100%;
+    margin: 0;
+  }
+  .gallery ul .img3 img {
+    width: inherit;
+    height: 280px;
+  }
 }
 @media (max-width: 620px) {
   .homeHeader .flexContainer {
@@ -922,18 +994,42 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
   }
   .webLinks ul li {
     width: 100%;
-    padding: 20px 10px;
+    padding: 20px 0px 20px 8px;
     margin-bottom: 3%;
   }
   .webLinks ul li a {
-    margin-left: 55px;
+    margin-left: 48px;
   }
-  .webLinks ul li a .icon {
-    left: 5px;
+  .journey {
+    padding: 60px 0;
+  }
+  .journey .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .journey .journeyImage {
+    width: 60%;
+    min-width: 200px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 12%;
+  }
+  .journey .journeyImage img {
+    width: 100%;
+  }
+  .journey .journeyText {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
   }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+  }
   .homeHeader h2 {
     font-size: 3.6rem;
   }
@@ -952,6 +1048,48 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
   }
   .about {
     padding-top: 20%;
+  }
+  .blogOne .blogOneText {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 5px;
+  }
+  .blogOne .blogOneText p {
+    text-align: justify;
+  }
+  .blogOne .blogOneText .btn {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .blogTwo .blogTwoText {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 35px 5px 20px 5px;
+  }
+  .blogTwo .blogTwoText p {
+    text-align: justify;
+  }
+  .blogTwo .blogTwoText .btn {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .gallery ul {
+    padding: 35px 0;
+  }
+  .gallery ul li {
+    width: 100%;
+  }
+  .gallery ul .img {
+    margin: 1.5% 0;
+  }
+  .gallery ul .img img {
+    width: 100%;
+    height: 250px;
+  }
+  .footer {
+    font-size: 0.72rem;
   }
 }
 @media (max-width: 350px) {

@@ -7,23 +7,17 @@
 }   
 
 .blogOne {
-    .blogOneImage {
-        img {
-            position: relative;
-            bottom: 35px;
-            box-shadow: 15px 15px $secondary,
-            -100px 15px $secondary;
-        }
-        
+    .blogOneImage img {
+        position: relative;
+        bottom: 35px;
+        box-shadow: 15px 15px $secondary,
+        -100px 15px $secondary;
     }
+
     .blogOneText {
         padding: 70px 0 15px 95px;
-        p {
-            margin: 20px 0 25px;
-        }
-        .btn {
-            align-self: flex-start;
-        }
+        p { margin: 20px 0 25px; }
+        .btn { align-self: flex-start; }
     }
 }
 
@@ -31,19 +25,14 @@
     padding-top: 20px;
     .blogTwoText {
             padding: 30px 95px 20px 0;
-            p {
-                margin: 20px 0 25px;
-            }
-            .btn {
-                align-self: flex-end;
-            }
+            p { margin: 20px 0 25px; }
+            .btn { align-self: flex-end; }
         }
-    .blogTwoImage {
-        img {
-            position: relative;
-            top: 25px;
-            box-shadow: 15px 15px $primary,
-            100px 15px $primary;
-        }
+
+    .blogTwoImage img {
+        position: relative;
+        top: 25px;
+        box-shadow: 15px 15px $primary,
+        100px 15px $primary;
     }
 }
