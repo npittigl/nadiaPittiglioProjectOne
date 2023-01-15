@@ -4,7 +4,7 @@
     background-color: $whiteShade;
     padding: 80px 0 95px;
 
-    aside {
+    .leftColumn {
         width: calc(33% - 1.5%);
         margin-right: 1.5%;
     }
@@ -17,35 +17,34 @@
 
 .card {
     background-color: $white;
-    padding: 30px;
+    padding: 35px;
 }
 
-aside {
-    .aboutHarper {
-        margin-bottom: 5%;
-        h5 { border-bottom: 3px solid transparent; }
-        a {
-            padding: 20px 0 15px;
-            &:hover h5,
-            &:focus h5 {
-                border-bottom: 3px solid $accent;
-            }
-        }
-    }
 
-    .recentPosts {
-        h5 { margin-bottom: 15px; }
-        .posts { 
-            list-style-position: inside;
-            a {
-                border-bottom-style: inset; 
-                border-bottom: 2px solid transparent;
-                padding-left: 5px;
-                &:hover,
-                &:focus {
-                    border-bottom-style:inset;
-                    border-bottom: 2px solid $accent;
-                }
+.aboutHarper {
+    width: 100%;
+    margin-bottom: 5%;
+    a {
+        padding: 20px 0 15px;
+        &:hover h5, &:focus h5 { color: $accent; }
+    }
+}
+
+.recentPosts {
+    width: 100%;
+    h5 { margin-bottom: 15px; }
+    .posts { 
+        padding-left: 25px;
+        li {
+            padding: 10px 0 0 8px; 
+            line-height: 1rem;
+        }
+        a {
+            display: inline;
+
+            &:hover,
+            &:focus {
+                color: $accent;
             }
         }
     }
@@ -74,12 +73,9 @@ aside {
     }
 }
 
-.userPost:nth-child(even) {
-    border-bottom: 4px solid $tertiary;
-}
+.userPost:nth-child(even) { border-bottom: 4px solid $tertiary; }
 
 .commentForm {
-    
     input {
         width: calc((100% / 2) - 4px);
         padding: 25px 30px;
@@ -103,8 +99,6 @@ aside {
             resize: none;
         }
 
-        button {
-            padding: 7px;
-        }
+        button { padding: 7px; }
     }
 }

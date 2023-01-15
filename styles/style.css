@@ -592,6 +592,7 @@ nav ul li a:hover, nav ul li a:focus {
 
 .blogPostHeader {
   background: url(../assets/blog-image-1.jpg) no-repeat center/cover;
+  height: auto;
 }
 .blogPostHeader .wrapper {
   position: relative;
@@ -606,7 +607,7 @@ nav ul li a:hover, nav ul li a:focus {
   background-color: #f6f6f6;
   padding: 80px 0 95px;
 }
-.blogPostMain aside {
+.blogPostMain .leftColumn {
   width: 31.5%;
   margin-right: 1.5%;
 }
@@ -617,35 +618,38 @@ nav ul li a:hover, nav ul li a:focus {
 
 .card {
   background-color: #fff;
-  padding: 30px;
+  padding: 35px;
 }
 
-aside .aboutHarper {
+.aboutHarper {
+  width: 100%;
   margin-bottom: 5%;
 }
-aside .aboutHarper h5 {
-  border-bottom: 3px solid transparent;
-}
-aside .aboutHarper a {
+.aboutHarper a {
   padding: 20px 0 15px;
 }
-aside .aboutHarper a:hover h5, aside .aboutHarper a:focus h5 {
-  border-bottom: 3px solid #f38d8d;
+.aboutHarper a:hover h5, .aboutHarper a:focus h5 {
+  color: #f38d8d;
 }
-aside .recentPosts h5 {
+
+.recentPosts {
+  width: 100%;
+}
+.recentPosts h5 {
   margin-bottom: 15px;
 }
-aside .recentPosts .posts {
-  list-style-position: inside;
+.recentPosts .posts {
+  padding-left: 25px;
 }
-aside .recentPosts .posts a {
-  border-bottom-style: inset;
-  border-bottom: 2px solid transparent;
-  padding-left: 5px;
+.recentPosts .posts li {
+  padding: 10px 0 0 8px;
+  line-height: 1rem;
 }
-aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
-  border-bottom-style: inset;
-  border-bottom: 2px solid #f38d8d;
+.recentPosts .posts a {
+  display: inline;
+}
+.recentPosts .posts a:hover, .recentPosts .posts a:focus {
+  color: #f38d8d;
 }
 
 .article {
@@ -1108,3 +1112,90 @@ aside .recentPosts .posts a:hover, aside .recentPosts .posts a:focus {
     padding-top: 25%;
   }
 }
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 95%;
+  }
+  .blogPostMain .wrapper.flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .blogPostMain .leftColumn,
+.blogPostMain .rightColumn {
+    width: 100%;
+    margin: 0;
+  }
+  .blogPostMain .rightColumn {
+    margin-bottom: 10%;
+  }
+  .leftColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutHarper {
+    width: 48%;
+    margin: 0 2% 0 0;
+  }
+  .aboutHarper img {
+    width: 100%;
+    height: 250px;
+  }
+  .recentPosts {
+    width: 48%;
+    margin-left: 2%;
+    height: 65%;
+  }
+  .postedComments .userPost.flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .postedComments .userPost img {
+    width: 70px;
+    margin: 0 0 15px 0;
+  }
+  .postedComments .userPost .commentText {
+    margin-left: 0;
+    width: 100%;
+  }
+  .commentForm input {
+    width: 100%;
+  }
+  .commentForm input[type=text] {
+    margin: 5% 0 1.5% 0;
+  }
+  .commentForm input[type=email] {
+    margin: 1.5% 0 0 0;
+  }
+}
+/* Small Break Point */
+@media (max-width: 600px) {
+  .leftColumn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutHarper,
+.recentPosts {
+    width: 100%;
+  }
+  .aboutHarper {
+    margin: 0 0 2% 0;
+  }
+  .recentPosts {
+    margin: 2% 0 0 0;
+  }
+}
+/* Landscape phones and down */
