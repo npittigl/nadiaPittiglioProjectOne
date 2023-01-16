@@ -1,0 +1,109 @@
+@use './variables' as *;
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    // Wrapper 
+    .wrapper {
+        width: 90%;
+    }
+
+    .contactHeader {
+        .wrapper h2 { 
+            font-size: 3rem;
+        }
+    }
+
+    .contactMain {
+        .wrapper.flexContainer {
+            flex-direction: column-reverse;
+        }
+    
+        aside {
+            width: 100%;
+            margin: 6% 0 0 0;
+
+            .contactInfoCard {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .mediaLinks.flexContainer {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5px;
+
+        li {
+            text-align: center;
+            margin: 0;
+        }
+    }
+    
+        
+    
+    .contactForm {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    // wrapper {
+    .wrapper { width: 95%; }
+
+    .contactHeader {
+        .wrapper h2 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .contactMain {
+        padding: 50px 0 40px;
+
+        aside {
+            .contactInfoCard {
+                margin-top: 3%;
+                padding: 45px 20px;
+            }
+
+            .emailBold {
+                font-size: 0.86rem;
+                margin: 7px 0;
+            }
+
+            .address {
+                font-size: 0.76rem;
+                line-height: 1.3rem;
+            }
+        }
+    }
+    
+    .contactForm {
+        input { 
+            width: 100%; 
+            padding: 15px 20px 30px;
+        }
+
+        input[type="text"] { margin: 0 0 3% 0; }
+
+        input[type="email"] { margin-left: 0; }
+
+        .flexContainer {
+            textarea { padding: 20px 20px 45px; }
+        }
+
+        input, textarea { font-size: 0.78rem; }
+    }
+}
+
+// Small break point
+@media (max-width: 350px) {
+    .contactHeader {
+        .wrapper h2 {
+            font-size: 2.25rem;
+        }
+    }
+}

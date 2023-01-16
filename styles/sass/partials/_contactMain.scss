@@ -39,6 +39,7 @@
             &:hover,
             &:focus {
                 border: 1px solid transparent;
+                color: $accent;
             }
         }
     }
@@ -54,13 +55,9 @@
         font-family: $bodyFont;
     }
 
-    input[type="text"] {
-        margin-right: 4px;
-    }
+    input[type="text"] { margin-right: 4px; }
 
-    input[type="email"] {
-        margin-left: 4px;
-    }
+    input[type="email"] { margin-left: 4px; }
 
     .flexContainer {
         flex-direction: column;
@@ -73,8 +70,6 @@
             resize: none;
         }
 
-        button {
-            padding: 7px;
-        }
+        button { padding: 7px; }
     }
 }

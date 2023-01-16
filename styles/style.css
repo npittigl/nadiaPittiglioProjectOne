@@ -757,6 +757,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 .mediaLinks li a:hover, .mediaLinks li a:focus {
   border: 1px solid transparent;
+  color: #f38d8d;
 }
 
 .contactForm {
@@ -1199,3 +1200,97 @@ nav ul li a:hover, nav ul li a:focus {
   }
 }
 /* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+  .contactHeader .wrapper h2 {
+    font-size: 3rem;
+  }
+  .contactMain .wrapper.flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactMain aside {
+    width: 100%;
+    margin: 6% 0 0 0;
+  }
+  .contactMain aside .contactInfoCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mediaLinks.flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 5px;
+  }
+  .mediaLinks.flexContainer li {
+    text-align: center;
+    margin: 0;
+  }
+  .contactForm {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+  }
+  .contactHeader .wrapper h2 {
+    font-size: 2.5rem;
+  }
+  .contactMain {
+    padding: 50px 0 40px;
+  }
+  .contactMain aside .contactInfoCard {
+    margin-top: 3%;
+    padding: 45px 20px;
+  }
+  .contactMain aside .emailBold {
+    font-size: 0.86rem;
+    margin: 7px 0;
+  }
+  .contactMain aside .address {
+    font-size: 0.76rem;
+    line-height: 1.3rem;
+  }
+  .contactForm input {
+    width: 100%;
+    padding: 15px 20px 30px;
+  }
+  .contactForm input[type=text] {
+    margin: 0 0 3% 0;
+  }
+  .contactForm input[type=email] {
+    margin-left: 0;
+  }
+  .contactForm .flexContainer textarea {
+    padding: 20px 20px 45px;
+  }
+  .contactForm input, .contactForm textarea {
+    font-size: 0.78rem;
+  }
+}
+@media (max-width: 350px) {
+  .contactHeader .wrapper h2 {
+    font-size: 2.25rem;
+  }
+}
