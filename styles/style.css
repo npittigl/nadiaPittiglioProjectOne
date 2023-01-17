@@ -399,6 +399,10 @@ label[for=toggle],
 
 nav {
   height: 66px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 nav ul {
   -webkit-box-pack: center;
@@ -436,6 +440,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .headerTitle {
+  margin-right: 35px;
   -ms-flex-item-align: center;
       align-self: center;
   position: relative;
@@ -715,7 +720,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 .contactHeader .wrapper {
   position: relative;
-  min-height: calc(45vh - 59px);
+  min-height: calc(55vh - 66px);
 }
 .contactHeader .wrapper h2 {
   position: absolute;
@@ -816,12 +821,15 @@ nav ul li a:hover, nav ul li a:focus {
   .wrapper {
     width: 90%;
   }
+  nav {
+    position: unset;
+  }
   label[for=toggle] {
     display: block;
     position: fixed;
     right: 2.5%;
     top: 10px;
-    z-index: 10;
+    z-index: 100;
   }
   label[for=toggle] i.fa-bars {
     font-size: 1.65rem;
@@ -842,7 +850,7 @@ nav ul li a:hover, nav ul li a:focus {
             justify-content: space-evenly;
     position: fixed;
     right: -60%;
-    top: 100px;
+    top: 65px;
     z-index: 10;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
