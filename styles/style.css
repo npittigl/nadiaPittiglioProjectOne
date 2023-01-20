@@ -333,7 +333,7 @@ ul:not(.posts) {
 }
 
 .wrapper {
-  max-width: 1260px;
+  max-width: 1280px;
   width: 85%;
   margin: 0 auto;
 }
@@ -399,10 +399,6 @@ label[for=toggle],
 
 nav {
   height: 66px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
 }
 nav ul {
   -webkit-box-pack: center;
@@ -801,7 +797,7 @@ nav ul li a:hover, nav ul li a:focus {
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .homeHeader h2 {
-    font-size: 5rem;
+    font-size: 4.8rem;
   }
   .homeHeader .flexContainer {
     gap: 0;
@@ -813,16 +809,13 @@ nav ul li a:hover, nav ul li a:focus {
     top: 12%;
   }
   .headerTitle .textImage {
-    height: 87%;
+    height: 84%;
   }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .wrapper {
     width: 90%;
-  }
-  nav {
-    position: unset;
   }
   label[for=toggle] {
     display: block;
@@ -1119,6 +1112,20 @@ nav ul li a:hover, nav ul li a:focus {
   }
   .about {
     padding-top: 25%;
+  }
+}
+@media (max-height: 320px) {
+  .homeHeader h2 {
+    font-size: 2.9rem;
+  }
+  .homeHeader .headerImgContainer {
+    width: 30%;
+    top: -70px;
+  }
+  .headerTitle .textImage {
+    height: 57%;
+    left: 72%;
+    bottom: 38%;
   }
 }
 /* Portrait tablet and small desktops */

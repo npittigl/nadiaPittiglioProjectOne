@@ -4,7 +4,7 @@
 @media (max-width: 940px) {
     // Header 
     .homeHeader {
-        h2 { font-size: 5rem; }
+        h2 { font-size: 4.8rem; }
         .flexContainer {
             gap: 0;
             justify-content: space-between;
@@ -12,7 +12,9 @@
         .headerImgContainer img { top: 12%; }
     }
 
-    .headerTitle .textImage { height: 87%; }
+    .headerTitle .textImage { 
+        height: 84%; 
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -21,12 +23,6 @@
     .wrapper { width: 90%; }
 
     // Nav Slide-Out Menu //
-    nav {
-        position: unset;
-        // top: auto;
-        // z-index: -10px;
-    }
-
     label[for="toggle"] {
         display: block;
         position: fixed;
@@ -80,7 +76,9 @@
         .headerImgContainer { right: 15px; }
     }
 
-    .headerTitle .textImage { height: 75%; }
+    .headerTitle .textImage { 
+        height: 75%; 
+    }
     
     // About Section
     .about {
@@ -285,4 +283,22 @@
 
     // About Section 
     .about { padding-top: 25%; }
+}
+
+@media (max-height: 320px) {
+    // Header 
+        .homeHeader {
+            h2 { font-size: 2.9rem; }
+    
+            .headerImgContainer {
+                width: 30%;
+                top: -70px;
+            }
+        }
+    
+        .headerTitle .textImage {
+            height: 57%;
+            left: 72%;
+            bottom: 38%;
+        }
 }
