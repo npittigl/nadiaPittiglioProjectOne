@@ -1,24 +1,23 @@
 @use './variables' as *;
 
+// Home Page Header Styles
 .homeHeader {
-    max-height: 77vh;
+    height: auto;
+    padding-top: 45px;
     .flexContainer { gap: 8%; }
+    // Header Image Styles
     .headerImgContainer {
         width: 38%;
-        position: relative;
-        top: 30px;
-            img {
-                box-shadow: 16px 16px 0 $white;
-            }
+        top: 60px;
+            img { box-shadow: 16px 16px 0 $white; }
     }
 }
 
+// H2 Styles
 .headerTitle {
     margin-right: 35px;
     align-self: center;
-    position: relative;
     .textImage {
-        position: absolute;
         left: 76%;
         bottom: 33%;
     }

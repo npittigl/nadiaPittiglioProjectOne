@@ -1,15 +1,13 @@
 @use './variables' as *;
 
+// About Section Styles in Home Page
 .about {
-    background-color: $whiteShade;
     padding: 7% 0;
     .flexContainer {
         justify-content: flex-end;
         .aboutText {
             width: 53%;
-            p {
-                margin: 20px 0;
-            }
+            p { margin: 20px 0; }
         }
     }
 }

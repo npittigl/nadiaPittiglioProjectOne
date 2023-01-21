@@ -1,11 +1,11 @@
 @use './variables' as *;
 
-
+// Web Links Section Styles in Home Page
 .webLinks {
-    background-color: $whiteShade;
-    .linksImgContainer img { min-height: 140px; }
+    img { min-height: 180px; }
+    
+    // Icon Links Styles
     ul {
-        flex-wrap: wrap;
         padding: 50px 0 110px;
         .photosIcon, .blogIcon { margin-right: 10px; }
         .aboutIcon, .contactIcon { margin-left: 10px; }
@@ -13,19 +13,16 @@
         li {
             width: calc((100% / 2) - 10px);
             padding: 20px 0 20px 60px;
-            position: relative;
 
             a {
                 padding-bottom: 5px;
                 margin-bottom: 10px;
                 border-bottom: 4px solid transparent;
                 .icon {
-                    background-color: $primary;
                     font-size: 0.92rem;
                     text-align: center;
                     padding: 13px;
                     border-radius: 50%;
-                    position: absolute;
                     top: 15px;
                     left: 0;
                 }

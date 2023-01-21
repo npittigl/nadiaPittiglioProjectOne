@@ -375,6 +375,14 @@ img {
   padding: 2px 20px;
 }
 
+nav, .homeHeader, .icon {
+  background-color: #b9dde7;
+}
+
+.about, .webLinks, .journey {
+  background-color: #f6f6f6;
+}
+
 .flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,8 +396,9 @@ img {
           flex-direction: column;
 }
 
-nav, .homeHeader {
-  background-color: #b9dde7;
+.webLinks ul, .gallery ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 label[for=toggle],
@@ -397,8 +406,19 @@ label[for=toggle],
   display: none;
 }
 
+.headerImgContainer, .headerTitle, .webLinks li, .imgContainer img {
+  position: relative;
+}
+
+.textImage, .icon {
+  position: absolute;
+}
+
 nav {
-  height: 66px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
 }
 nav ul {
   -webkit-box-pack: center;
@@ -407,28 +427,28 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 20px;
+  gap: 20px;
 }
 nav ul .logo {
-  margin: 0 5px;
+  margin: 0 10px;
 }
-nav ul li a {
+nav ul a {
   padding: 15px;
 }
-nav ul li a:hover, nav ul li a:focus {
+nav ul a:hover, nav ul a:focus {
   color: #f6f6f6;
 }
 
 .homeHeader {
-  max-height: 77vh;
+  height: auto;
+  padding-top: 45px;
 }
 .homeHeader .flexContainer {
   gap: 8%;
 }
 .homeHeader .headerImgContainer {
   width: 38%;
-  position: relative;
-  top: 30px;
+  top: 60px;
 }
 .homeHeader .headerImgContainer img {
   -webkit-box-shadow: 16px 16px 0 #fff;
@@ -439,16 +459,13 @@ nav ul li a:hover, nav ul li a:focus {
   margin-right: 35px;
   -ms-flex-item-align: center;
       align-self: center;
-  position: relative;
 }
 .headerTitle .textImage {
-  position: absolute;
   left: 76%;
   bottom: 33%;
 }
 
 .about {
-  background-color: #f6f6f6;
   padding: 7% 0;
 }
 .about .flexContainer {
@@ -463,15 +480,10 @@ nav ul li a:hover, nav ul li a:focus {
   margin: 20px 0;
 }
 
-.webLinks {
-  background-color: #f6f6f6;
-}
-.webLinks .linksImgContainer img {
-  min-height: 140px;
+.webLinks img {
+  min-height: 180px;
 }
 .webLinks ul {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 50px 0 110px;
 }
 .webLinks ul .photosIcon, .webLinks ul .blogIcon {
@@ -483,7 +495,6 @@ nav ul li a:hover, nav ul li a:focus {
 .webLinks ul li {
   width: calc(50% - 10px);
   padding: 20px 0 20px 60px;
-  position: relative;
 }
 .webLinks ul li a {
   padding-bottom: 5px;
@@ -491,12 +502,10 @@ nav ul li a:hover, nav ul li a:focus {
   border-bottom: 4px solid transparent;
 }
 .webLinks ul li a .icon {
-  background-color: #b9dde7;
   font-size: 0.92rem;
   text-align: center;
   padding: 13px;
   border-radius: 50%;
-  position: absolute;
   top: 15px;
   left: 0;
 }
@@ -510,8 +519,7 @@ nav ul li a:hover, nav ul li a:focus {
   background-color: #fff;
 }
 
-.blogOne .blogOneImage img {
-  position: relative;
+.blogOne img {
   bottom: 35px;
   -webkit-box-shadow: 15px 15px #68b0c1, -100px 15px #68b0c1;
           box-shadow: 15px 15px #68b0c1, -100px 15px #68b0c1;
@@ -540,15 +548,13 @@ nav ul li a:hover, nav ul li a:focus {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-.blogTwo .blogTwoImage img {
-  position: relative;
+.blogTwo img {
   top: 25px;
   -webkit-box-shadow: 15px 15px #b9dde7, 100px 15px #b9dde7;
           box-shadow: 15px 15px #b9dde7, 100px 15px #b9dde7;
 }
 
 .journey {
-  background-color: #f6f6f6;
   padding: 120px 0 80px;
 }
 .journey .journeyImage {
@@ -794,7 +800,10 @@ nav ul li a:hover, nav ul li a:focus {
   padding: 7px;
 }
 
-/* Portrait tablet and small desktops */
+/**************************************/
+/* FIRST BIG BREAK POINT:             */
+/* Portrait Tablet and Small Desktops */
+/**************************************/
 @media (max-width: 940px) {
   .homeHeader h2 {
     font-size: 4.8rem;
@@ -805,14 +814,17 @@ nav ul li a:hover, nav ul li a:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .homeHeader .headerImgContainer img {
-    top: 12%;
+  .homeHeader .headerImgContainer {
+    top: 50px;
   }
   .headerTitle .textImage {
     height: 84%;
   }
 }
-/* Landscape phone to portrait tablet */
+/**************************************/
+/* SECOND BIG BREAK POINT:            */
+/* Landscape Phone to Portrait Tablet */
+/**************************************/
 @media (max-width: 768px) {
   .wrapper {
     width: 90%;
@@ -834,6 +846,7 @@ nav ul li a:hover, nav ul li a:focus {
     min-width: 55%;
     background: #68b0c1;
     border: 4px solid #f38d8d;
+    border-right-color: transparent;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -907,7 +920,7 @@ nav ul li a:hover, nav ul li a:focus {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .blogOne .blogOneImage img {
+  .blogOne img {
     width: 100%;
     -webkit-box-shadow: 10px 15px #68b0c1, -100px 15px #68b0c1;
             box-shadow: 10px 15px #68b0c1, -100px 15px #68b0c1;
@@ -928,7 +941,7 @@ nav ul li a:hover, nav ul li a:focus {
   .blogTwo {
     padding-top: 0px;
   }
-  .blogTwo .blogTwoImage img {
+  .blogTwo img {
     top: 0px;
   }
   .blogTwo .blogTwoText {
@@ -940,10 +953,6 @@ nav ul li a:hover, nav ul li a:focus {
   .blogTwo .blogTwoText .btn {
     -ms-flex-item-align: start;
         align-self: flex-start;
-  }
-  .gallery .flexContainer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .gallery ul {
     padding: 60px 0;
@@ -966,6 +975,9 @@ nav ul li a:hover, nav ul li a:focus {
     height: 280px;
   }
 }
+/**************************************/
+/* FIRST SMALL BREAK POINT            */
+/**************************************/
 @media (max-width: 620px) {
   .homeHeader .flexContainer {
     -webkit-box-orient: vertical;
@@ -1031,7 +1043,10 @@ nav ul li a:hover, nav ul li a:focus {
     text-align: center;
   }
 }
-/* Landscape phones and down */
+/**************************************/
+/* THIRD BIG BREAK POINT:             */
+/* Landscape Phones and Down          */
+/**************************************/
 @media (max-width: 480px) {
   .wrapper {
     width: 95%;
@@ -1098,6 +1113,9 @@ nav ul li a:hover, nav ul li a:focus {
     font-size: 0.72rem;
   }
 }
+/**************************************/
+/* SECOND SMALL BREAK POINT           */
+/**************************************/
 @media (max-width: 350px) {
   .homeHeader h2 {
     font-size: 3.1rem;
@@ -1114,6 +1132,10 @@ nav ul li a:hover, nav ul li a:focus {
     padding-top: 25%;
   }
 }
+/**************************************/
+/* THIRD SMALL BREAK POINT:           */
+/* SMALLEST PHONES LANDSCAPE          */
+/**************************************/
 @media (max-height: 320px) {
   .homeHeader h2 {
     font-size: 2.9rem;

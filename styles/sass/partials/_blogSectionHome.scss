@@ -1,17 +1,18 @@
 @use './variables' as *;
 
+// Blog Section Styles in Home Page
+
 .imgContainer,
 .blogText {
     width: calc(100% / 2);
     background-color: $white;
 }   
 
+// Harper's Travels Blog Styles
 .blogOne {
-    .blogOneImage img {
-        position: relative;
+    img {
         bottom: 35px;
-        box-shadow: 15px 15px $secondary,
-        -100px 15px $secondary;
+        box-shadow: 15px 15px $secondary, -100px 15px $secondary;
     }
 
     .blogOneText {
@@ -21,6 +22,7 @@
     }
 }
 
+// Favourite Things Blog Styles
 .blogTwo {
     padding-top: 20px;
     .blogTwoText {
@@ -29,10 +31,8 @@
             .btn { align-self: flex-end; }
         }
 
-    .blogTwoImage img {
-        position: relative;
+    img {
         top: 25px;
-        box-shadow: 15px 15px $primary,
-        100px 15px $primary;
+        box-shadow: 15px 15px $primary, 100px 15px $primary;
     }
 }

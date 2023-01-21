@@ -75,16 +75,26 @@ img {
     }
 }
 
+// Background Colours 
+nav, .homeHeader, .icon { background-color: $primary; }
+
+.about, .webLinks, .journey { background-color: $whiteShade; }
+
 // Flexbox
 .flexContainer { display: flex; }
 
 .blogText { flex-direction: column; }
 
-// Background Colours 
-nav, .homeHeader  { background-color: $primary; }
+.webLinks ul, .gallery ul { flex-wrap: wrap; }
 
-// display: none
+// Display: none
 label[for="toggle"],
 .toggle {
     display: none;
 }
+
+// Positioning 
+.headerImgContainer, .headerTitle, .webLinks li, .imgContainer img { position: relative; }
+
+.textImage, .icon { position: absolute; }
+
