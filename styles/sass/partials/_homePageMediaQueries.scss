@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 /**************************************/
-/* FIRST BIG BREAK POINT:             */
+/* 1st BIG BREAK POINT:               */
 /* Portrait Tablet and Small Desktops */
 /**************************************/
 @media (max-width: 940px) {
@@ -14,7 +14,7 @@
 }
 
 /**************************************/
-/* SECOND BIG BREAK POINT:            */
+/* 2nd BIG BREAK POINT:               */
 /* Landscape Phone to Portrait Tablet */
 /**************************************/
 @media (max-width: 768px) {
@@ -34,26 +34,27 @@
     input[type="checkbox"]:checked+ul.slideOutMenu { right: 0px; }
 
     ul.slideOutMenu {
-        // width: 55%;
-        min-width: 55%;
+        width: 65%;
+        min-width: 230px;
         background: $secondary;
-        border: 4px solid $accent;
-        border-right-color: transparent;
+        border: 2px solid $whiteShade;
+        box-shadow: 2px 2px $accent,
+        -2px -2px $accent, -2px 2px $accent;
         flex-direction: column;
-        justify-content: space-evenly;
+        gap: 0;
         position: fixed;
-        right: -60%;
-        top: 65px;
+        right: -75%;
+        top: 55px;
         z-index: 10;
         transition: all 0.6s;
     
-        h1 { font-size: 2.3rem; }
+        h1 { font-size: 2rem; }
 
         li { width: 100%; }
     
         a {
             width: inherit;
-            padding: 35px 0;
+            padding: 20px 0;
             font-size: 1.8rem;
             text-align: center;
             border-top: 2px solid transparent;
@@ -107,10 +108,8 @@
     }
 
     .blogOne {
-        img { 
-            width: 100%;
-            box-shadow: 10px 15px $secondary, 
-            -100px 15px $secondary; 
+        img {
+            box-shadow: 20px 15px $secondary, -20px 15px $secondary;
         }
 
         .blogOneText { 
@@ -196,12 +195,11 @@
             min-width: 200px;
             align-self: center;
             margin-bottom: 12%;
-
-            img { width: 100%; }
         }
     
+        .journeyImage img, .journeyText { width: 100%; }
+
         .journeyText {
-            width: 100%;
             margin-left: 0;
             text-align: center;
         }
@@ -209,10 +207,18 @@
 }
 
 /**************************************/
+/* FIRST SMALL BREAK POINT FOR HEIGHT */
+/**************************************/
+@media (max-height: 600px) {
+    .homeHeader {
+        max-height: 100vh;
+    }
+}
+
+/**************************************/
 /* SECOND SMALL BREAK POINT:          */
 /**************************************/
-
-@media (max-width: 550px) {
+@media (max-width: 568px) {
     // Header
     .homeHeader {
         .flexContainer { flex-direction: column-reverse; }
@@ -223,7 +229,11 @@
             min-width: 180px;
         }
 
-        .headerTitle { align-self: flex-start; }
+        .headerTitle { 
+            position: relative;
+            top: 30px;
+            align-self: flex-start; 
+        }
     }
 }
 
@@ -232,26 +242,28 @@
 /* Landscape Phones and Down          */
 /**************************************/
 @media (max-width: 480px) {
-
     // ABOUT SECTION:
     .about { padding-top: 20%; }
 
     // BLOG SECTION:
+    .blogPosts {
+        .blogText { 
+            align-items: center;
+            .btn { align-self: center; }
+        }
+    }
+
     .blogOne {
         .blogOneText {
-            align-items: center;
             padding: 20px 5px;
             p { text-align: justify; }
-            .btn { align-self: center; }
         }
     }
 
     .blogTwo {
         .blogTwoText {
-            align-items: center;
             padding: 35px 5px 20px 5px;
             p { text-align: justify; }
-            .btn { align-self: center; }
         }
     }
 
@@ -284,41 +296,44 @@
 
         .headerImgContainer {
             width: 50%;
-            top: 15px;
+            top: 20px;
             right: 0;
         }
 
         .headerImgContainer, .headerTitle { align-self: center;}
 
+        .headerTitle { top: 10px; }
         .textImage {
             height: 60%;
             bottom: 38%;
             left: 74%;
         }
     }
-
-    // ABOUT SECTION: 
-    .about { padding-top: 25%; }
 }
 
 /**************************************/
-/* FOURTH SMALL BREAK POINT:          */
+/* SECOND BREAK POINT FOR HEIGHT      */
 /* SMALLEST PHONES LANDSCAPE          */
 /**************************************/
 @media (max-height: 320px) {
     // Header 
         .homeHeader {
+            max-height: 80vh;
             h2 { font-size: 3rem; }
     
             .headerImgContainer {
                 width: 30%;
-                top: -70px;
+                top: -100px;
             }
 
-            .textImage {
-                height: 57%;
-                left: 72%;
+            .headerTitle { top: 60px; }
+
+            .textImage { 
+                height: 60%;
                 bottom: 38%;
+                left: 74%; 
             }
         }
+
+        .about { padding-top: 13%; }
 }

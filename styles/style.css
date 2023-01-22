@@ -510,6 +510,10 @@ nav ul a:hover, nav ul a:focus {
   background-color: #fff;
 }
 
+.imgContainer img {
+  width: 100%;
+}
+
 .blogOne img {
   bottom: 35px;
   -webkit-box-shadow: 15px 15px #68b0c1, -100px 15px #68b0c1;
@@ -792,7 +796,7 @@ nav ul a:hover, nav ul a:focus {
 }
 
 /**************************************/
-/* FIRST BIG BREAK POINT:             */
+/* 1st BIG BREAK POINT:               */
 /* Portrait Tablet and Small Desktops */
 /**************************************/
 @media (max-width: 940px) {
@@ -807,7 +811,7 @@ nav ul a:hover, nav ul a:focus {
   }
 }
 /**************************************/
-/* SECOND BIG BREAK POINT:            */
+/* 2nd BIG BREAK POINT:               */
 /* Landscape Phone to Portrait Tablet */
 /**************************************/
 @media (max-width: 768px) {
@@ -828,33 +832,33 @@ nav ul a:hover, nav ul a:focus {
     right: 0px;
   }
   ul.slideOutMenu {
-    min-width: 55%;
+    width: 65%;
+    min-width: 230px;
     background: #68b0c1;
-    border: 4px solid #f38d8d;
-    border-right-color: transparent;
+    border: 2px solid #f6f6f6;
+    -webkit-box-shadow: 2px 2px #f38d8d, -2px -2px #f38d8d, -2px 2px #f38d8d;
+            box-shadow: 2px 2px #f38d8d, -2px -2px #f38d8d, -2px 2px #f38d8d;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    gap: 0;
     position: fixed;
-    right: -60%;
-    top: 65px;
+    right: -75%;
+    top: 55px;
     z-index: 10;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
   }
   ul.slideOutMenu h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   ul.slideOutMenu li {
     width: 100%;
   }
   ul.slideOutMenu a {
     width: inherit;
-    padding: 35px 0;
+    padding: 20px 0;
     font-size: 1.8rem;
     text-align: center;
     border-top: 2px solid transparent;
@@ -914,9 +918,8 @@ nav ul a:hover, nav ul a:focus {
             flex-direction: column-reverse;
   }
   .blogOne img {
-    width: 100%;
-    -webkit-box-shadow: 10px 15px #68b0c1, -100px 15px #68b0c1;
-            box-shadow: 10px 15px #68b0c1, -100px 15px #68b0c1;
+    -webkit-box-shadow: 20px 15px #68b0c1, -20px 15px #68b0c1;
+            box-shadow: 20px 15px #68b0c1, -20px 15px #68b0c1;
   }
   .blogOne .blogOneText {
     padding: 15px 0px 30px;
@@ -1022,19 +1025,26 @@ nav ul a:hover, nav ul a:focus {
         align-self: center;
     margin-bottom: 12%;
   }
-  .journeySection .journeyImage img {
+  .journeySection .journeyImage img, .journeySection .journeyText {
     width: 100%;
   }
   .journeySection .journeyText {
-    width: 100%;
     margin-left: 0;
     text-align: center;
   }
 }
 /**************************************/
+/* FIRST SMALL BREAK POINT FOR HEIGHT */
+/**************************************/
+@media (max-height: 600px) {
+  .homeHeader {
+    max-height: 100vh;
+  }
+}
+/**************************************/
 /* SECOND SMALL BREAK POINT:          */
 /**************************************/
-@media (max-width: 550px) {
+@media (max-width: 568px) {
   .homeHeader .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1049,6 +1059,8 @@ nav ul a:hover, nav ul a:focus {
     min-width: 180px;
   }
   .homeHeader .headerTitle {
+    position: relative;
+    top: 30px;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -1061,31 +1073,26 @@ nav ul a:hover, nav ul a:focus {
   .about {
     padding-top: 20%;
   }
-  .blogOne .blogOneText {
+  .blogPosts .blogText {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .blogPosts .blogText .btn {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .blogOne .blogOneText {
     padding: 20px 5px;
   }
   .blogOne .blogOneText p {
     text-align: justify;
   }
-  .blogOne .blogOneText .btn {
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
   .blogTwo .blogTwoText {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding: 35px 5px 20px 5px;
   }
   .blogTwo .blogTwoText p {
     text-align: justify;
-  }
-  .blogTwo .blogTwoText .btn {
-    -ms-flex-item-align: center;
-        align-self: center;
   }
   .gallery ul {
     padding: 35px 0;
@@ -1113,12 +1120,39 @@ nav ul a:hover, nav ul a:focus {
   }
   .homeHeader .headerImgContainer {
     width: 50%;
-    top: 15px;
+    top: 20px;
     right: 0;
   }
   .homeHeader .headerImgContainer, .homeHeader .headerTitle {
     -ms-flex-item-align: center;
         align-self: center;
+  }
+  .homeHeader .headerTitle {
+    top: 10px;
+  }
+  .homeHeader .textImage {
+    height: 60%;
+    bottom: 38%;
+    left: 74%;
+  }
+}
+/**************************************/
+/* SECOND BREAK POINT FOR HEIGHT      */
+/* SMALLEST PHONES LANDSCAPE          */
+/**************************************/
+@media (max-height: 320px) {
+  .homeHeader {
+    max-height: 80vh;
+  }
+  .homeHeader h2 {
+    font-size: 3rem;
+  }
+  .homeHeader .headerImgContainer {
+    width: 30%;
+    top: -100px;
+  }
+  .homeHeader .headerTitle {
+    top: 60px;
   }
   .homeHeader .textImage {
     height: 60%;
@@ -1126,25 +1160,7 @@ nav ul a:hover, nav ul a:focus {
     left: 74%;
   }
   .about {
-    padding-top: 25%;
-  }
-}
-/**************************************/
-/* FOURTH SMALL BREAK POINT:          */
-/* SMALLEST PHONES LANDSCAPE          */
-/**************************************/
-@media (max-height: 320px) {
-  .homeHeader h2 {
-    font-size: 3rem;
-  }
-  .homeHeader .headerImgContainer {
-    width: 30%;
-    top: -70px;
-  }
-  .homeHeader .textImage {
-    height: 57%;
-    left: 72%;
-    bottom: 38%;
+    padding-top: 13%;
   }
 }
 /* Portrait tablet and small desktops */
