@@ -2,17 +2,12 @@
 
 // Navigation Bar Styles (home, blog & contact page)
 nav {
-    // Fixed Nav Bar
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 20;
-    // Nav Menu Styles
+    height: 66px;
     ul {
         justify-content: center;
         align-items: center;
         gap: 20px;
-    
+
         .logo { margin: 0 10px; }
 
         a {

@@ -2,26 +2,26 @@
 
 // Home Page Header Styles
 .homeHeader {
-    height: auto;
-    padding-top: 45px;
-    .flexContainer { gap: 8%; }
+    max-height: 77vh;
+    .flexContainer { 
+        gap: 8%;
+        align-items: center; 
+    }
     // Header Image Styles
     .headerImgContainer {
         width: 38%;
-        top: 60px;
+        top: 30px;
             img { box-shadow: 16px 16px 0 $white; }
     }
-}
 
-// H2 Styles
-.headerTitle {
-    margin-right: 35px;
-    align-self: center;
+    // H2 Styles
     .textImage {
         left: 76%;
         bottom: 33%;
     }
 }
+
+
 
 
 

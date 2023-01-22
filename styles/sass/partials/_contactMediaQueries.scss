@@ -3,9 +3,9 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     // Wrapper 
-    .wrapper {
-        width: 90%;
-    }
+    // .wrapper {
+    //     width: 90%;
+    // }
 
     .contactHeader {
         .wrapper h2 { 
@@ -41,8 +41,6 @@
         }
     }
     
-        
-    
     .contactForm {
         width: 100%;
         margin-left: 0;
@@ -52,7 +50,7 @@
 /* Landscape phones and down */
 @media (max-width: 480px) {
     // wrapper {
-    .wrapper { width: 95%; }
+    // .wrapper { width: 95%; }
 
     .contactHeader {
         .wrapper h2 {

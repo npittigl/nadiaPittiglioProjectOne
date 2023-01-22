@@ -4,12 +4,12 @@
 .webLinks {
     img { min-height: 180px; }
     
-    // Icon Links Styles
     ul {
         padding: 50px 0 110px;
         .photosIcon, .blogIcon { margin-right: 10px; }
         .aboutIcon, .contactIcon { margin-left: 10px; }
     
+        // Icon Links Styles
         li {
             width: calc((100% / 2) - 10px);
             padding: 20px 0 20px 60px;

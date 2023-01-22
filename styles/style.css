@@ -338,6 +338,14 @@ ul:not(.posts) {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -346,17 +354,8 @@ a {
   transition: 0.3s;
 }
 
-a,
-button {
+a, button {
   cursor: pointer;
-}
-
-img {
-  max-width: 100%;
-  height: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .btn {
@@ -379,7 +378,7 @@ nav, .homeHeader, .icon {
   background-color: #b9dde7;
 }
 
-.about, .webLinks, .journey {
+.about, .webLinks, .journeySection {
   background-color: #f6f6f6;
 }
 
@@ -401,8 +400,7 @@ nav, .homeHeader, .icon {
       flex-wrap: wrap;
 }
 
-label[for=toggle],
-.toggle {
+label[for=toggle], .toggle {
   display: none;
 }
 
@@ -415,10 +413,7 @@ label[for=toggle],
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 20;
+  height: 66px;
 }
 nav ul {
   -webkit-box-pack: center;
@@ -440,27 +435,23 @@ nav ul a:hover, nav ul a:focus {
 }
 
 .homeHeader {
-  height: auto;
-  padding-top: 45px;
+  max-height: 77vh;
 }
 .homeHeader .flexContainer {
   gap: 8%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .homeHeader .headerImgContainer {
   width: 38%;
-  top: 60px;
+  top: 30px;
 }
 .homeHeader .headerImgContainer img {
   -webkit-box-shadow: 16px 16px 0 #fff;
           box-shadow: 16px 16px 0 #fff;
 }
-
-.headerTitle {
-  margin-right: 35px;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-.headerTitle .textImage {
+.homeHeader .textImage {
   left: 76%;
   bottom: 33%;
 }
@@ -554,23 +545,23 @@ nav ul a:hover, nav ul a:focus {
           box-shadow: 15px 15px #b9dde7, 100px 15px #b9dde7;
 }
 
-.journey {
+.journeySection {
   padding: 120px 0 80px;
 }
-.journey .journeyImage {
+.journeySection .journeyImage {
   width: 25%;
   min-width: 250px;
 }
-.journey .journeyImage img {
+.journeySection .journeyImage img {
   height: auto;
   -webkit-box-shadow: 15px 15px #227284;
           box-shadow: 15px 15px #227284;
 }
-.journey .journeyText {
+.journeySection .journeyText {
   width: 67%;
   margin-left: 8%;
 }
-.journey .journeyText p {
+.journeySection .journeyText p {
   margin: 25px 0 30px;
 }
 
@@ -806,18 +797,12 @@ nav ul a:hover, nav ul a:focus {
 /**************************************/
 @media (max-width: 940px) {
   .homeHeader h2 {
-    font-size: 4.8rem;
+    font-size: 5rem;
   }
   .homeHeader .flexContainer {
-    gap: 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    gap: 12%;
   }
-  .homeHeader .headerImgContainer {
-    top: 50px;
-  }
-  .headerTitle .textImage {
+  .homeHeader .textImage {
     height: 84%;
   }
 }
@@ -827,7 +812,7 @@ nav ul a:hover, nav ul a:focus {
 /**************************************/
 @media (max-width: 768px) {
   .wrapper {
-    width: 90%;
+    width: 95%;
   }
   label[for=toggle] {
     display: block;
@@ -881,22 +866,31 @@ nav ul a:hover, nav ul a:focus {
     border-bottom: 2px solid #f6f6f6;
   }
   .homeHeader h2 {
-    font-size: 4.2rem;
+    font-size: 4.3rem;
   }
   .homeHeader .flexContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .homeHeader .headerImgContainer {
     right: 15px;
+    top: 60px;
   }
-  .headerTitle .textImage {
-    height: 75%;
+  .homeHeader .headerImgContainer img {
+    -webkit-box-shadow: 13px 13px 0 #fff;
+            box-shadow: 13px 13px 0 #fff;
+  }
+  .homeHeader .textImage {
+    height: 74%;
+    bottom: 36%;
   }
   .about {
-    padding-top: 12%;
+    padding-top: 10%;
   }
   .about .flexContainer {
     -webkit-box-pack: start;
@@ -906,8 +900,7 @@ nav ul a:hover, nav ul a:focus {
   .about .flexContainer .aboutText {
     width: 70%;
   }
-  .blogText,
-.imgContainer {
+  .blogText, .imgContainer {
     width: 100%;
   }
   .blogPosts .flexContainer {
@@ -979,20 +972,16 @@ nav ul a:hover, nav ul a:focus {
 /* FIRST SMALL BREAK POINT            */
 /**************************************/
 @media (max-width: 620px) {
-  .homeHeader .flexContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  .homeHeader h2 {
+    font-size: 3.6rem;
   }
   .homeHeader .headerImgContainer {
-    width: 45%;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    width: 38%;
   }
-  .headerTitle {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+  .homeHeader .textImage {
+    height: 72%;
+    bottom: 32%;
+    left: 74%;
   }
   .about {
     padding: 12% 0 10%;
@@ -1006,8 +995,7 @@ nav ul a:hover, nav ul a:focus {
   .webLinks ul .photosIcon, .webLinks ul .blogIcon {
     margin-right: 0;
   }
-  .webLinks ul .aboutIcon,
-.webLinks ul .contactIcon {
+  .webLinks ul .aboutIcon, .webLinks ul .contactIcon {
     margin-left: 0;
   }
   .webLinks ul li {
@@ -1018,29 +1006,48 @@ nav ul a:hover, nav ul a:focus {
   .webLinks ul li a {
     margin-left: 48px;
   }
-  .journey {
+  .journeySection {
     padding: 60px 0;
   }
-  .journey .flexContainer {
+  .journeySection .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .journey .journeyImage {
+  .journeySection .journeyImage {
     width: 60%;
     min-width: 200px;
     -ms-flex-item-align: center;
         align-self: center;
     margin-bottom: 12%;
   }
-  .journey .journeyImage img {
+  .journeySection .journeyImage img {
     width: 100%;
   }
-  .journey .journeyText {
+  .journeySection .journeyText {
     width: 100%;
     margin-left: 0;
     text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .homeHeader .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .homeHeader .headerImgContainer {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    top: 40px;
+    width: 45%;
+    min-width: 180px;
+  }
+  .homeHeader .headerTitle {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 /**************************************/
@@ -1048,25 +1055,6 @@ nav ul a:hover, nav ul a:focus {
 /* Landscape Phones and Down          */
 /**************************************/
 @media (max-width: 480px) {
-  .wrapper {
-    width: 95%;
-  }
-  .homeHeader h2 {
-    font-size: 3.6rem;
-  }
-  .homeHeader .headerImgContainer {
-    width: 50%;
-    min-width: 180px;
-  }
-  .homeHeader .headerImgContainer img {
-    -webkit-box-shadow: 13px 13px 0 #fff;
-            box-shadow: 13px 13px 0 #fff;
-  }
-  .headerTitle .textImage {
-    height: 68%;
-    left: 75%;
-    bottom: 35%;
-  }
   .about {
     padding-top: 20%;
   }
@@ -1114,26 +1102,27 @@ nav ul a:hover, nav ul a:focus {
   }
 }
 /**************************************/
-/* SECOND SMALL BREAK POINT           */
+/* THIRD SMALL BREAK POINT            */
 /**************************************/
 @media (max-width: 350px) {
   .homeHeader h2 {
-    font-size: 3.1rem;
+    font-size: 3.2rem;
   }
   .homeHeader .headerImgContainer {
+    width: 50%;
     top: 15px;
   }
-  .headerTitle .textImage {
+  .homeHeader .textImage {
     height: 63%;
-    left: 72%;
     bottom: 35%;
+    left: 74%;
   }
   .about {
     padding-top: 25%;
   }
 }
 /**************************************/
-/* THIRD SMALL BREAK POINT:           */
+/* FOURTH SMALL BREAK POINT:          */
 /* SMALLEST PHONES LANDSCAPE          */
 /**************************************/
 @media (max-height: 320px) {
@@ -1144,23 +1133,15 @@ nav ul a:hover, nav ul a:focus {
     width: 30%;
     top: -70px;
   }
-  .headerTitle .textImage {
+  .homeHeader .textImage {
     height: 57%;
     left: 72%;
     bottom: 38%;
   }
 }
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-  .wrapper {
-    width: 90%;
-  }
-}
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  .wrapper {
-    width: 95%;
-  }
   .blogPostMain .wrapper.flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1239,9 +1220,6 @@ nav ul a:hover, nav ul a:focus {
 /* Landscape phones and down */
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  .wrapper {
-    width: 90%;
-  }
   .contactHeader .wrapper h2 {
     font-size: 3rem;
   }
@@ -1288,9 +1266,6 @@ nav ul a:hover, nav ul a:focus {
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  .wrapper {
-    width: 95%;
-  }
   .contactHeader .wrapper h2 {
     font-size: 2.5rem;
   }

@@ -7,16 +7,9 @@
 @media (max-width: 940px) {
     // HEADER: 
     .homeHeader {
-        h2 { font-size: 4.8rem; }
-        .flexContainer {
-            gap: 0;
-            justify-content: space-between;
-        }
-        .headerImgContainer { top: 50px;}    
-    }
-
-    .headerTitle .textImage { 
-        height: 84%; 
+        h2 { font-size: 5rem; }
+        .flexContainer { gap: 12%; }
+        .textImage { height: 84%; }
     }
 }
 
@@ -26,7 +19,7 @@
 /**************************************/
 @media (max-width: 768px) {
     // WRAPPER: 
-    .wrapper { width: 90%; }
+    .wrapper { width: 95%; }
 
     // NAV SLIDE_OUT MENU:
     label[for="toggle"] {
@@ -77,18 +70,28 @@
     
     // HEADER:
     .homeHeader {
-        h2 { font-size: 4.2rem; }
-        .flexContainer { flex-direction: row-reverse; }
-        .headerImgContainer { right: 15px; }
+        h2 { font-size: 4.3rem; }
+
+        .flexContainer { 
+            flex-direction: row-reverse; 
+            justify-content: space-between;
+        }
+
+        .headerImgContainer {
+            right: 15px;
+            top: 60px;
+            img { box-shadow: 13px 13px 0 $white; }
+        }
+
+        .textImage {
+            height: 74%;
+            bottom: 36%;
+        }
     }
 
-    .headerTitle .textImage { 
-        height: 75%; 
-    }
-    
     // ABOUT SECTION:
     .about {
-        padding-top: 12%;
+        padding-top: 10%;
         .flexContainer { 
             justify-content: flex-start;
             .aboutText { width: 70%; }
@@ -96,8 +99,7 @@
     }
 
     // BLOG SECTION:
-    .blogText,
-    .imgContainer { width: 100%; }
+    .blogText, .imgContainer { width: 100%; }
 
     .blogPosts {
         .flexContainer { flex-wrap: wrap; }
@@ -154,14 +156,15 @@
 @media (max-width: 620px) {
     // HEADER:
     .homeHeader {
-        .flexContainer { flex-direction: column-reverse; }
-        .headerImgContainer { 
-            width: 45%;
-            align-self: flex-end; 
+        h2 { font-size: 3.6rem; }
+        .headerImgContainer { width: 38%; }
+
+        .textImage {
+            height: 72%;
+            bottom: 32%;
+            left: 74%;
         }
     }
-
-    .headerTitle { align-self: flex-start; }
 
     // ABOUT SECTION:
     .about {
@@ -172,26 +175,19 @@
     // WEBLINKS SECTION:
     .webLinks ul {
         padding: 40px 0 70px;
-        .photosIcon, .blogIcon {
-            margin-right: 0;
-            }
-        .aboutIcon,
-        .contactIcon {
-            margin-left: 0;
-        }
+        .photosIcon, .blogIcon { margin-right: 0; }
+        .aboutIcon, .contactIcon { margin-left: 0; }
         li {
             width: 100%;
             padding: 20px 0px 20px 8px;
             margin-bottom: 3%;
 
-            a {
-                margin-left: 48px;
-            }
+            a { margin-left: 48px; }
         }
     }
 
     // JOURNEY SECTION:
-    .journey {
+    .journeySection {
         padding: 60px 0;
         .flexContainer { flex-direction: column; }
     
@@ -212,29 +208,28 @@
     }
 }
 
+@media (max-width: 550px) {
+
+    .homeHeader {
+        .flexContainer { flex-direction: column-reverse; }
+        .headerImgContainer {
+            align-self: flex-end;
+            top: 40px;
+            width: 45%;
+            min-width: 180px;
+        }
+
+        .headerTitle {
+            align-self: flex-start;
+        }
+    }
+}
+
 /**************************************/
 /* THIRD BIG BREAK POINT:             */
 /* Landscape Phones and Down          */
 /**************************************/
 @media (max-width: 480px) {
-    // WRAPPER: 
-    .wrapper { width: 95%; }
-
-    // HEADER: 
-    .homeHeader {
-        h2 { font-size: 3.6rem; }
-        .headerImgContainer {
-            width: 50%;
-            min-width: 180px;
-            img { box-shadow: 13px 13px 0 $white; }
-        }
-    }
-
-    .headerTitle .textImage {
-        height: 68%;
-        left: 75%;
-        bottom: 35%;
-    }
 
     // ABOUT SECTION:
     .about { padding-top: 20%; }
@@ -278,19 +273,23 @@
 }
 
 /**************************************/
-/* SECOND SMALL BREAK POINT           */
+/* THIRD SMALL BREAK POINT            */
 /**************************************/
 @media (max-width: 350px) {
     // HEADER: 
     .homeHeader {
-        h2 { font-size: 3.1rem; }
-        .headerImgContainer { top: 15px; }
-    }
+        h2 { font-size: 3.2rem; }
 
-    .headerTitle .textImage {
-        height: 63%;
-        left: 72%;
-        bottom: 35%;
+        .headerImgContainer {
+            width: 50%;
+            top: 15px;
+        }
+
+        .textImage {
+            height: 63%;
+            bottom: 35%;
+            left: 74%;
+        }
     }
 
     // ABOUT SECTION: 
@@ -298,7 +297,7 @@
 }
 
 /**************************************/
-/* THIRD SMALL BREAK POINT:           */
+/* FOURTH SMALL BREAK POINT:          */
 /* SMALLEST PHONES LANDSCAPE          */
 /**************************************/
 @media (max-height: 320px) {
@@ -310,11 +309,13 @@
                 width: 30%;
                 top: -70px;
             }
+
+            .textImage {
+                height: 57%;
+                left: 72%;
+                bottom: 38%;
+            }
         }
     
-        .headerTitle .textImage {
-            height: 57%;
-            left: 72%;
-            bottom: 38%;
-        }
+
 }
