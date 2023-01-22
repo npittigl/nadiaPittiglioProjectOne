@@ -898,7 +898,7 @@ nav ul a:hover, nav ul a:focus {
             justify-content: flex-start;
   }
   .about .flexContainer .aboutText {
-    width: 70%;
+    width: 58%;
   }
   .blogText, .imgContainer {
     width: 100%;
@@ -1031,6 +1031,9 @@ nav ul a:hover, nav ul a:focus {
     text-align: center;
   }
 }
+/**************************************/
+/* SECOND SMALL BREAK POINT:          */
+/**************************************/
 @media (max-width: 550px) {
   .homeHeader .flexContainer {
     -webkit-box-orient: vertical;
@@ -1111,10 +1114,15 @@ nav ul a:hover, nav ul a:focus {
   .homeHeader .headerImgContainer {
     width: 50%;
     top: 15px;
+    right: 0;
+  }
+  .homeHeader .headerImgContainer, .homeHeader .headerTitle {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .homeHeader .textImage {
-    height: 63%;
-    bottom: 35%;
+    height: 60%;
+    bottom: 38%;
     left: 74%;
   }
   .about {
@@ -1127,7 +1135,7 @@ nav ul a:hover, nav ul a:focus {
 /**************************************/
 @media (max-height: 320px) {
   .homeHeader h2 {
-    font-size: 2.9rem;
+    font-size: 3rem;
   }
   .homeHeader .headerImgContainer {
     width: 30%;
