@@ -1,17 +1,24 @@
 @use './variables' as *;
 
-.blogPostHeader {
-    // min-height: calc(65vh - 59px);
-    background: url(../assets/blog-image-1.jpg) no-repeat center / cover;
-    height: auto;
-    
-    .wrapper {
-        position: relative;
-        min-height: calc(65vh - 59px);
+// Blog Post Header Styles:
 
-        h2 {
-            position: absolute;
-            bottom: -30px;
-        }
+// .blogPostHeader { 
+//     background-image: url(../assets/blog-image-1.jpg);
+//     background-position: center bottom;
+//     background-size: center;
+//     background-repeat: no-repeat;
+// }
+
+.blogPageHeaderImage {
+    height: auto;
+    img { height: 100%; }
+}
+
+.blogTitle {
+    position: relative;
+
+    h2 {
+        position: absolute;
+        bottom: -35px;
     }
 }

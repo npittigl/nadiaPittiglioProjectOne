@@ -592,17 +592,19 @@ nav ul a:hover, nav ul a:focus {
   text-align: center;
 }
 
-.blogPostHeader {
-  background: url(../assets/blog-image-1.jpg) no-repeat center/cover;
+.blogPageHeaderImage {
   height: auto;
 }
-.blogPostHeader .wrapper {
-  position: relative;
-  min-height: calc(65vh - 59px);
+.blogPageHeaderImage img {
+  height: 100%;
 }
-.blogPostHeader .wrapper h2 {
+
+.blogTitle {
+  position: relative;
+}
+.blogTitle h2 {
   position: absolute;
-  bottom: -30px;
+  bottom: -35px;
 }
 
 .blogPostMain {
@@ -972,7 +974,7 @@ nav ul a:hover, nav ul a:focus {
   }
 }
 /**************************************/
-/* FIRST SMALL BREAK POINT            */
+/* 1st SMALL BREAK POINT              */
 /**************************************/
 @media (max-width: 620px) {
   .homeHeader h2 {
@@ -1034,7 +1036,7 @@ nav ul a:hover, nav ul a:focus {
   }
 }
 /**************************************/
-/* FIRST SMALL BREAK POINT FOR HEIGHT */
+/* 1st SMALL BREAK POINT FOR HEIGHT */
 /**************************************/
 @media (max-height: 600px) {
   .homeHeader {
@@ -1042,7 +1044,7 @@ nav ul a:hover, nav ul a:focus {
   }
 }
 /**************************************/
-/* SECOND SMALL BREAK POINT:          */
+/* 2nd SMALL BREAK POINT:             */
 /**************************************/
 @media (max-width: 568px) {
   .homeHeader .flexContainer {
@@ -1066,7 +1068,7 @@ nav ul a:hover, nav ul a:focus {
   }
 }
 /**************************************/
-/* THIRD BIG BREAK POINT:             */
+/* 3rd BIG BREAK POINT:               */
 /* Landscape Phones and Down          */
 /**************************************/
 @media (max-width: 480px) {
@@ -1112,7 +1114,7 @@ nav ul a:hover, nav ul a:focus {
   }
 }
 /**************************************/
-/* THIRD SMALL BREAK POINT            */
+/* 3rd SMALL BREAK POINT              */
 /**************************************/
 @media (max-width: 350px) {
   .homeHeader h2 {
@@ -1137,8 +1139,7 @@ nav ul a:hover, nav ul a:focus {
   }
 }
 /**************************************/
-/* SECOND BREAK POINT FOR HEIGHT      */
-/* SMALLEST PHONES LANDSCAPE          */
+/* 2nd SMALL BREAK POINT FOR HEIGHT   */
 /**************************************/
 @media (max-height: 320px) {
   .homeHeader {
@@ -1164,8 +1165,19 @@ nav ul a:hover, nav ul a:focus {
   }
 }
 /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .blogPostMain .wrapper {
+    width: 90%;
+  }
+  .blogPageHeaderImage {
+    height: 230px;
+  }
+}
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .blogPostMain .wrapper {
+    width: 95%;
+  }
   .blogPostMain .wrapper.flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1222,7 +1234,12 @@ nav ul a:hover, nav ul a:focus {
     margin: 1.5% 0 0 0;
   }
 }
-/* Small Break Point */
+/**************************************/
+/* 1st SMALL BREAK POINT FOR HEIGHT   */
+/**************************************/
+/**************************************/
+/* 1st SMALL BREAK POINT              */
+/**************************************/
 @media (max-width: 600px) {
   .leftColumn {
     -webkit-box-orient: vertical;
@@ -1241,7 +1258,9 @@ nav ul a:hover, nav ul a:focus {
     margin: 2% 0 0 0;
   }
 }
-/* Landscape phones and down */
+/**************************************/
+/* 2nd SMALL BREAK POINT FOR HEIGHT   */
+/**************************************/
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .contactHeader .wrapper h2 {
