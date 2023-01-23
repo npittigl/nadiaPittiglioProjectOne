@@ -7,6 +7,9 @@
 /* Portrait Tablet and Small Desktops */
 /**************************************/
 @media (max-width: 940px) {
+    // Wrapper 
+    .wrapper { width: 90%;}
+    
     // HEADER: 
     .homeHeader {
         h2 { font-size: 5rem; }

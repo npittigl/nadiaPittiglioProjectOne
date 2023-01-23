@@ -267,8 +267,8 @@ html {
 }
 
 body,
-input,
-textarea {
+.form input,
+.form textarea {
   font-family: "Cabin", sans-serif;
 }
 
@@ -279,7 +279,14 @@ body {
   letter-spacing: 0px;
 }
 
-nav, h1, h2, h3, h4, h5, .btn {
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+.btn,
+.emailBold {
   font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
 }
@@ -302,6 +309,7 @@ h1 {
 .contactHeader h2 {
   font-size: 3.6rem;
   line-height: 4.2rem;
+  bottom: -35px;
 }
 
 h3 {
@@ -386,14 +394,16 @@ nav, .homeHeader, .icon {
 .about,
 .webLinks,
 .journeySection,
-.blogPostMain {
+.blogPostMain,
+.contactMain {
   background-color: #f6f6f6;
 }
 
 .imgContainer,
 .blogText,
 .card,
-.article {
+.article,
+.contactInfoCard {
   background-color: #fff;
 }
 
@@ -403,7 +413,7 @@ nav, .homeHeader, .icon {
   display: flex;
 }
 
-.blogText, .commentForm .flexContainer {
+.blogText, .form .flexContainer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -423,12 +433,28 @@ label[for=toggle], .toggle {
 .headerTitle,
 .webLinks li,
 .imgContainer img,
-.blogTitle {
+.blogTitle,
+.contactTitle {
   position: relative;
 }
 
-.textImage, .icon, .blogTitle h2 {
+.textImage, .icon, .blogTitle h2, .contactTitle h2 {
   position: absolute;
+}
+
+.form input, .form textarea {
+  border: none;
+}
+.form input {
+  padding: 25px 30px;
+}
+.form textarea {
+  margin: 17px 0;
+  padding: 35px 30px;
+  resize: none;
+}
+.form button {
+  padding: 7px;
 }
 
 nav {
@@ -609,10 +635,6 @@ nav ul a:hover, nav ul a:focus {
   text-align: center;
 }
 
-.blogTitle h2 {
-  bottom: -35px;
-}
-
 .blogPostMain {
   padding: 80px 0 95px;
 }
@@ -689,7 +711,6 @@ nav ul a:hover, nav ul a:focus {
 
 .commentForm input {
   width: calc(50% - 4px);
-  padding: 25px 30px;
 }
 .commentForm input[type=text] {
   margin-right: 2px;
@@ -697,32 +718,9 @@ nav ul a:hover, nav ul a:focus {
 .commentForm input[type=email] {
   margin-left: 2px;
 }
-.commentForm textarea {
-  margin: 17px 0;
-  padding: 35px 30px;
-  resize: none;
-}
-.commentForm input, .commentForm textarea {
-  border: none;
-}
-.commentForm button {
-  padding: 7px;
-}
-
-.contactHeader {
-  background: url(../assets/contact-image-1.jpg) no-repeat center/cover;
-}
-.contactHeader .wrapper {
-  position: relative;
-  min-height: calc(55vh - 66px);
-}
-.contactHeader .wrapper h2 {
-  position: absolute;
-  bottom: -35px;
-}
 
 .contactMain {
-  background-color: #f6f6f6;
+  min-height: 100vh;
   padding: 80px 0;
 }
 .contactMain aside {
@@ -730,14 +728,11 @@ nav ul a:hover, nav ul a:focus {
   margin-right: 1%;
 }
 .contactMain aside .contactInfoCard {
-  background-color: #fff;
   padding: 35px 30px;
 }
 .contactMain aside .emailBold {
   font-size: 0.9rem;
-  font-family: "Oswald", sans-serif;
   font-weight: bold;
-  letter-spacing: 1px;
   margin: 10px 0;
 }
 .contactMain aside .address {
@@ -765,9 +760,6 @@ nav ul a:hover, nav ul a:focus {
 }
 .contactForm input {
   width: calc(50% - 8px);
-  padding: 25px 30px;
-  border: none;
-  font-family: "Cabin", sans-serif;
 }
 .contactForm input[type=text] {
   margin-right: 4px;
@@ -775,28 +767,15 @@ nav ul a:hover, nav ul a:focus {
 .contactForm input[type=email] {
   margin-left: 4px;
 }
-.contactForm .flexContainer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.contactForm .flexContainer textarea {
-  border: none;
-  margin: 17px 0;
-  padding: 35px 30px;
-  font-family: "Cabin", sans-serif;
-  resize: none;
-}
-.contactForm .flexContainer button {
-  padding: 7px;
-}
 
 /**************************************/
 /* 1st BIG BREAK POINT:               */
 /* Portrait Tablet and Small Desktops */
 /**************************************/
 @media (max-width: 940px) {
+  .wrapper {
+    width: 90%;
+  }
   .homeHeader h2 {
     font-size: 5rem;
   }
@@ -1168,14 +1147,9 @@ nav ul a:hover, nav ul a:focus {
 /* Portrait Tablet and Small Desktops */
 /**************************************/
 @media (max-width: 940px) {
-  .blogPostHeader .wrapper, .blogPostMain .wrapper {
-    width: 90%;
-  }
-  .blogPageHeaderImage {
+  .blogPageHeaderImage,
+.contactHeaderImage {
     height: 230px;
-  }
-  .blogPostHeader nav {
-    height: 50px;
   }
   .blogPostHeader h2 {
     font-size: 3rem;
@@ -1189,13 +1163,13 @@ nav ul a:hover, nav ul a:focus {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .blogPostMain .rightColumn {
+    margin-bottom: 10%;
+  }
   .blogPostMain .leftColumn,
 .blogPostMain .rightColumn {
     width: 100%;
     margin: 0;
-  }
-  .blogPostMain .rightColumn {
-    margin-bottom: 10%;
   }
   .leftColumn {
     display: -webkit-box;
@@ -1204,7 +1178,7 @@ nav ul a:hover, nav ul a:focus {
   }
   .aboutHarper {
     width: 48%;
-    margin: 0 2% 0 0;
+    margin: 10% 2% 0 0;
   }
   .aboutHarper img {
     width: 100%;
@@ -1212,7 +1186,7 @@ nav ul a:hover, nav ul a:focus {
   }
   .recentPosts {
     width: 48%;
-    margin-left: 2%;
+    margin: 10% 0 0 2%;
     height: 65%;
   }
   .postedComments .userPost.flexContainer {
@@ -1244,9 +1218,9 @@ nav ul a:hover, nav ul a:focus {
 /* Landscape Phone to Portrait Tablet */
 /**************************************/
 @media (max-width: 768px) {
-  .blogPostHeader .wrapper,
-.blogPostMain .wrapper {
-    width: 95%;
+  .blogPostHeader nav,
+.contactHeader nav {
+    height: 52px;
   }
   .card {
     padding: 25px;
@@ -1264,11 +1238,9 @@ nav ul a:hover, nav ul a:focus {
 .recentPosts {
     width: 75%;
   }
-  .aboutHarper {
-    margin: 0 0 2% 0;
-  }
-  .recentPosts {
-    margin: 2% 0 0 0;
+  .aboutHarper,
+.recentPosts {
+    margin: 10% 0 0 0;
   }
   .aboutImage img {
     height: 335px;
@@ -1295,14 +1267,17 @@ nav ul a:hover, nav ul a:focus {
 /**************************************/
 /* 1st SMALL BREAK POINT              */
 /**************************************/
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .aboutImage img {
     height: 230px;
   }
 }
-/* Landscape phone to portrait tablet */
+/**************************************/
+/* 1st BIG BREAK POINT:               */
+/* Landscape Phone to Portrait Tablet */
+/**************************************/
 @media (max-width: 768px) {
-  .contactHeader .wrapper h2 {
+  .contactHeader h2 {
     font-size: 3rem;
   }
   .contactMain .wrapper.flexContainer {
@@ -1346,9 +1321,12 @@ nav ul a:hover, nav ul a:focus {
     margin-left: 0;
   }
 }
-/* Landscape phones and down */
+/**************************************/
+/* 2nd BIG BREAK POINT:               */
+/* Landscape Phones and Down          */
+/**************************************/
 @media (max-width: 480px) {
-  .contactHeader .wrapper h2 {
+  .contactHeader h2 {
     font-size: 2.5rem;
   }
   .contactMain {
@@ -1376,15 +1354,17 @@ nav ul a:hover, nav ul a:focus {
   .contactForm input[type=email] {
     margin-left: 0;
   }
-  .contactForm .flexContainer textarea {
-    padding: 20px 20px 45px;
-  }
   .contactForm input, .contactForm textarea {
     font-size: 0.78rem;
   }
+  .contactForm .flexContainer textarea {
+    padding: 20px 20px 45px;
+  }
 }
+/* 1st SMALL BREAK POINT              */
+/**************************************/
 @media (max-width: 350px) {
-  .contactHeader .wrapper h2 {
+  .contactHeader h2 {
     font-size: 2.25rem;
   }
 }

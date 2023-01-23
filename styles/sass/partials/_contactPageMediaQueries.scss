@@ -1,23 +1,20 @@
 @use './variables' as *;
 
-/* Landscape phone to portrait tablet */
+// CONTACT PAGE MEDIA QUERIES: 
+
+/**************************************/
+/* 1st BIG BREAK POINT:               */
+/* Landscape Phone to Portrait Tablet */
+/**************************************/
 @media (max-width: 768px) {
-    // Wrapper 
-    // .wrapper {
-    //     width: 90%;
-    // }
-
-    .contactHeader {
-        .wrapper h2 { 
-            font-size: 3rem;
-        }
-    }
-
-    .contactMain {
-        .wrapper.flexContainer {
-            flex-direction: column-reverse;
-        }
+    // Header
+    .contactHeader h2 { font-size: 3rem; }
     
+    // Contact Main Layout
+    .contactMain {
+        .wrapper.flexContainer { flex-direction: column-reverse; }
+    
+        // Contact Info-Card
         aside {
             width: 100%;
             margin: 6% 0 0 0;
@@ -30,6 +27,7 @@
         }
     }
 
+    // Media Icon Links
     .mediaLinks.flexContainer {
         flex-direction: column;
         justify-content: space-between;
@@ -41,26 +39,26 @@
         }
     }
     
+    // Contact Form
     .contactForm {
         width: 100%;
         margin-left: 0;
     }
 }
 
-/* Landscape phones and down */
+/**************************************/
+/* 2nd BIG BREAK POINT:               */
+/* Landscape Phones and Down          */
+/**************************************/
 @media (max-width: 480px) {
-    // wrapper {
-    // .wrapper { width: 95%; }
+    // Header
+    .contactHeader h2 { font-size: 2.5rem; }
 
-    .contactHeader {
-        .wrapper h2 {
-            font-size: 2.5rem;
-        }
-    }
-
+    // Contact Main Layout
     .contactMain {
         padding: 50px 0 40px;
 
+        // Contact Info-Card
         aside {
             .contactInfoCard {
                 margin-top: 3%;
@@ -79,29 +77,24 @@
         }
     }
     
+    // Contact Form
     .contactForm {
         input { 
             width: 100%; 
             padding: 15px 20px 30px;
         }
-
         input[type="text"] { margin: 0 0 3% 0; }
-
         input[type="email"] { margin-left: 0; }
-
-        .flexContainer {
-            textarea { padding: 20px 20px 45px; }
-        }
-
         input, textarea { font-size: 0.78rem; }
+
+        .flexContainer { textarea { padding: 20px 20px 45px; }
+        }
     }
 }
 
-// Small break point
+//**************************************/
+/* 1st SMALL BREAK POINT              */
+/**************************************/
 @media (max-width: 350px) {
-    .contactHeader {
-        .wrapper h2 {
-            font-size: 2.25rem;
-        }
-    }
+    .contactHeader h2 { font-size: 2.25rem; }
 }

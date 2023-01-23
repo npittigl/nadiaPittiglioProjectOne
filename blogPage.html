@@ -16,48 +16,49 @@
     <script src="https://kit.fontawesome.com/7313fc4cea.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- header begins -->
+    <!-- Blog Page Header Begins -->
     <header class="blogPostHeader">
-        <!-- navigation bar begins -->
+        <!-- Navigation Bar Begins -->
         <nav>
-            <!-- nav wrapper -->
+            <!-- Nav Wrapper -->
             <div class="wrapper">
-                <!-- icon for slide out menu on smaller screen -->
+                <!-- Icon for Slide Out Menu on Smaller Screen -->
                 <label for="toggle" aria-label="Click here to open or close main menu">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </label>
                 <input type="checkbox" class="toggle" id="toggle" name="toggle">
 
-                <!-- menu -->
+                <!-- Menu -->
                 <ul class="slideOutMenu flexContainer">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li class="logo"><a href="index.html">
                             <h1>HARPER</h1>
                         </a></li>
-                    <li><a href="blogPost.html">BLOG</a></li>
+                    <li><a href="blogPage.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
-            </div><!-- nav wrapper ends -->
-        </nav><!-- navigation bar ends -->
+            </div><!-- Nav Wrapper Ends -->
+        </nav><!-- Navigation Bar Ends -->
 
+        <!-- Blog Header Image -->
         <div class="blogPageHeaderImage">
             <img src="./assets/blog-image-1.jpg" alt="Close up of cherry blossom tree branches that are in full bloom with pink flowers.">
-        </div>
+        </div><!-- Header Image ends-->
 
-        <!-- blog title -->
+        <!-- Blog Title -->
         <div class="blogTitle wrapper">
             <h2>BLOG</h2>
-        </div><!-- blog title ends -->
-    </header><!-- header ends -->
+        </div><!-- Blog Title Ends -->
+    </header><!-- Header Ends -->
 
-    <!-- main begins -->
+    <!-- Main Begins -->
     <main class="blogPostMain">
-        <!-- flex wrapper container begins -->
+        <!-- Flex Wrapper Container Begins -->
         <div class="wrapper flexContainer">
-            <!-- aside begins -->
+            <!-- Aside Begins -->
             <aside class="leftColumn">
-                <!-- aboutHarper begins -->
+                <!-- aboutHarper Begins -->
                 <div class="aboutHarper card">
                     <div class="aboutImage">
                         <img src="./assets/blog-image-2.jpg" alt="A girl with dark hair, wearing faux fur pink coat and pink top, lying down on a carpeted floor.">
@@ -67,10 +68,10 @@
                         <a href="#about"><h5>ABOUT HARPER</h5></a>
                         <p> Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.
                         </p>
-                    </div><!-- about text ends -->
-                </div><!-- aboutHarper ends -->
+                    </div><!-- About Text Ends -->
+                </div><!-- aboutHarper Ends -->
 
-                <!-- recent posts begins -->
+                <!-- Recent Posts Begins -->
                 <div class="recentPosts card">
                     <h5>RECENT POSTS</h5>
                     <ul class="posts">
@@ -79,12 +80,12 @@
                         <li><a href="#">Semper sed sapien metus</a></li>
                         <li><a href="#">Scelerisque nec pharetra id</a></li>
                     </ul>
-                </div><!-- recent posts ends -->
-            </aside><!-- aside ends -->
+                </div><!-- Recent Posts Ends -->
+            </aside><!-- Aside Ends -->
 
-            <!-- right column begins -->
+            <!-- Right Column Begins -->
             <div class="rightColumn">
-                <!-- blog article begins -->
+                <!-- Blog Article Begins -->
                 <section class="article">
                     <div class="card">
                         <h4>MY FAVOURITE TRAVEL DESTINATIONS</h4>
@@ -111,54 +112,54 @@
                         tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est
                         augue tristique risus.</p>
                     </div>    
-                </section><!-- article section ends -->
+                </section><!-- Article Section Ends -->
 
-                <!-- comment section begins -->
+                <!-- Comment Section Begins -->
                 <section class="postedComments">
-                    <!-- posted user comments -->
+                    <!-- Posted User Comments -->
                     <div class="userPost card flexContainer">
                         <img src="./assets/blog-image-3.jpg" alt="Photo of user named Maggie; she is facing the camera and has dark, short hair with bangs.">
                         <div class="commentText">
                             <p>Tuesday October 9th, 2018 by Maggie</p>
                             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
-                        </div><!-- commentText ends -->
-                    </div><!-- userPost ends -->
+                        </div><!-- commentText Ends -->
+                    </div><!-- userPost Ends -->
                     
                     <div class="userPost card flexContainer">
                         <img src="./assets/blog-image-4.jpg" alt="Photo of blond haired girl blowing pink bubble gum.">
                         <div class="commentText">
                             <p>Wednesday October 10th, 2018 by Daisy</p>
                             <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
-                        </div><!-- commentText ends -->
-                    </div><!-- userPost ends -->
-                </section><!-- comments section ends -->
+                        </div><!-- commentText Ends -->
+                    </div><!-- userPost Ends -->
+                </section><!-- Comments Section Ends -->
 
-                <!-- form to post comments -->
-                <form action="#" method="#" class="commentForm" name="commentForm">
-                    <!-- name & email input -->
+                <!-- Form to Post Comments -->
+                <form action="#" method="#" class="commentForm form" name="commentForm">
+                    <!-- Name & Email Input -->
                     <div>
                         <label for="userName" class="sr-only">Name</label>
                         <input type="text" id="userName" name="userName" placeholder="Name" required>
                         
                         <label for="userEmail" class="sr-only">Email address</label>
                         <input type="email" id="userEmail" name="userEmail" placeholder="Email address" required>
-                    </div><!-- name & email input ends -->
+                    </div><!-- Name & Email Input Ends -->
 
                     <div class="flexContainer">
                         <label for="comment" class="sr-only">Comment</label>
                         <textarea name="userComment" id="userComment" cols="30" rows="8" placeholder="Comment" required></textarea>
 
-                        <!-- button to post comment -->
+                        <!-- Button to Post Comment -->
                         <button type="submit" class="btn">Post Comment</button>
                     </div>
-                </form><!-- comment form ends -->
-            </div><!-- right column ends -->
-        </div><!-- flex wrapper container ends -->
-    </main><!-- main ends -->
+                </form><!-- Comment Form Ends -->
+            </div><!-- Right Column Ends -->
+        </div><!-- Flex wrapper Container Ends -->
+    </main><!-- Main Ends -->
 
-    <!-- footer begins -->
+    <!-- Footer Begins -->
     <footer class="footer">
         <p>Copyright &copy 2022 Juno College</p>
-    </footer><!-- footer ends -->
+    </footer><!-- Footer Ends -->
 </body>
 </html>

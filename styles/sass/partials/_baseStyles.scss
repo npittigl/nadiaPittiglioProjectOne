@@ -71,17 +71,19 @@ nav, .homeHeader, .icon { background-color: $primary; }
 .about, 
 .webLinks, 
 .journeySection, 
-.blogPostMain { background-color: $whiteShade; }
+.blogPostMain,
+.contactMain { background-color: $whiteShade; }
 
 .imgContainer, 
 .blogText, 
 .card, 
-.article { background-color: $white; }
+.article,
+.contactInfoCard { background-color: $white; }
 
 // Flexbox
 .flexContainer { display: flex; }
 
-.blogText, .commentForm .flexContainer  { flex-direction: column; }
+.blogText, .form .flexContainer  { flex-direction: column; }
 
 .webLinks ul, .gallery ul { flex-wrap: wrap; }
 
@@ -93,7 +95,19 @@ label[for="toggle"], .toggle { display: none; }
 .headerTitle, 
 .webLinks li, 
 .imgContainer img, 
-.blogTitle { position: relative; }
+.blogTitle,
+.contactTitle { position: relative; }
 
-.textImage, .icon, .blogTitle h2 { position: absolute; }
+.textImage, .icon, .blogTitle h2, .contactTitle h2 { position: absolute; }
 
+// Forms Styles
+.form {
+    input, textarea { border: none; } 
+    input { padding: 25px 30px; }
+    textarea {
+        margin: 17px 0;
+        padding: 35px 30px;
+        resize: none;
+    }
+    button { padding: 7px; }
+}

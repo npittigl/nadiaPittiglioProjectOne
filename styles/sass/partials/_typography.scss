@@ -5,8 +5,8 @@ html { font-size: 125%; }
 
 // Body Font Styles
 body,
-input,
-textarea { font-family: $bodyFont; }
+.form input,
+.form textarea { font-family: $bodyFont; }
 
 body {
     font-size: 0.85rem;
@@ -16,7 +16,14 @@ body {
 }
 
 // Heading Styles
-nav, h1, h2, h3, h4, h5, .btn {
+nav, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+.btn,
+.emailBold  {
     font-family: $headingFont;
     letter-spacing: 1px;
 }
@@ -38,6 +45,7 @@ h1 {
 .contactHeader h2 {
     font-size: 3.6rem;
     line-height: 4.2rem;
+    bottom: -35px;
 }
 
 h3 { 

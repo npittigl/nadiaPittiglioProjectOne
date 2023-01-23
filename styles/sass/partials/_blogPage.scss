@@ -1,7 +1,6 @@
 @use './variables' as *;
 
-// Blog Page Header:
-.blogTitle h2 { bottom: -35px; }
+// BLOG PAGE STYLES: 
 
 // Blog Post Main Layout
 .blogPostMain {
@@ -18,12 +17,13 @@
     }
 }
 
-// .card styles
+// .card Styles
 .card { padding: 35px; }
 
+// About Harper & Recent Posts Aside
 .aboutHarper, .recentPosts { width: 100%; }
 
-// About Harper Aside
+// About Harper Styles
 .aboutHarper {
     margin-bottom: 15px;
     a {
@@ -32,7 +32,7 @@
     }
 }
 
-// Recent Posts Aside
+// Recent Posts Styles
 .recentPosts {
     h5 { margin-bottom: 15px; }
     .posts { 
@@ -49,7 +49,7 @@
     }
 }
 
-// Blog article styles
+// Blog Article Styles
 .article {
     padding-bottom: 30px;
     border-bottom: 4px solid $tertiary;
@@ -58,7 +58,7 @@
     p { margin-bottom: 15px; }
 }
 
-// User posted comments styles
+// User Posted Comments Styles
 .postedComments {
     .userPost {
         margin: 3.5% 0;
@@ -77,21 +77,7 @@
 
 // Comment Form
 .commentForm {
-    input {
-        width: calc((100% / 2) - 4px);
-        padding: 25px 30px;
-    }
-
+    input { width: calc((100% / 2) - 4px); }
     input[type="text"] { margin-right: 2px; }
     input[type="email"] { margin-left: 2px; }
-
-    textarea {
-        margin: 17px 0;
-        padding: 35px 30px; 
-        resize: none;
-    }
-
-    input, textarea { border: none; }
-
-    button { padding: 7px; }
 }
