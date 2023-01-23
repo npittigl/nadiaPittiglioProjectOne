@@ -1,0 +1,132 @@
+@use './variables' as *;
+
+// Media Queries for Blog Page: 
+
+/**************************************/
+/* 1st BIG BREAK POINT:               */
+/* Portrait Tablet and Small Desktops */
+/**************************************/
+@media (max-width: 940px) {
+    // Wrapper
+    .blogPostHeader .wrapper, .blogPostMain .wrapper { width: 90%; }
+    
+    // Blog Header 
+    .blogPageHeaderImage { height: 230px; }
+
+    // Header 
+    .blogPostHeader { 
+        nav { height: 50px; }
+        h2 { font-size: 3rem; }
+    }
+
+    // Main Blog Post Layout
+    .blogPostMain {
+        padding: 65px 0 15%;
+
+        .wrapper.flexContainer { flex-direction: column-reverse; }
+
+        .leftColumn, 
+        .rightColumn { 
+            width: 100%;
+            margin: 0;
+        }
+
+        .rightColumn { margin-bottom: 10%; }
+    }
+
+    // Flex About Harper & Recent Posts side by side
+    .leftColumn { display: flex; }
+
+    // About Harper
+    .aboutHarper {
+        width: calc(50% - 2%);
+        margin: 0 2% 0 0;
+
+        img {
+            width: 100%;
+            height: 250px;
+        }
+    }
+
+    // Recent Posts
+    .recentPosts { 
+        width: calc(50% - 2%);
+        margin-left: 2%; 
+        height: 65%;
+    }
+
+    // User Posted Comments
+    .postedComments {
+        .userPost.flexContainer { flex-direction: column; }
+
+        .userPost img { 
+            width: 70px;
+            margin: 0 0 15px 0; 
+        }
+
+        .userPost .commentText { 
+            margin-left: 0; 
+            width: 100%;
+        }
+    }
+
+    // Comment Form:
+    .commentForm {
+        input { width: 100%; }
+        input[type="text"] { margin: 5% 0 1.5% 0; }
+        input[type="email"] { margin: 1.5% 0 0 0; }
+    }
+}
+
+/**************************************/
+/* 2nd BIG BREAK POINT:               */
+/* Landscape Phone to Portrait Tablet */
+/**************************************/
+@media (max-width: 768px) {
+    // Wrapper
+    .blogPostHeader .wrapper,
+    .blogPostMain .wrapper { width: 95%; }
+
+    // .card padding
+    .card { padding: 25px;}
+
+    // About Harper & Recent Posts
+    .leftColumn { 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutHarper,
+    .recentPosts { width: 75%; }
+
+    .aboutHarper { margin: 0 0 2% 0; }
+    .recentPosts { margin: 2% 0 0 0; }
+
+    // About Harper Image
+    .aboutImage img { height: 335px; }
+}
+
+/**************************************/
+/* 3rd BIG BREAK POINT:               */
+/* Landscape Phones and Down          */
+/**************************************/
+@media (max-width: 480px) {
+    // Header fonts
+        h4 { font-size: 1.2rem; }
+    
+        h5 { font-size: 1rem; }
+
+    // .card padding
+    .card { padding: 20px; }
+
+    // About Harper & Recent Posts
+    .aboutHarper, .recentPosts { width: 100%; }
+
+}
+
+/**************************************/
+/* 1st SMALL BREAK POINT              */
+/**************************************/
+@media (max-width: 380px) {
+    .aboutImage img { height: 230px; }
+}

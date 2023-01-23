@@ -1,5 +1,7 @@
 @use 'variables' as *;
 
+// Media Queries for Home Page
+
 /**************************************/
 /* 1st BIG BREAK POINT:               */
 /* Portrait Tablet and Small Desktops */
@@ -242,6 +244,12 @@
 /* Landscape Phones and Down          */
 /**************************************/
 @media (max-width: 480px) {
+    // Body Typography
+    body {
+        font-size: 0.82rem;
+        line-height: 1.3rem;
+    }
+
     // ABOUT SECTION:
     .about { padding-top: 20%; }
 

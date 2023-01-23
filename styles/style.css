@@ -266,8 +266,13 @@ html {
   font-size: 125%;
 }
 
-body {
+body,
+input,
+textarea {
   font-family: "Cabin", sans-serif;
+}
+
+body {
   font-size: 0.85rem;
   line-height: 1.5rem;
   color: #171717;
@@ -378,8 +383,18 @@ nav, .homeHeader, .icon {
   background-color: #b9dde7;
 }
 
-.about, .webLinks, .journeySection {
+.about,
+.webLinks,
+.journeySection,
+.blogPostMain {
   background-color: #f6f6f6;
+}
+
+.imgContainer,
+.blogText,
+.card,
+.article {
+  background-color: #fff;
 }
 
 .flexContainer {
@@ -388,7 +403,7 @@ nav, .homeHeader, .icon {
   display: flex;
 }
 
-.blogText {
+.blogText, .commentForm .flexContainer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -404,11 +419,15 @@ label[for=toggle], .toggle {
   display: none;
 }
 
-.headerImgContainer, .headerTitle, .webLinks li, .imgContainer img {
+.headerImgContainer,
+.headerTitle,
+.webLinks li,
+.imgContainer img,
+.blogTitle {
   position: relative;
 }
 
-.textImage, .icon {
+.textImage, .icon, .blogTitle h2 {
   position: absolute;
 }
 
@@ -504,10 +523,8 @@ nav ul a:hover, nav ul a:focus {
   border-bottom: 4px solid #f38d8d;
 }
 
-.imgContainer,
-.blogText {
+.imgContainer, .blogText {
   width: 50%;
-  background-color: #fff;
 }
 
 .imgContainer img {
@@ -592,23 +609,11 @@ nav ul a:hover, nav ul a:focus {
   text-align: center;
 }
 
-.blogPageHeaderImage {
-  height: auto;
-}
-.blogPageHeaderImage img {
-  height: 100%;
-}
-
-.blogTitle {
-  position: relative;
-}
 .blogTitle h2 {
-  position: absolute;
   bottom: -35px;
 }
 
 .blogPostMain {
-  background-color: #f6f6f6;
   padding: 80px 0 95px;
 }
 .blogPostMain .leftColumn {
@@ -621,13 +626,15 @@ nav ul a:hover, nav ul a:focus {
 }
 
 .card {
-  background-color: #fff;
   padding: 35px;
 }
 
-.aboutHarper {
+.aboutHarper, .recentPosts {
   width: 100%;
-  margin-bottom: 5%;
+}
+
+.aboutHarper {
+  margin-bottom: 15px;
 }
 .aboutHarper a {
   padding: 20px 0 15px;
@@ -636,9 +643,6 @@ nav ul a:hover, nav ul a:focus {
   color: #f38d8d;
 }
 
-.recentPosts {
-  width: 100%;
-}
 .recentPosts h5 {
   margin-bottom: 15px;
 }
@@ -657,7 +661,6 @@ nav ul a:hover, nav ul a:focus {
 }
 
 .article {
-  background-color: #fff;
   padding-bottom: 30px;
   border-bottom: 4px solid #227284;
   margin-bottom: 2%;
@@ -680,16 +683,13 @@ nav ul a:hover, nav ul a:focus {
   width: calc(88% - 10px);
   margin-left: 10px;
 }
-
-.userPost:nth-child(even) {
+.postedComments .userPost:nth-child(even) {
   border-bottom: 4px solid #227284;
 }
 
 .commentForm input {
   width: calc(50% - 4px);
   padding: 25px 30px;
-  border: none;
-  font-family: "Cabin", sans-serif;
 }
 .commentForm input[type=text] {
   margin-right: 2px;
@@ -697,20 +697,15 @@ nav ul a:hover, nav ul a:focus {
 .commentForm input[type=email] {
   margin-left: 2px;
 }
-.commentForm .flexContainer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.commentForm .flexContainer textarea {
-  border: none;
+.commentForm textarea {
   margin: 17px 0;
   padding: 35px 30px;
-  font-family: "Cabin", sans-serif;
   resize: none;
 }
-.commentForm .flexContainer button {
+.commentForm input, .commentForm textarea {
+  border: none;
+}
+.commentForm button {
   padding: 7px;
 }
 
@@ -1072,6 +1067,10 @@ nav ul a:hover, nav ul a:focus {
 /* Landscape Phones and Down          */
 /**************************************/
 @media (max-width: 480px) {
+  body {
+    font-size: 0.82rem;
+    line-height: 1.3rem;
+  }
   .about {
     padding-top: 20%;
   }
@@ -1164,19 +1163,25 @@ nav ul a:hover, nav ul a:focus {
     padding-top: 13%;
   }
 }
-/* Portrait tablet and small desktops */
+/**************************************/
+/* 1st BIG BREAK POINT:               */
+/* Portrait Tablet and Small Desktops */
+/**************************************/
 @media (max-width: 940px) {
-  .blogPostMain .wrapper {
+  .blogPostHeader .wrapper, .blogPostMain .wrapper {
     width: 90%;
   }
   .blogPageHeaderImage {
     height: 230px;
   }
-}
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  .blogPostMain .wrapper {
-    width: 95%;
+  .blogPostHeader nav {
+    height: 50px;
+  }
+  .blogPostHeader h2 {
+    font-size: 3rem;
+  }
+  .blogPostMain {
+    padding: 65px 0 15%;
   }
   .blogPostMain .wrapper.flexContainer {
     -webkit-box-orient: vertical;
@@ -1235,21 +1240,29 @@ nav ul a:hover, nav ul a:focus {
   }
 }
 /**************************************/
-/* 1st SMALL BREAK POINT FOR HEIGHT   */
+/* 2nd BIG BREAK POINT:               */
+/* Landscape Phone to Portrait Tablet */
 /**************************************/
-/**************************************/
-/* 1st SMALL BREAK POINT              */
-/**************************************/
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .blogPostHeader .wrapper,
+.blogPostMain .wrapper {
+    width: 95%;
+  }
+  .card {
+    padding: 25px;
+  }
   .leftColumn {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .aboutHarper,
 .recentPosts {
-    width: 100%;
+    width: 75%;
   }
   .aboutHarper {
     margin: 0 0 2% 0;
@@ -1257,10 +1270,36 @@ nav ul a:hover, nav ul a:focus {
   .recentPosts {
     margin: 2% 0 0 0;
   }
+  .aboutImage img {
+    height: 335px;
+  }
 }
 /**************************************/
-/* 2nd SMALL BREAK POINT FOR HEIGHT   */
+/* 3rd BIG BREAK POINT:               */
+/* Landscape Phones and Down          */
 /**************************************/
+@media (max-width: 480px) {
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  .card {
+    padding: 20px;
+  }
+  .aboutHarper, .recentPosts {
+    width: 100%;
+  }
+}
+/**************************************/
+/* 1st SMALL BREAK POINT              */
+/**************************************/
+@media (max-width: 380px) {
+  .aboutImage img {
+    height: 230px;
+  }
+}
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .contactHeader .wrapper h2 {

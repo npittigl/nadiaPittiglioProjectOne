@@ -1,7 +1,10 @@
 @use './variables' as *;
 
+// Blog Page Header:
+.blogTitle h2 { bottom: -35px; }
+
+// Blog Post Main Layout
 .blogPostMain {
-    background-color: $whiteShade;
     padding: 80px 0 95px;
 
     .leftColumn {
@@ -15,23 +18,22 @@
     }
 }
 
-.card {
-    background-color: $white;
-    padding: 35px;
-}
+// .card styles
+.card { padding: 35px; }
 
+.aboutHarper, .recentPosts { width: 100%; }
 
+// About Harper Aside
 .aboutHarper {
-    width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 15px;
     a {
         padding: 20px 0 15px;
         &:hover h5, &:focus h5 { color: $accent; }
     }
 }
 
+// Recent Posts Aside
 .recentPosts {
-    width: 100%;
     h5 { margin-bottom: 15px; }
     .posts { 
         padding-left: 25px;
@@ -41,17 +43,14 @@
         }
         a {
             display: inline;
-
             &:hover,
-            &:focus {
-                color: $accent;
-            }
+            &:focus { color: $accent; }
         }
     }
 }
 
+// Blog article styles
 .article {
-    background-color: $white;
     padding-bottom: 30px;
     border-bottom: 4px solid $tertiary;
     margin-bottom: 2%;
@@ -59,6 +58,7 @@
     p { margin-bottom: 15px; }
 }
 
+// User posted comments styles
 .postedComments {
     .userPost {
         margin: 3.5% 0;
@@ -70,35 +70,28 @@
             width: calc(88% - 10px);
             margin-left: 10px;
         }
+
+        &:nth-child(even) { border-bottom: 4px solid $tertiary; }
     }
 }
 
-.userPost:nth-child(even) { border-bottom: 4px solid $tertiary; }
-
+// Comment Form
 .commentForm {
     input {
         width: calc((100% / 2) - 4px);
         padding: 25px 30px;
-        border: none;
-        font-family: $bodyFont;
     }
-    input[type="text"] {
-        margin-right: 2px;
-    }
-    input[type="email"] {
-        margin-left: 2px;
-    }
-    .flexContainer {
-        flex-direction: column;
 
-        textarea {
-            border: none;
-            margin: 17px 0;
-            padding: 35px 30px; 
-            font-family: $bodyFont;
-            resize: none;
-        }
+    input[type="text"] { margin-right: 2px; }
+    input[type="email"] { margin-left: 2px; }
 
-        button { padding: 7px; }
+    textarea {
+        margin: 17px 0;
+        padding: 35px 30px; 
+        resize: none;
     }
+
+    input, textarea { border: none; }
+
+    button { padding: 7px; }
 }

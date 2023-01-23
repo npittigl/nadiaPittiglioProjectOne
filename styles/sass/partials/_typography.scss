@@ -4,8 +4,11 @@
 html { font-size: 125%; }
 
 // Body Font Styles
+body,
+input,
+textarea { font-family: $bodyFont; }
+
 body {
-    font-family: $bodyFont;
     font-size: 0.85rem;
     line-height: 1.5rem;
     color: $black;

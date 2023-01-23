@@ -2,11 +2,7 @@
 
 // Blog Section Styles in Home Page
 
-.imgContainer,
-.blogText {
-    width: calc(100% / 2);
-    background-color: $white;
-}   
+.imgContainer, .blogText { width: calc(100% / 2); }   
 
 .imgContainer img { width: 100%; }
 
