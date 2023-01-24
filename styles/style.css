@@ -553,10 +553,6 @@ nav ul a:hover, nav ul a:focus {
   width: 50%;
 }
 
-.imgContainer img {
-  width: 100%;
-}
-
 .blogOne img {
   bottom: 35px;
   -webkit-box-shadow: 15px 15px #68b0c1, -100px 15px #68b0c1;
@@ -893,9 +889,14 @@ nav ul a:hover, nav ul a:focus {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .blogOne .imgContainer {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   .blogOne img {
-    -webkit-box-shadow: 20px 15px #68b0c1, -20px 15px #68b0c1;
-            box-shadow: 20px 15px #68b0c1, -20px 15px #68b0c1;
+    -webkit-box-shadow: 20px 15px #68b0c1, -100px 15px #68b0c1;
+            box-shadow: 20px 15px #68b0c1, -100px 15px #68b0c1;
   }
   .blogOne .blogOneText {
     padding: 15px 0px 30px;
@@ -1050,6 +1051,9 @@ nav ul a:hover, nav ul a:focus {
     font-size: 0.82rem;
     line-height: 1.3rem;
   }
+  h3 {
+    font-size: 1.65rem;
+  }
   .about {
     padding-top: 20%;
   }
@@ -1069,7 +1073,7 @@ nav ul a:hover, nav ul a:focus {
     text-align: justify;
   }
   .blogTwo .blogTwoText {
-    padding: 35px 5px 20px 5px;
+    padding: 55px 5px 20px;
   }
   .blogTwo .blogTwoText p {
     text-align: justify;
@@ -1251,7 +1255,7 @@ nav ul a:hover, nav ul a:focus {
 /* Landscape Phones and Down          */
 /**************************************/
 @media (max-width: 480px) {
-  h4 {
+  .blogPostMain h4 {
     font-size: 1.2rem;
   }
   h5 {

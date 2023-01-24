@@ -1,10 +1,9 @@
 @use './variables' as *;
 
-// Blog Section Styles in Home Page
+// BLOG SECTION OF HOME PAGE STYLES:
 
-.imgContainer, .blogText { width: calc(100% / 2); }   
-
-.imgContainer img { width: 100%; }
+// Width of Img/Text Containers
+.imgContainer, .blogText { width: calc(100% / 2); }
 
 // Harper's Travels Blog Styles
 .blogOne {

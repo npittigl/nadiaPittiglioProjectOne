@@ -16,6 +16,68 @@
         .flexContainer { gap: 12%; }
         .textImage { height: 84%; }
     }
+
+        // BLOG SECTION:
+        // .blogText,
+        // .imgContainer {
+        //     width: 100%;
+        // }
+    
+        // .blogPosts {
+        //     .flexContainer {
+        //         flex-wrap: wrap;
+        //     }
+    
+        //     .blogTwo.flexContainer {
+        //         flex-direction: column-reverse;
+        //     }
+        // }
+    
+        // .blogOne {
+        //     .imgContainer {
+        //         justify-content: flex-end;
+        //     }
+    
+        //     img {
+        //         box-shadow: 20px 15px $secondary, -270px 15px $secondary;
+        //         // box-shadow: 20px 15px $secondary, -20px 15px $secondary;
+        //     }
+    
+        //     .blogOneText {
+        //         padding: 25px 0px 30px;
+    
+        //         p {
+        //             text-align: right;
+        //         }
+    
+        //         align-items: flex-end;
+    
+        //         .btn {
+        //             align-self: flex-end;
+        //         }
+        //     }
+        // }
+    
+        // .blogTwo {
+        //     padding-top: 0px;
+    
+        //     img {
+        //         // top: 0px;
+        //         box-shadow: 15px 15px $primary, 270px 15px $primary;
+        //     }
+    
+        //     .blogTwoText {
+        //         padding: 80px 0 30px;
+    
+        //         p {
+        //             text-align: left;
+        //         }
+    
+        //         .btn {
+        //             align-self: flex-start;
+        //         }
+        //     }
+        // }
 }
 
 /**************************************/
@@ -113,9 +175,9 @@
     }
 
     .blogOne {
-        img {
-            box-shadow: 20px 15px $secondary, -20px 15px $secondary;
-        }
+        .imgContainer { justify-content: flex-end;}
+
+        img { box-shadow: 20px 15px $secondary, -100px 15px $secondary;}
 
         .blogOneText { 
             padding: 15px 0px 30px;
@@ -215,9 +277,7 @@
 /* 1st SMALL BREAK POINT FOR HEIGHT */
 /**************************************/
 @media (max-height: 600px) {
-    .homeHeader {
-        max-height: 100vh;
-    }
+    .homeHeader { max-height: 100vh; }
 }
 
 /**************************************/
@@ -247,11 +307,13 @@
 /* Landscape Phones and Down          */
 /**************************************/
 @media (max-width: 480px) {
-    // Body Typography
+    // Typography
     body {
         font-size: 0.82rem;
         line-height: 1.3rem;
     }
+
+    h3 { font-size: 1.65rem;}
 
     // ABOUT SECTION:
     .about { padding-top: 20%; }
@@ -266,6 +328,7 @@
 
     .blogOne {
         .blogOneText {
+            // padding: 20px 5px 15px;
             padding: 20px 5px;
             p { text-align: justify; }
         }
@@ -273,7 +336,8 @@
 
     .blogTwo {
         .blogTwoText {
-            padding: 35px 5px 20px 5px;
+            // padding: 80px 5px 35px;
+            padding: 55px 5px 20px;
             p { text-align: justify; }
         }
     }
