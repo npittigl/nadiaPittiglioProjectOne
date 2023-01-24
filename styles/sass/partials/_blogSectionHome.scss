@@ -2,11 +2,10 @@
 
 // BLOG SECTION OF HOME PAGE STYLES:
 
+// Width img/text Containers
 .blogPostSection {
-    // Width img/text Containers
     .imgContainer, .blogText { width: calc(100% / 2); }
     p { margin: 20px 0 25px;}
-    img { height: 100%; }
 }
 
 // Harper's Travels Blog Styles

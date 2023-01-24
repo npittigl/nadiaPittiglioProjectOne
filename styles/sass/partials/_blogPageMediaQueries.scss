@@ -7,15 +7,16 @@
 /* Portrait Tablet and Small Desktops */
 /**************************************/
 @media (max-width: 940px) {
+
     // Contact & Blog Header 
     .blogPageHeaderImage,
     .contactHeaderImage { height: 230px; }
 
-    .blogPostHeader h2 { font-size: 3rem; }
+    .blogPageHeader h2 { font-size: 3rem; }
     
 
     // Main Blog Post Layout
-    .blogPostMain {
+    .blogPageMain {
         padding: 65px 0 15%;
 
         .wrapper.flexContainer { flex-direction: column-reverse; }
@@ -72,13 +73,14 @@
         input[type="email"] { margin: 1.5% 0 0 0; }
     }
 }
+
 /**************************************/
 /* 2nd BIG BREAK POINT:               */
 /* Landscape Phone to Portrait Tablet */
 /**************************************/
 @media (max-width: 768px) {
     // Header Nav - Blog & Contact Page
-    .blogPostHeader nav,
+    .blogPageHeader nav,
     .contactHeader nav { height: 52px; }
 
     // .card padding
@@ -106,7 +108,7 @@
 /**************************************/
 @media (max-width: 480px) {
     // Header fonts
-    .blogPostMain h4 { font-size: 1.2rem; }
+    .blogPageMain h4 { font-size: 1.2rem; }
     
     h5 { font-size: 1rem; }
 

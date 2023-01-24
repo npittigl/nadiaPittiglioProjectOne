@@ -305,7 +305,7 @@ h1 {
   line-height: 6.4rem;
 }
 
-.blogPostHeader h2,
+.blogPageHeader h2,
 .contactHeader h2 {
   font-size: 3.6rem;
   line-height: 4.2rem;
@@ -353,7 +353,7 @@ ul:not(.posts) {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -394,7 +394,7 @@ nav, .homeHeader, .icon {
 .about,
 .webLinks,
 .journeySection,
-.blogPostMain,
+.blogPageMain,
 .contactMain {
   background-color: #f6f6f6;
 }
@@ -425,7 +425,7 @@ nav, .homeHeader, .icon {
       flex-wrap: wrap;
 }
 
-label[for=toggle], .toggle {
+label[for=toggle], input[type=checkbox] {
   display: none;
 }
 
@@ -502,7 +502,6 @@ nav ul a:hover, nav ul a:focus {
           box-shadow: 16px 16px 0 #fff;
 }
 .homeHeader .textImage {
-  height: 100%;
   left: 76%;
   bottom: 33%;
 }
@@ -560,9 +559,6 @@ nav ul a:hover, nav ul a:focus {
 }
 .blogPostSection p {
   margin: 20px 0 25px;
-}
-.blogPostSection img {
-  height: 100%;
 }
 
 .blogOne img {
@@ -637,14 +633,14 @@ nav ul a:hover, nav ul a:focus {
   text-align: center;
 }
 
-.blogPostMain {
+.blogPageMain {
   padding: 80px 0 95px;
 }
-.blogPostMain .leftColumn {
+.blogPageMain .leftColumn {
   width: 31.5%;
   margin-right: 1.5%;
 }
-.blogPostMain .rightColumn {
+.blogPageMain .rightColumn {
   width: 65.5%;
   margin-left: 1.5%;
 }
@@ -801,17 +797,20 @@ nav ul a:hover, nav ul a:focus {
     position: fixed;
     right: 2.5%;
     top: 10px;
-    z-index: 100;
+    z-index: 10;
   }
   label[for=toggle] i.fa-bars {
     font-size: 1.65rem;
   }
+  label[for=toggle]:hover, label[for=toggle]:focus {
+    color: #f38d8d;
+  }
   input[type=checkbox]:checked + ul.slideOutMenu {
-    right: 0px;
+    right: 0;
   }
   ul.slideOutMenu {
-    width: 65%;
-    min-width: 230px;
+    width: 100%;
+    max-width: 450px;
     background: #68b0c1;
     border: 2px solid #f6f6f6;
     -webkit-box-shadow: 2px 2px #f38d8d, -2px -2px #f38d8d, -2px 2px #f38d8d;
@@ -822,21 +821,20 @@ nav ul a:hover, nav ul a:focus {
             flex-direction: column;
     gap: 0;
     position: fixed;
-    right: -75%;
+    right: -500px;
     top: 55px;
-    z-index: 10;
+    z-index: 100;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
   }
   ul.slideOutMenu h1 {
     font-size: 2rem;
   }
-  ul.slideOutMenu li {
-    width: 100%;
+  ul.slideOutMenu li, ul.slideOutMenu a {
+    width: inherit;
   }
   ul.slideOutMenu a {
-    width: inherit;
-    padding: 20px 0;
+    padding: 25px 0;
     font-size: 1.8rem;
     text-align: center;
     border-top: 2px solid transparent;
@@ -1155,23 +1153,23 @@ nav ul a:hover, nav ul a:focus {
 .contactHeaderImage {
     height: 230px;
   }
-  .blogPostHeader h2 {
+  .blogPageHeader h2 {
     font-size: 3rem;
   }
-  .blogPostMain {
+  .blogPageMain {
     padding: 65px 0 15%;
   }
-  .blogPostMain .wrapper.flexContainer {
+  .blogPageMain .wrapper.flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .blogPostMain .rightColumn {
+  .blogPageMain .rightColumn {
     margin-bottom: 10%;
   }
-  .blogPostMain .leftColumn,
-.blogPostMain .rightColumn {
+  .blogPageMain .leftColumn,
+.blogPageMain .rightColumn {
     width: 100%;
     margin: 0;
   }
@@ -1222,7 +1220,7 @@ nav ul a:hover, nav ul a:focus {
 /* Landscape Phone to Portrait Tablet */
 /**************************************/
 @media (max-width: 768px) {
-  .blogPostHeader nav,
+  .blogPageHeader nav,
 .contactHeader nav {
     height: 52px;
   }
@@ -1255,7 +1253,7 @@ nav ul a:hover, nav ul a:focus {
 /* Landscape Phones and Down          */
 /**************************************/
 @media (max-width: 480px) {
-  .blogPostMain h4 {
+  .blogPageMain h4 {
     font-size: 1.2rem;
   }
   h5 {
