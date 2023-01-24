@@ -102,7 +102,13 @@ label[for="toggle"], .toggle { display: none; }
 
 // Forms Styles
 .form {
-    input, textarea { border: none; } 
+    input, 
+    textarea { 
+        border: none; 
+
+        &:focus { background: rgba($primary, 0.3); }
+    } 
+
     input { padding: 25px 30px; }
     textarea {
         margin: 17px 0;

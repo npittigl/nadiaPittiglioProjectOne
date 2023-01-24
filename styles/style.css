@@ -442,8 +442,13 @@ label[for=toggle], .toggle {
   position: absolute;
 }
 
-.form input, .form textarea {
+.form input,
+.form textarea {
   border: none;
+}
+.form input:focus,
+.form textarea:focus {
+  background: rgba(185, 221, 231, 0.3);
 }
 .form input {
   padding: 25px 30px;
