@@ -2,8 +2,12 @@
 
 // BLOG SECTION OF HOME PAGE STYLES:
 
-// Width of Img/Text Containers
-.imgContainer, .blogText { width: calc(100% / 2); }
+.blogPostSection {
+    // Width img/text Containers
+    .imgContainer, .blogText { width: calc(100% / 2); }
+    p { margin: 20px 0 25px;}
+    img { height: 100%; }
+}
 
 // Harper's Travels Blog Styles
 .blogOne {
@@ -11,23 +15,19 @@
         bottom: 35px;
         box-shadow: 15px 15px $secondary, -100px 15px $secondary;
     }
-
     .blogOneText {
-        padding: 70px 0 15px 95px;
-        p { margin: 20px 0 25px; }
+        padding: 85px 0 20px 9%;
         .btn { align-self: flex-start; }
     }
 }
 
 // Favourite Things Blog Styles
 .blogTwo {
-    padding-top: 20px;
+    margin-top: 20px;
     .blogTwoText {
-            padding: 30px 95px 20px 0;
-            p { margin: 20px 0 25px; }
+            padding: 20px 9% 85px 0;
             .btn { align-self: flex-end; }
         }
-
     img {
         top: 25px;
         box-shadow: 15px 15px $primary, 100px 15px $primary;

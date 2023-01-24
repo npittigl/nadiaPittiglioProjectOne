@@ -353,7 +353,7 @@ ul:not(.posts) {
 
 img {
   max-width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -502,6 +502,7 @@ nav ul a:hover, nav ul a:focus {
           box-shadow: 16px 16px 0 #fff;
 }
 .homeHeader .textImage {
+  height: 100%;
   left: 76%;
   bottom: 33%;
 }
@@ -554,8 +555,14 @@ nav ul a:hover, nav ul a:focus {
   border-bottom: 4px solid #f38d8d;
 }
 
-.imgContainer, .blogText {
+.blogPostSection .imgContainer, .blogPostSection .blogText {
   width: 50%;
+}
+.blogPostSection p {
+  margin: 20px 0 25px;
+}
+.blogPostSection img {
+  height: 100%;
 }
 
 .blogOne img {
@@ -564,10 +571,7 @@ nav ul a:hover, nav ul a:focus {
           box-shadow: 15px 15px #68b0c1, -100px 15px #68b0c1;
 }
 .blogOne .blogOneText {
-  padding: 70px 0 15px 95px;
-}
-.blogOne .blogOneText p {
-  margin: 20px 0 25px;
+  padding: 85px 0 20px 9%;
 }
 .blogOne .blogOneText .btn {
   -ms-flex-item-align: start;
@@ -575,13 +579,10 @@ nav ul a:hover, nav ul a:focus {
 }
 
 .blogTwo {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .blogTwo .blogTwoText {
-  padding: 30px 95px 20px 0;
-}
-.blogTwo .blogTwoText p {
-  margin: 20px 0 25px;
+  padding: 20px 9% 85px 0;
 }
 .blogTwo .blogTwoText .btn {
   -ms-flex-item-align: end;
@@ -881,18 +882,18 @@ nav ul a:hover, nav ul a:focus {
   .about .flexContainer .aboutText {
     width: 58%;
   }
-  .blogText, .imgContainer {
-    width: 100%;
-  }
-  .blogPosts .flexContainer {
+  .blogPostSection .flexContainer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .blogPosts .blogTwo.flexContainer {
+  .blogPostSection .blogTwo.flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .blogPostSection .blogText, .blogPostSection .imgContainer {
+    width: 100%;
   }
   .blogOne .imgContainer {
     -webkit-box-pack: end;
@@ -904,7 +905,7 @@ nav ul a:hover, nav ul a:focus {
             box-shadow: 20px 15px #68b0c1, -100px 15px #68b0c1;
   }
   .blogOne .blogOneText {
-    padding: 15px 0px 30px;
+    padding: 5% 0;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -917,13 +918,10 @@ nav ul a:hover, nav ul a:focus {
         align-self: flex-end;
   }
   .blogTwo {
-    padding-top: 0px;
-  }
-  .blogTwo img {
-    top: 0px;
+    margin-top: 0;
   }
   .blogTwo .blogTwoText {
-    padding: 50px 0 30px;
+    padding: 15% 0 8%;
   }
   .blogTwo .blogTwoText p {
     text-align: left;
@@ -1062,23 +1060,20 @@ nav ul a:hover, nav ul a:focus {
   .about {
     padding-top: 20%;
   }
-  .blogPosts .blogText {
+  .blogPostSection .blogText {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .blogPosts .blogText .btn {
+  .blogPostSection .blogText .btn {
     -ms-flex-item-align: center;
         align-self: center;
-  }
-  .blogOne .blogOneText {
-    padding: 20px 5px;
   }
   .blogOne .blogOneText p {
     text-align: justify;
   }
   .blogTwo .blogTwoText {
-    padding: 55px 5px 20px;
+    padding-top: 80px;
   }
   .blogTwo .blogTwoText p {
     text-align: justify;

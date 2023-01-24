@@ -31,7 +31,7 @@ ul:not(.posts) { list-style: none; }
 // Images
 img {
     max-width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
     object-fit: cover;
 }
@@ -94,7 +94,7 @@ label[for="toggle"], .toggle { display: none; }
 .headerImgContainer, 
 .headerTitle, 
 .webLinks li, 
-.imgContainer img, 
+.imgContainer img,
 .blogTitle,
 .contactTitle { position: relative; }
 
