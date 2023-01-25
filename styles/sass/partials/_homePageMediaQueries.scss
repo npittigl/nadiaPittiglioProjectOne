@@ -13,8 +13,8 @@
     // HEADER: 
     .homeHeader {
         h2 { font-size: 5rem; }
-        .flexContainer { gap: 12%; }
         .textImage { height: 84%; }
+        .headerImgContainer { margin-right: 12%; }
     }
 }
 
@@ -50,7 +50,6 @@
         box-shadow: 2px 2px $accent,
         -2px -2px $accent, -2px 2px $accent;
         flex-direction: column;
-        gap: 0;
         position: fixed;
         right: -500px;
         top: 55px;
@@ -58,8 +57,11 @@
         transition: all 0.6s;
         
         h1 { font-size: 2rem; }
-        
+
         li, a { width: inherit; }
+
+        li { 
+            margin-right: 0;
 
             a {
                 padding: 25px 0;
@@ -68,11 +70,12 @@
                 border-top: 2px solid transparent;
                 border-bottom: 2px solid transparent;
         
-            &:hover,
-            &:focus {
-                background-color: $tertiary;
-                border-top: 2px solid $whiteShade;
-                border-bottom: 2px solid $whiteShade;
+                &:hover,
+                &:focus {
+                    background-color: $tertiary;
+                    border-top: 2px solid $whiteShade;
+                    border-bottom: 2px solid $whiteShade;
+                }
             }
         }
     }
@@ -87,6 +90,7 @@
         }
 
         .headerImgContainer {
+            margin-right: 0;
             right: 15px;
             top: 60px;
             img { box-shadow: 13px 13px 0 $white; }
@@ -137,6 +141,7 @@
             p { text-align: left; }
             .btn { align-self: flex-start; }
         }
+        img { height: auto; }
     }
 
     // GALLERY SECTION:
@@ -148,7 +153,7 @@
             .img2 { margin: 0 0 3% 1.5%; }
             .img3 { 
                 width: 100%;
-                margin: 0; 
+                margin: 0;
                 img {
                     width: inherit;
                     height: 280px;
@@ -269,9 +274,7 @@
     }
 
     .blogOne {
-        .blogOneText {
-            p { text-align: justify; }
-        }
+        .blogOneText p { text-align: justify; }
     }
 
     .blogTwo {

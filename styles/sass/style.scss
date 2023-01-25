@@ -4,15 +4,13 @@
 @use './partials/typography';
 @use './partials/baseStyles';
 @use './partials/nav';
-@use './partials/headerHome';
-@use './partials/aboutSectionHome';
+@use './partials/headerAndAboutSectionHome';
 @use './partials/webLinksSectionHome';
 @use './partials/blogSectionHome';
-@use './partials/journeySectionHome';
-@use './partials/gallerySectionHome';
+@use './partials/journeyAndGallerySectionHome';
 @use './partials/footer';
 
-// styles for blogPost page:
+// styles for blog page:
 @use './partials/blogPage';
 
 // styles for contact page:

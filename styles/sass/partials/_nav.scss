@@ -6,13 +6,15 @@ nav {
     ul {
         justify-content: center;
         align-items: center;
-        gap: 20px;
-
-        .logo { margin: 0 10px; }
-
-        a {
-            padding: 15px;
-            &:hover, &:focus { color: $whiteShade; }
+        li { 
+            margin-right: 25px; 
+            a {
+                padding: 15px;
+                &:hover,
+                &:focus {
+                    color: $whiteShade;
+                }
+            }
         }
     }
 }

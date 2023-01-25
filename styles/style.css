@@ -296,7 +296,7 @@ nav {
 }
 
 h1 {
-  font-size: 1.65rem;
+  font-size: 1.8rem;
   line-height: 1.8rem;
 }
 
@@ -353,10 +353,16 @@ ul:not(.posts) {
 
 img {
   max-width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.blogTwo img,
+.blogPageHeader img,
+.contactHeader img {
+  height: 100%;
 }
 
 a {
@@ -472,15 +478,14 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
 }
-nav ul .logo {
-  margin: 0 10px;
+nav ul li {
+  margin-right: 25px;
 }
-nav ul a {
+nav ul li a {
   padding: 15px;
 }
-nav ul a:hover, nav ul a:focus {
+nav ul li a:hover, nav ul li a:focus {
   color: #f6f6f6;
 }
 
@@ -488,7 +493,6 @@ nav ul a:hover, nav ul a:focus {
   max-height: 77vh;
 }
 .homeHeader .flexContainer {
-  gap: 8%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -496,12 +500,14 @@ nav ul a:hover, nav ul a:focus {
 .homeHeader .headerImgContainer {
   width: 38%;
   top: 30px;
+  margin-right: 8%;
 }
 .homeHeader .headerImgContainer img {
   -webkit-box-shadow: 16px 16px 0 #fff;
           box-shadow: 16px 16px 0 #fff;
 }
 .homeHeader .textImage {
+  height: 100%;
   left: 76%;
   bottom: 33%;
 }
@@ -598,7 +604,6 @@ nav ul a:hover, nav ul a:focus {
   min-width: 250px;
 }
 .journeySection .journeyImage img {
-  height: auto;
   -webkit-box-shadow: 15px 15px #227284;
           box-shadow: 15px 15px #227284;
 }
@@ -777,11 +782,11 @@ nav ul a:hover, nav ul a:focus {
   .homeHeader h2 {
     font-size: 5rem;
   }
-  .homeHeader .flexContainer {
-    gap: 12%;
-  }
   .homeHeader .textImage {
     height: 84%;
+  }
+  .homeHeader .headerImgContainer {
+    margin-right: 12%;
   }
 }
 /**************************************/
@@ -819,7 +824,6 @@ nav ul a:hover, nav ul a:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 0;
     position: fixed;
     right: -500px;
     top: 55px;
@@ -833,14 +837,17 @@ nav ul a:hover, nav ul a:focus {
   ul.slideOutMenu li, ul.slideOutMenu a {
     width: inherit;
   }
-  ul.slideOutMenu a {
+  ul.slideOutMenu li {
+    margin-right: 0;
+  }
+  ul.slideOutMenu li a {
     padding: 25px 0;
     font-size: 1.8rem;
     text-align: center;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
   }
-  ul.slideOutMenu a:hover, ul.slideOutMenu a:focus {
+  ul.slideOutMenu li a:hover, ul.slideOutMenu li a:focus {
     background-color: #227284;
     border-top: 2px solid #f6f6f6;
     border-bottom: 2px solid #f6f6f6;
@@ -858,6 +865,7 @@ nav ul a:hover, nav ul a:focus {
             justify-content: space-between;
   }
   .homeHeader .headerImgContainer {
+    margin-right: 0;
     right: 15px;
     top: 60px;
   }
@@ -927,6 +935,9 @@ nav ul a:hover, nav ul a:focus {
   .blogTwo .blogTwoText .btn {
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+  .blogTwo img {
+    height: auto;
   }
   .gallery ul {
     padding: 60px 0;

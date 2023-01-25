@@ -1,29 +1,44 @@
 @use './variables' as *;
 
-// Home Page Header Styles
+// Home Page Header & About Section Styles
 
 .homeHeader {
     max-height: 77vh;
     .flexContainer { 
-        gap: 8%;
         align-items: center; 
     }
     // Header Image Styles
     .headerImgContainer {
         width: 38%;
         top: 30px;
+        margin-right: 8%;
             img { box-shadow: 16px 16px 0 $white; }
     }
 
     // H2 Styles
     .textImage {
+        height: 100%;
         left: 76%;
         bottom: 33%;
     }
 }
 
+// About Section Styles 
+.about {
+    padding: 7% 0;
 
+    .flexContainer {
+        justify-content: flex-end;
 
+        .aboutText {
+            width: 53%;
+
+            p {
+                margin: 20px 0;
+            }
+        }
+    }
+}
 
 
 
