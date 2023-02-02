@@ -289,6 +289,7 @@ h5,
 .emailBold {
   font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 nav {
@@ -359,10 +360,20 @@ img {
      object-fit: cover;
 }
 
+.textImage,
 .blogTwo img,
 .blogPageHeader img,
-.contactHeader img {
+.contactHeader img,
+.userPost img {
   height: 100%;
+}
+
+.homeHeader,
+.webLinks img,
+.blogPageHeader img,
+.contactHeader img {
+  max-width: 2700px;
+  width: 100%;
 }
 
 a {
@@ -507,7 +518,6 @@ nav ul li a:hover, nav ul li a:focus {
           box-shadow: 16px 16px 0 #fff;
 }
 .homeHeader .textImage {
-  height: 100%;
   left: 76%;
   bottom: 33%;
 }
@@ -528,6 +538,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .webLinks img {
+  max-height: 450px;
   min-height: 180px;
 }
 .webLinks ul {
@@ -737,6 +748,7 @@ nav ul li a:hover, nav ul li a:focus {
   font-size: 0.9rem;
   font-weight: bold;
   margin: 10px 0;
+  text-transform: none;
 }
 .contactMain aside .address {
   font-size: 0.82rem;

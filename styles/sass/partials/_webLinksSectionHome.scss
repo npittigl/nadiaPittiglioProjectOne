@@ -2,7 +2,10 @@
 
 // Web Links Section Styles in Home Page
 .webLinks {
-    img { min-height: 180px; }
+    img { 
+        max-height: 450px;
+        min-height: 180px; 
+    }
     
     ul {
         padding: 50px 0 110px;
