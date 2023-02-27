@@ -27,59 +27,60 @@
     .wrapper { width: 95%; }
 
     // NAV SLIDE OUT MENU:
-    label[for="toggle"] { 
+    .toggle {
         display: block;
         position: fixed;
         right: 2.5%;
         top: 10px;
         z-index: 10;
-        
-        i.fa-bars { font-size: 1.65rem; }
-
-        &:hover,
-        &:focus { color: $accent; }
     }
 
-    input[type="checkbox"]:checked+ul.slideOutMenu { right: 0; }
-
-    ul.slideOutMenu {
-        width: 100%;
-        max-width: 450px;
-        background: $secondary;
-        border: 2px solid $whiteShade;
-        box-shadow: 2px 2px $accent,
-        -2px -2px $accent, -2px 2px $accent;
+    #menu {
+        width: 100vw;
+        height: 100vh;
+        background: #68b0c1;
         flex-direction: column;
+        justify-content: flex-start;
         position: fixed;
-        right: -500px;
-        top: 55px;
-        z-index: 100;
-        transition: all 0.6s;
-        
+        top: 0;
+        left: -100vw;
+        z-index: 9;
+        transition: all 1s ease-in-out;
+        padding-top: 45px;
+
         h1 { font-size: 2rem; }
-
+        
         li, a { width: inherit; }
-
-        li { 
+        
+        li {
             margin-right: 0;
+            height: 20%;
+            max-height: 100px;
 
             a {
-                padding: 25px 0;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding-left: 60px;
                 font-size: 1.8rem;
-                text-align: center;
                 border-top: 2px solid transparent;
                 border-bottom: 2px solid transparent;
-        
+
                 &:hover,
                 &:focus {
-                    background-color: $tertiary;
-                    border-top: 2px solid $whiteShade;
-                    border-bottom: 2px solid $whiteShade;
+                    background-color: #227284;
+                    border-top: 2px solid #f6f6f6;
+                    border-bottom: 2px solid #f6f6f6;
                 }
             }
         }
     }
     
+    #menu.slideOut {
+        left: 0;
+        transition: all 1s ease-in-out;
+    }
+
     // HEADER:
     .homeHeader {
         h2 { font-size: 4.3rem; }

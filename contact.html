@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,23 +19,19 @@
     <header class="contactHeader">
         <!-- Navigation Bar Begins -->
         <nav>
-            <!-- Nav Wrapper -->
-            <div class="wrapper">
-                <!-- Icon for Slide Out Menu on Smaller Screen -->
-                <label for="toggle" aria-label="Click here to open or close main menu">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </label>
-                <input type="checkbox" class="toggle" id="toggle" name="toggle">
+            <!-- Hamburger Menu Icon -->
+            <button class="toggle" aria-label="Click here to open or close main menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
         
-                <!-- Menu -->
-                <ul class="slideOutMenu flexContainer">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li class="logo"><a href="index.html"><h1>Harper</h1></a></li>
-                    <li><a href="blogPage.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div><!-- Nav Wrapper Ends -->
+            <!-- Menu -->
+            <ul class="flexContainer" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="logo"><a href="index.html"><h1>Harper</h1></a></li>
+                <li><a href="blogPage.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav><!-- Navigation Bar Ends -->
 
         <!-- Contact Header Image -->
@@ -124,5 +119,8 @@
     <footer class="footer">
         <p>Copyright &copy 2022 Juno College</p>
     </footer><!-- Footer Ends -->
+
+    <!-- link to javascript -->
+    <script src="scriptsHamMenu.js"></script>
 </body>
 </html>

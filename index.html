@@ -16,15 +16,14 @@
 </head>
 <body>
     <!-- Navigation Bar Begins -->
-    <nav class="homeNav">
+    <nav>
         <!-- Hamburger Menu Icon -->
-        <label for="toggle" aria-label="Click here to open or close main menu">
+        <button class="toggle" aria-label="Click here to open or close main menu">
             <i class="fa fa-bars" aria-hidden="true"></i>
-        </label>
-        <input type="checkbox" class="toggle" id="toggle" name="toggle">
+        </button>
         
         <!-- Menu -->
-        <ul class="slideOutMenu flexContainer">
+        <ul class="flexContainer" id="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <!-- Main Header Title -->
@@ -156,7 +155,7 @@
         <section class="gallery" id="gallery">
             <!-- image gallery begins -->
             <ul class="wrapper flexContainer">
-                <li class="img img1"><img src="./assets/home-image-6.jpg" alt="View of top half of a pink house with white trimmed windows, againste a bright blue sky."></li>
+                <li class="img img1"><img src="./assets/home-image-6.jpg" alt="View of top half of a pink house with white trimmed windows, against a bright blue sky."></li>
                 <li class="img img2"><img src="./assets/home-image-7.jpg" alt="Image of a plane flying across a cloudy sky with some pink hues."></li>
                 <li class="img img3"><img src="./assets/home-image-8.jpg" alt="Abstract image of pink, light blue and white coloured clouds."></li>
             </ul><!-- image gallery ends -->
@@ -167,5 +166,8 @@
     <footer class="footer">
         <p>Copyright &copy 2022 Juno College</p>
     </footer><!-- footer ends -->
+
+    <!-- link to javascript -->
+    <script src="scriptsHamMenu.js"></script>
 </body>
 </html>

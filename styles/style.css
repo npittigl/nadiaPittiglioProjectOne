@@ -442,10 +442,6 @@ nav, .homeHeader, .icon {
       flex-wrap: wrap;
 }
 
-label[for=toggle], input[type=checkbox] {
-  display: none;
-}
-
 .headerImgContainer,
 .headerTitle,
 .webLinks li,
@@ -498,6 +494,23 @@ nav ul li a {
 }
 nav ul li a:hover, nav ul li a:focus {
   color: #f6f6f6;
+}
+
+.toggle {
+  border: none;
+  background: none;
+  display: none;
+  cursor: pointer;
+  color: #f6f6f6;
+}
+.toggle i.fa-bars,
+.toggle i.fa-times {
+  font-size: 1.65rem;
+}
+.toggle i.fa-bars:hover, .toggle i.fa-bars:focus,
+.toggle i.fa-times:hover,
+.toggle i.fa-times:focus {
+  color: #f38d8d;
 }
 
 .homeHeader {
@@ -809,60 +822,65 @@ nav ul li a:hover, nav ul li a:focus {
   .wrapper {
     width: 95%;
   }
-  label[for=toggle] {
+  .toggle {
     display: block;
     position: fixed;
     right: 2.5%;
     top: 10px;
     z-index: 10;
   }
-  label[for=toggle] i.fa-bars {
-    font-size: 1.65rem;
-  }
-  label[for=toggle]:hover, label[for=toggle]:focus {
-    color: #f38d8d;
-  }
-  input[type=checkbox]:checked + ul.slideOutMenu {
-    right: 0;
-  }
-  ul.slideOutMenu {
-    width: 100%;
-    max-width: 450px;
+  #menu {
+    width: 100vw;
+    height: 100vh;
     background: #68b0c1;
-    border: 2px solid #f6f6f6;
-    -webkit-box-shadow: 2px 2px #f38d8d, -2px -2px #f38d8d, -2px 2px #f38d8d;
-            box-shadow: 2px 2px #f38d8d, -2px -2px #f38d8d, -2px 2px #f38d8d;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     position: fixed;
-    right: -500px;
-    top: 55px;
-    z-index: 100;
-    -webkit-transition: all 0.6s;
-    transition: all 0.6s;
+    top: 0;
+    left: -100vw;
+    z-index: 9;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    padding-top: 45px;
   }
-  ul.slideOutMenu h1 {
+  #menu h1 {
     font-size: 2rem;
   }
-  ul.slideOutMenu li, ul.slideOutMenu a {
+  #menu li, #menu a {
     width: inherit;
   }
-  ul.slideOutMenu li {
+  #menu li {
     margin-right: 0;
+    height: 20%;
+    max-height: 100px;
   }
-  ul.slideOutMenu li a {
-    padding: 25px 0;
+  #menu li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    padding-left: 60px;
     font-size: 1.8rem;
-    text-align: center;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
   }
-  ul.slideOutMenu li a:hover, ul.slideOutMenu li a:focus {
+  #menu li a:hover, #menu li a:focus {
     background-color: #227284;
     border-top: 2px solid #f6f6f6;
     border-bottom: 2px solid #f6f6f6;
+  }
+  #menu.slideOut {
+    left: 0;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   .homeHeader h2 {
     font-size: 4.3rem;

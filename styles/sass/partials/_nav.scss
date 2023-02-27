@@ -18,3 +18,21 @@ nav {
         }
     }
 }
+
+// Hamburger Menu Icon/Menu Slide Out Styles
+.toggle {
+    border: none;
+    background: none;
+    display: none;
+    cursor: pointer;
+    color: #f6f6f6;
+
+    i.fa-bars,
+    i.fa-times { 
+        font-size: 1.65rem; 
+
+        &:hover,
+        &:focus { color: #f38d8d; }
+    }
+}
+
