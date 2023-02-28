@@ -1,0 +1,108 @@
+// Modal Styles
+
+.modalSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 450px;
+    width: 95%;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    z-index: 200;
+}
+
+.modal .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.modal img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.message { padding: 1.5rem 0; }
+
+.modal input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.message h3 { padding: 3px 0; }
+
+.message p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0.4rem 0 0.2rem;
+}
+
+.button {
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalSubmit {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 5px;
+
+    &:hover,
+    &:focus {
+        background-color: #ddd;
+        color: black;
+    }
+}
+
+.btnClose {
+    background: none;
+    transform: translate(10px, -30px);
+    padding: 0.5rem 0.7rem;
+    font-size: 1.5rem;
+
+    &:hover,
+    &:focus { color: #ddd; }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+}

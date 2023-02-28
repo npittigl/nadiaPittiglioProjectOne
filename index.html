@@ -161,11 +161,45 @@
                 <li class="img img3"><img src="./assets/home-image-8.jpg" alt="Abstract image of pink, light blue and white coloured clouds."></li>
             </ul><!-- image gallery ends -->
         </section><!-- gallery section ends -->
+
+        <!-- modal section begins - appears on page load only -->
+        <section class="modalSection">
+            <!-- modal container begins -->
+            <div class="modal">
+                <div class="flex">
+                    <img src="./assets/blog-image-2.jpg" alt="A girl with dark hair, wearing faux fur pink coat and pink top, lying down on a carpeted floor.">
+                    <!-- button to close modal -->
+                    <button class="button btnClose" sr-only="Click here to close pop up box.">X</button>
+                </div>
+            
+                <div class="message">
+                    <h3>Stay in touch</h3>
+
+                    <p>Keep up to date with all of Harper's worldly adventures, new photos, travel tips and more!</p>
+
+                    <p>Sign up today for free monthly newsletters.</p>
+                </div>
+            
+                <!-- label and input for email -->
+                <form action="#">
+                    <label for="userEmail" class="sr-only">Email address</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="jharper@email.com" required="true">
+                    <!-- submit button -->
+                    <button class="button modalSubmit">Submit</button>
+                </form>
+            </div><!-- modal container ends -->
+        </section><!-- modal section ends -->
+        
+        <!-- modal overlay -->
+        <div class="overlay"></div>
     </main><!-- main ends -->    
 
     <!-- footer begins -->
     <footer class="footer">
         <p>Copyright &copy 2022 Juno College</p>
     </footer><!-- footer ends -->
+
+    <!-- link to javascript -->
+    <script src="scriptModal.js"></script>
 </body>
 </html>
