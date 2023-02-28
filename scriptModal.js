@@ -1,3 +1,5 @@
+// Adapted from work of Victor Eke => https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/
+
 // declare variables:
 const modalButton = document.querySelector('.btnClose');
 
