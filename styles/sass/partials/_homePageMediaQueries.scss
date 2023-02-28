@@ -32,7 +32,7 @@
         position: fixed;
         right: 2.5%;
         top: 10px;
-        z-index: 10;
+        z-index: 10000;
         
         i.fa-bars { font-size: 1.65rem; }
 
@@ -53,7 +53,7 @@
         position: fixed;
         right: -500px;
         top: 55px;
-        z-index: 100;
+        z-index: 10000;
         transition: all 0.6s;
         
         h1 { font-size: 2rem; }

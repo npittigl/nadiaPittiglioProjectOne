@@ -58,6 +58,79 @@
     p { margin-bottom: 15px; }
 }
 
+// Carousel Section Styles
+.carouselSection { padding-bottom: 5%; }
+
+.carouselWrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carouselContainer {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+}
+
+.carouselPhoto {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    z-index: 100;
+    transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
+}
+
+.carouselPhoto img { 
+    width: 100%; 
+    height: 100%;
+    display: block;
+}
+
+.carouselPhoto.active {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+}
+
+/* JS will dynamically set classes to pre-position the prev and next items by translating them with the transform property */
+.carouselPhoto.prev,
+.carouselPhoto.next { z-index: 800; }
+
+/* move previous item to the left */
+.carouselPhoto.prev { transform: translateX(-100%); }
+
+/* move next item to the right */
+.carouselPhoto.next { transform: translateX(100%); }
+
+/* Carousel Button & Icon Styles */
+.arrow {
+    position: absolute;
+    bottom: 50%;
+    z-index: 1001;
+    background: none;
+    border: none;
+    transform: translateY(25%);
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.5;
+
+    &:hover,
+    &:focus { opacity: 0.9; }
+
+    i {
+        font-size: 40px;
+        color: #FFF;
+    }
+}
+
+.leftButton { left: 2%; }
+
+.rightButton { right: 2%; }
+
 // User Posted Comments Styles
 .postedComments {
     .userPost {

@@ -14,6 +14,8 @@
 
     .blogPageHeader h2 { font-size: 3rem; }
     
+    // Carousel Section
+    .carouselContainer { height: 75vh; }
 
     // Main Blog Post Layout
     .blogPageMain {
@@ -74,6 +76,13 @@
     }
 }
 
+@media(max-height: 600px) {
+    // Carousel Section
+    .carouselContainer {
+        height: 100vh;
+    }
+}
+
 /**************************************/
 /* 2nd BIG BREAK POINT:               */
 /* Landscape Phone to Portrait Tablet */
@@ -82,6 +91,9 @@
     // Header Nav - Blog & Contact Page
     .blogPageHeader nav,
     .contactHeader nav { height: 52px; }
+
+    // Carousel Section
+    .carouselContainer { height: 350px; }
 
     // .card padding
     .card { padding: 25px;}
@@ -111,6 +123,9 @@
     .blogPageMain h4 { font-size: 1.2rem; }
     
     h5 { font-size: 1rem; }
+
+    // Carousel Section
+    .carouselContainer { height: 300px; }
 
     // .card padding
     .card { padding: 20px; }
